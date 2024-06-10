@@ -14,17 +14,23 @@ import {
 
 import Link from "next/link";
 const Sidebar = () => {
-
-
   const WelcomeSideLink = [
     {
       title: "🎉 Welcome",
-path:"docs-index",
-      Fullpath: "/Welcome/docs-index",
+      
+
+      sublinks: [
+        {
+          name: "🗺️ Docs Index",
+          prams: "docs-index",
+          path:"welcome/docs-index"
+        },
+        
+       
+    ]
+   
     },
   ];
-
-
 
   return (
     <VStack px={"20px"}>
