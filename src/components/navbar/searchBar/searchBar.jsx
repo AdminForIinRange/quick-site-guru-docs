@@ -22,6 +22,11 @@ const SearchBar = () => {
                   ></Box>
                 </HStack>
               </Box></>
+
+
+
+
+
   )
 }
 

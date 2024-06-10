@@ -21,27 +21,32 @@ const Sidebar = () => {
     },
   ];
 
-
   return (
     <VStack px={"20px"}>
       <Box bg={"#242526"} w={"265px"} h={"100%"} p={"5px"} rounded={"8px"}>
         <VStack justify={"left"} align={"left"}>
           <Accordion
-          transition={"all .3s ease"}
-            defaultIndex={[0]}
+            transition={"all .3s ease"}
+            defaultIndex={[1]}
             allowMultiple
             color={"white"}
             border={"none"}
-
           >
-            <AccordionItem border={"none"}  >
-      
-                <AccordionButton  _hover={{ background: "none", transform: "scale(1.05)" }}>
-                  <Box as="span" flex="1" textAlign="left" fontSize={"16px"}    fontWeight={"400"}>
-                    🎉 Welcome
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
+            <AccordionItem border={"none"}>
+              <AccordionButton
+                _hover={{ background: "none", transform: "scale(1.05)" }}
+              >
+                <Box
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                  fontSize={"16px"}
+                  fontWeight={"400"}
+                >
+                  🎉 Welcome
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
 
               <AccordionPanel py={"5px"}>
                 <HStack
@@ -61,17 +66,22 @@ const Sidebar = () => {
                       orientation="vertical"
                       borderColor={"#686868"}
                       borderWidth={"2px"}
-                       // map this too and index it with the subheadings
+                      // map this too and index it with the subheadings
                     />
                   </VStack>
-                  <VStack w={"100%"} h={"100%"} justify={"left"} align={"left"} gap={"0px"}>
+                  <VStack
+                    w={"100%"}
+                    h={"100%"}
+                    justify={"left"}
+                    align={"left"}
+                    gap={"0px"}
+                  >
                     <Box
                       cursor={"pointer"}
                       fontWeight={"400"}
                       w={"100%"}
                       h={"100%"}
                       p={"10px"}
-        
                       rounded={"15px"}
                       _hover={{ background: "#3a3b3c" }}
                       fontSize={"13px"}
@@ -79,8 +89,6 @@ const Sidebar = () => {
                     >
                       🗺️ Docs Index
                     </Box>
-              
-                   
                   </VStack>
                 </HStack>
               </AccordionPanel>
