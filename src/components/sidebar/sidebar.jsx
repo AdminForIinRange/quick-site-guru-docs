@@ -14,12 +14,17 @@ import {
 
 import Link from "next/link";
 const Sidebar = () => {
-  const PresetItems = [
+
+
+  const WelcomeSideLink = [
     {
-      title: "🪵 Login Form",
-      path: "/Welcome/docs-index",
+      title: "🎉 Welcome",
+path:"docs-index",
+      Fullpath: "/Welcome/docs-index",
     },
   ];
+
+
 
   return (
     <VStack px={"20px"}>
