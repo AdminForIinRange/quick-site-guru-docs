@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <VStack px={"20px"}>
-      <Box bg={"#242526"} w={"250px"} h={"100%"} p={"5px"} rounded={"8px"}>
+      <Box bg={"#242526"} w={"265px"} h={"100%"} p={"5px"} rounded={"8px"}>
         <VStack justify={"left"} align={"left"}>
           <Accordion
           transition={"all .3s ease"}
@@ -37,7 +37,7 @@ const Sidebar = () => {
             <AccordionItem border={"none"}  >
       
                 <AccordionButton  _hover={{ background: "none", transform: "scale(1.05)" }}>
-                  <Box as="span" flex="1" textAlign="left" fontSize={"18px"}    fontWeight={"400"}>
+                  <Box as="span" flex="1" textAlign="left" fontSize={"16px"}    fontWeight={"400"}>
                     🎉 Welcome
                   </Box>
                   <AccordionIcon />
@@ -55,7 +55,7 @@ const Sidebar = () => {
                     h={"100%"}
                     justify={"left"}
                     align={"left"}
-                    height="50px"
+                    height="45px"
                   >
                     <Divider
                       orientation="vertical"
@@ -74,7 +74,7 @@ const Sidebar = () => {
         
                       rounded={"15px"}
                       _hover={{ background: "#3a3b3c" }}
-                      fontSize={"15px"}
+                      fontSize={"13px"}
                       textIndent={"5px"}
                     >
                       🗺️ Docs Index
