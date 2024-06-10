@@ -12,8 +12,11 @@ import {
 } from "@chakra-ui/react";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Sidebar = () => {
+
+    const router = useRouter();
   const SideLink = [
     {
       Welcome: [
@@ -123,7 +126,7 @@ const Sidebar = () => {
               path: "stage-2/welcome-stage-2",
             },
             {
-              sublink: "🎨 Propose a design (Figma)",
+              sublink: "🎨 Propose a design",
               prams: "propose-design",
               path: "stage-2/propose-design",
             },
@@ -152,12 +155,12 @@ const Sidebar = () => {
               path: "stage-3/welcome-stage-3",
             },
             {
-              sublink: "📊 Business-driven Templates",
+              sublink: "📊 Business Templates",
               prams: "business-templates",
               path: "stage-3/business-templates",
             },
             {
-              sublink: "🎨 Propose a template (Figma)",
+              sublink: "🎨 Propose a template",
               prams: "propose-template",
               path: "stage-3/propose-template",
             },
@@ -181,12 +184,12 @@ const Sidebar = () => {
               path: "stage-4/welcome-stage-4",
             },
             {
-              sublink: "📊 Business-driven Templates",
+              sublink: "📊 Business Templates",
               prams: "business-templates",
               path: "stage-4/business-templates",
             },
             {
-              sublink: "🎨 Propose a template (Figma)",
+              sublink: "🎨 Propose a template ",
               prams: "propose-template",
               path: "stage-4/propose-template",
             },
@@ -276,11 +279,16 @@ const Sidebar = () => {
   ];
 
   return (
-    <VStack px={"20px"}>
+
+
+
+
+    <VStack px={"20px"} >
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
             <Box
+           
               key={`${index}-${sectionIndex}`}
               bg={"#242526"}
               w={"265px"}
@@ -342,6 +350,7 @@ const Sidebar = () => {
                           
                           >
                             <Box
+                            onClick={() => router.push(sublink.path)}
                               cursor={"pointer"}
                               fontWeight={"400"}
                               w={"100%"}
@@ -366,6 +375,7 @@ const Sidebar = () => {
         )
       )}
     </VStack>
+
   );
 };
 
