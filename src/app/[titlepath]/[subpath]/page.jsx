@@ -19,10 +19,11 @@ const Home = ({ params }) => {
           mt={"15px"}
           gap={["15px", "15px", "15px", "10px", "10px"]}
           justify={"center"}
+  
         >
           <Box
             display={["none", "none", "none", "block", "block"]}
-            h={"685px"}
+            h={"700px"}
             overflowY={"scroll"}
             pr="10px"
              pl="10px"
@@ -30,7 +31,7 @@ const Home = ({ params }) => {
             overflowX={"hidden"}
             // Inner shadow style
           
-            boxShadow="inset 0 10px 10px rgba(0, 0, 0, 0.05)"
+       
           >
             <Sidebar titlepath={params.titlepath} subpath={params.subpath} />
           </Box>
