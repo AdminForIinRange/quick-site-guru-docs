@@ -14,7 +14,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import  SideLink  from "../../app/data/Sidelink";
+import  SideLink  from "../../app/global/data/Sidelink";
 const Sidebar = ({titlepath, subpath}) => {
 
     const router = useRouter();

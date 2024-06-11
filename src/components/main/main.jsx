@@ -9,7 +9,8 @@ const Main = ({ titlepath, subpath }) => {
   return (
     <>
       <Box
-        w={"1200px"}
+      mr={["15px", "15px", "15px", "15px", "25px"]}
+        w={"100%"}
         h={"750px"} // swith to 100% after testing
         bg={"#242526"}
         rounded={"15px"}
@@ -251,36 +252,39 @@ const Main = ({ titlepath, subpath }) => {
           </Box>
 
           <Box mt={"65px"} >
-            <HStack  w={"100%"} h={"100%"} justify={"space-between"}  transition={"all 0.3s ease-in-out"}>
+            <HStack  w={"100%"} h={"100%"} justify={"right"}  transition={"all 0.3s ease-in-out"}>
               <Box
        
                 cursor={"pointer"}
                 transition={"all 0.3s ease-in-out"}
                 _hover={{
                 
-                  w: "200px",
+                  w: "220px",
+                  bg:'rgb(255, 255, 255,0.1)',
                   
                 }}
                 p={"10px"}
                 px={"20px"}
                 rounded={"15px"}
-                w={"190px"}
+                w={"210px"}
                 h={"100%"}
                 bg={"rgb(255, 255, 255,0.05)"}
                 border={"1px solid rgb(255, 255, 255,0.05)"}
               >
                 <HStack align={"center"} w={"100%"} h={"100%"}  justify={"space-between"}   >
-                  <HiArrowLongLeft  fontSize={"40px"} color="white"   />
+                
                   <Text 
                     fontSize={["16px", "16px", "16px", "16px", "16px"]}
                     as={"span"}
                     textAlign={"left"}
                     color={"white"}
                   >
-                    🎉 Welcome 
+                   🧑‍💻 Introduction
                   </Text>{" "}
+                  <HiArrowLongRight  fontSize={"40px"} color="white"   />
                 </HStack>
               </Box>
+              
             </HStack>
           </Box>
         </VStack>
@@ -316,4 +320,45 @@ export default Main;
 //   accessible to everyone, regardless of technical expertise. Let's
 //   start building amazing websites! 🌐
 // </Text>
+// </Box>
+
+
+
+
+
+
+
+
+// <Box mt={"65px"} >
+// <HStack  w={"100%"} h={"100%"} justify={"space-between"}  transition={"all 0.3s ease-in-out"}>
+//   <Box
+
+//     cursor={"pointer"}
+//     transition={"all 0.3s ease-in-out"}
+//     _hover={{
+    
+//       w: "200px",
+      
+//     }}
+//     p={"10px"}
+//     px={"20px"}
+//     rounded={"15px"}
+//     w={"190px"}
+//     h={"100%"}
+//     bg={"rgb(255, 255, 255,0.05)"}
+//     border={"1px solid rgb(255, 255, 255,0.05)"}
+//   >
+//     <HStack align={"center"} w={"100%"} h={"100%"}  justify={"space-between"}   >
+//       <HiArrowLongLeft  fontSize={"40px"} color="white"   />
+//       <Text 
+//         fontSize={["16px", "16px", "16px", "16px", "16px"]}
+//         as={"span"}
+//         textAlign={"left"}
+//         color={"white"}
+//       >
+//         🎉 Welcome 
+//       </Text>{" "}
+//     </HStack>
+//   </Box>
+// </HStack>
 // </Box>

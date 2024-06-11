@@ -1,7 +1,7 @@
 import { Box, HStack, Text } from "@chakra-ui/react";
 import React from "react";
 
-import  SideLink  from "../../app/data/Sidelink";
+import  SideLink  from "../../app/global/data/Sidelink";
 const BreadCrumbs = ({ titlePath, subPath }) => {
   // Function to find and return the title with emoji when titlePath matches StartingPath
   const getTitleWithEmoji = () => {
