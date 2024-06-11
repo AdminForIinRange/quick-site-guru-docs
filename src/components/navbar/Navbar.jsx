@@ -159,7 +159,7 @@ const Navbar = () => {
                     cursor={"pointer"}
                     transition={"all 0.3s ease-in-out"}
                     _hover={{ transform: "scale(1.3)", color: "white" }}
-                    color={"#1A365D"}
+                    color={"#656565"}
                   >
                     <FaMoon
                    
