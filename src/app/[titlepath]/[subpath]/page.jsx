@@ -14,7 +14,7 @@ const Home = ( {params} ) => {
       gap={["15px", "15px", "25px", "25px", "25px"]}
       mt={"15px"}
     >
-      {!isTablet ? <Sidebar /> : null}
+      {!isTablet ? <Sidebar titlepath={params.titlepath} subpath={params.subpath}  /> : null}
 
  <Main titlepath={params.titlepath} subpath={params.subpath} /> 
 

@@ -14,7 +14,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const Sidebar = () => {
+const Sidebar = ({titlepath, subpath}) => {
 
     const router = useRouter();
   const SideLink = [
@@ -22,9 +22,10 @@ const Sidebar = () => {
       Welcome: [
         {
           title: "🎉 Welcome",
+          StartingPath: "welcome",
           sublinks: [
             {
-              sublink: "🗺️ docs index",
+              subtitle: "🗺️ docs index",
               prams: "docs-index",
               path: "welcome/docs-index",
             },
@@ -37,19 +38,20 @@ const Sidebar = () => {
       GettingStarted: [
         {
           title: "👋 Getting Started",
+          StartingPath: "getting-started",
           sublinks: [
             {
-              sublink: "🧑‍💻 Introduction",
+              subtitle: "🧑‍💻 Introduction",
               prams: "introduction",
               path: "getting-started/introduction",
             },
             {
-              sublink: "🏢 Company Values",
+              subtitle: "🏢 Company Values",
               prams: "company-values",
               path: "getting-started/company-values",
             },
             {
-              sublink: "🌐 Community/Support",
+              subtitle: "🌐 Community/Support",
               prams: "community-support",
               path: "getting-started/community-support",
             },
@@ -61,24 +63,25 @@ const Sidebar = () => {
       InternshipProgram: [
         {
           title: "🎓 Internship Program",
+          StartingPath: "internship-program",
           sublinks: [
             {
-              sublink: "🏗️ Program Structure",
+              subtitle: "🏗️ Program Structure",
               prams: "program-structure",
               path: "internship-program/program-structure",
             },
             {
-              sublink: "🚀 What we Expect",
+              subtitle: "🚀 What we Expect",
               prams: "what-we-expect",
               path: "internship-program/what-we-expect",
             },
             {
-              sublink: "👨‍🏫 Mentorship/Guidance",
+              subtitle: "👨‍🏫 Mentorship/Guidance",
               prams: "mentorship-guidance",
               path: "internship-program/mentorship-guidance",
             },
             {
-              sublink: "📅 Meetings/Feedback",
+              subtitle: "📅 Meetings/Feedback",
               prams: "meetings-feedback",
               path: "internship-program/meetings-feedback",
             },
@@ -90,24 +93,25 @@ const Sidebar = () => {
       Stage1: [
         {
           title: "🧠 Stage 1 Learning",
+          StartingPath: "stage-1",
           sublinks: [
             {
-              sublink: "🎉 Welcome to stage 1",
+              subtitle: "🎉 Welcome to stage 1",
               prams: "welcome-stage-1",
               path: "stage-1/welcome-stage-1",
             },
             {
-              sublink: "🌍 Our Mission/Vision",
+              subtitle: "🌍 Our Mission/Vision",
               prams: "mission-vision",
               path: "stage-1/mission-vision",
             },
             {
-              sublink: "🔊 Joining Discord",
+              subtitle: "🔊 Joining Discord",
               prams: "joining-discord",
               path: "stage-1/joining-discord",
             },
             {
-              sublink: "🗣️ Talking to mentors",
+              subtitle: "🗣️ Talking to mentors",
               prams: "talking-to-mentors",
               path: "stage-1/talking-to-mentors",
             },
@@ -119,24 +123,25 @@ const Sidebar = () => {
       Stage2: [
         {
           title: "💪 Stage 2 Building",
+          StartingPath: "stage-2",
           sublinks: [
             {
-              sublink: "🎉 Welcome to stage 2",
+              subtitle: "🎉 Welcome to stage 2",
               prams: "welcome-stage-2",
               path: "stage-2/welcome-stage-2",
             },
             {
-              sublink: "🎨 Propose a design",
+              subtitle: "🎨 Propose a design",
               prams: "propose-design",
               path: "stage-2/propose-design",
             },
             {
-              sublink: "💻 Coding in QuickSite",
+              subtitle: "💻 Coding in QuickSite",
               prams: "coding-in-quicksite",
               path: "stage-2/coding-in-quicksite",
             },
             {
-              sublink: "📅 Meetings/Feedback",
+              subtitle: "📅 Meetings/Feedback",
               prams: "meetings-feedback",
               path: "stage-2/meetings-feedback",
             },
@@ -148,24 +153,25 @@ const Sidebar = () => {
       Stage3: [
         {
           title: "🏗️ Stage 3 Tempting",
+          StartingPath: "stage-3",
           sublinks: [
             {
-              sublink: "🎉 Welcome to stage 3",
+              subtitle: "🎉 Welcome to stage 3",
               prams: "welcome-stage-3",
               path: "stage-3/welcome-stage-3",
             },
             {
-              sublink: "📊 Business Templates",
+              subtitle: "📊 Business Templates",
               prams: "business-templates",
               path: "stage-3/business-templates",
             },
             {
-              sublink: "🎨 Propose a template",
+              subtitle: "🎨 Propose a template",
               prams: "propose-template",
               path: "stage-3/propose-template",
             },
             {
-              sublink: "📅 Meetings/Feedback",
+              subtitle: "📅 Meetings/Feedback",
               prams: "meetings-feedback",
               path: "stage-3/meetings-feedback",
             },
@@ -177,24 +183,25 @@ const Sidebar = () => {
       Stage4: [
         {
           title: "⚒️ Stage 4 Developing",
+          StartingPath: "stage-4",
           sublinks: [
             {
-              sublink: "🎉 Welcome to stage 4",
+              subtitle: "🎉 Welcome to stage 4",
               prams: "welcome-stage-4",
               path: "stage-4/welcome-stage-4",
             },
             {
-              sublink: "📊 Business Templates",
+              subtitle: "📊 Business Templates",
               prams: "business-templates",
               path: "stage-4/business-templates",
             },
             {
-              sublink: "🎨 Propose a template ",
+              subtitle: "🎨 Propose a template ",
               prams: "propose-template",
               path: "stage-4/propose-template",
             },
             {
-              sublink: "📅 Meetings/Feedback",
+              subtitle: "📅 Meetings/Feedback",
               prams: "meetings-feedback",
               path: "stage-4/meetings-feedback",
             },
@@ -206,69 +213,78 @@ const Sidebar = () => {
       UsingQuickSite: [
         {
           title: "⚙️ Using QuickSite",
+          StartingPath: "using-quicksite",
           sublinks: [
             {
-              sublink: "🚀 Get Started",
+              subtitle: "🚀 Get Started",
               prams: "get-started",
               path: "using-quicksite/get-started",
             },
             {
-              sublink: "📱 Responsiveness",
+              subtitle: "📱 Responsiveness",
               prams: "responsiveness",
               path: "using-quicksite/responsiveness",
             },
             {
-              sublink: "📝 Content",
+              subtitle: "📝 Content",
               prams: "content",
               path: "using-quicksite/content",
             },
             {
-              sublink: "🌐 Hosting",
+              subtitle: "🌐 Hosting",
               prams: "hosting",
               path: "using-quicksite/hosting",
             },
             {
-              sublink: "📰 Publishing",
+              subtitle: "📰 Publishing",
               prams: "publishing",
               path: "using-quicksite/publishing",
             },
             {
-              sublink: "🔄 Cloning",
+              subtitle: "🔄 Cloning",
               prams: "cloning",
               path: "using-quicksite/cloning",
             },
             {
-              sublink: "🌍 Domain",
+              subtitle: "🌍 Domain",
               prams: "domain",
               path: "using-quicksite/domain",
             },
             {
-              sublink: "🔗 Embedding",
+              subtitle: "🔗 Embedding",
               prams: "embedding",
               path: "using-quicksite/embedding",
             },
             {
-              sublink: "🖼️ SVG/Assets",
+              subtitle: "🖼️ SVG/Assets",
               prams: "svg-assets",
               path: "using-quicksite/svg-assets",
             },
             {
-              sublink: "📞 Contact",
+              subtitle: "📞 Contact",
               prams: "contact",
               path: "using-quicksite/contact",
             },
             {
-              sublink: "🔗 Links/Scripts/Meta tags",
+              subtitle: "🔗 Links/Scripts/Meta tags",
               prams: "links-scripts-meta",
               path: "using-quicksite/links-scripts-meta",
             },
+           
+           
+          ],
+        },
+      ],
+    },
+    {
+      UsingQuickSite: [
+        {
+          title: "📗 Learning Material",
+        StartingPath: "learning-material",
+          sublinks: [
+           
             {
-              sublink: "📗 Learning Material",
-              prams: "learning-material",
-              path: "using-quicksite/learning-material",
-            },
-            {
-              sublink: "⌨️ Scrimba",
+              subtitle: "⌨️ Scrimba",
               prams: "scrimba",
               path: "using-quicksite/scrimba",
             },
@@ -283,6 +299,8 @@ const Sidebar = () => {
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
+          
+
             <Box
               key={`${index}-${sectionIndex}`}
               bg={"#242526"}
@@ -294,7 +312,7 @@ const Sidebar = () => {
               <VStack justify={"left"} align={"left"} h={"100%"}>
                 <Accordion
                   transition={"all .3s ease"}
-                  defaultIndex={[1]}
+                  defaultIndex={[section.StartingPath == titlepath ? 0 : 1]}
                   allowMultiple
                   color={"white"}
                   border={"none"}
@@ -316,7 +334,8 @@ const Sidebar = () => {
                     </AccordionButton>
 
                     <AccordionPanel py={"5px"}>
-                      {section.sublinks.map((sublink, sublinkIndex) => (
+                      {section.sublinks.map((subtitle, sublinkIndex) => (
+
                         <HStack
                           justify={"left"}
                           align={"left"}
@@ -344,7 +363,8 @@ const Sidebar = () => {
                             align={"left"}
                           >
                             <Box
-                              onClick={() => router.replace(`/${sublink.path}`)}
+
+                              onClick={() => router.replace(`/${subtitle.path}`)}
                               cursor={"pointer"}
                               fontWeight={"400"}
                               w={"100%"}
@@ -354,8 +374,9 @@ const Sidebar = () => {
                               _hover={{ background: "#3a3b3c" }}
                               fontSize={"14px"}
                               textIndent={"5px"}
+                              textColor={subtitle.prams == subpath ? "#9896FF" : "white"}
                             >
-                              {sublink.sublink}
+                              {subtitle.subtitle}
                             </Box>
                           </VStack>
                         </HStack>

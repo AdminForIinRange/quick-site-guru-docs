@@ -7,7 +7,7 @@ const Main = ({titlepath, subpath}) => {
   return (
     <>
     
-    <Box w={"1200px"} h={"700px"}  bg={"#242526"} rounded={"15px"} >
+    <Box w={"1200px"} h={"700px"}  bg={"#242526"} rounded={"15px"} px={"35px"} py={"15px"}  >
   <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
 
