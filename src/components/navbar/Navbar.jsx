@@ -54,14 +54,14 @@ const Navbar = () => {
 
   const IconsLinks = [
     {
-      icon: <FaDiscord fontSize={"28px"}  />,
+      icon: <FaDiscord fontSize={"28px"} />,
       link: "https://discord.gg/FsKFxcTC",
-       color: "#5865F2"
+      color: "#5865F2",
     },
     {
-      icon: <FaLinkedin fontSize={"25px"}  />,
+      icon: <FaLinkedin fontSize={"25px"} />,
       link: "https://www.linkedin.com/company/quicksite-guru/",
-      color: "#0077B5"
+      color: "#0077B5",
     },
   ];
 
@@ -83,9 +83,10 @@ const Navbar = () => {
 
   return (
     <>
-      {isTablet ? (
+      <Box display={["block", "block", "block", "none", "none"]}>
+        {" "}
         <HStack
-        px={"15"}
+          px={"15"}
           w={"100%"}
           h={"100%"}
           justify={"left"}
@@ -105,11 +106,21 @@ const Navbar = () => {
               <FaBars size={"25px"} color="#656565" />
             </HStack>
           </Box>
-<HStack w={"100%"} h={"100%"} justify={"center"} align={"center"} px={"15"}>    <SearchBar /> </HStack>
-
+          <HStack
+            w={"100%"}
+            h={"100%"}
+            justify={"center"}
+            align={"center"}
+            px={"15"}
+          >
+            {" "}
+            <SearchBar />{" "}
+          </HStack>
+        </HStack>{" "}
+      </Box>
       
-        </HStack>
-      ) : (
+      <Box display={["none", "none", "none", "block", "block"]}>
+        {" "}
         <HStack
           w={"100%"}
           h={"100%"}
@@ -161,12 +172,7 @@ const Navbar = () => {
                     _hover={{ transform: "scale(1.3)", color: "white" }}
                     color={"#656565"}
                   >
-                    <FaMoon
-                   
-                      size={"25px"}
-                      onClick={() => setNight(!night)}
-                    
-                    />
+                    <FaMoon size={"25px"} onClick={() => setNight(!night)} />
                   </Box>
                 ) : (
                   <Box
@@ -175,13 +181,7 @@ const Navbar = () => {
                     _hover={{ transform: "scale(1.3)", color: "white" }}
                     color={"#D69E2E"}
                   >
-                    <FaSun
-                    
-                  
-                      size={"25px"}
-                      onClick={() => setNight(!night)}
-                  
-                    />
+                    <FaSun size={"25px"} onClick={() => setNight(!night)} />
                   </Box>
                 )}
 
@@ -198,7 +198,7 @@ const Navbar = () => {
             </Box>
           </HStack>
         </HStack>
-      )}
+      </Box>
     </>
   );
 };

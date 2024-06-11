@@ -28,12 +28,12 @@ const Main = ({ titlepath, subpath }) => {
     <>
       <Box
         w={["95%", "95%", "95%", "100%", "62.5%"]}
-        h={["900px", "1000px", "750px", "750px", "800px"]} // swith to 100% after testing
+        h={["980px", "1060px", "780px", "790px", "820px"]} // swith to 100% after testing
         bg={"#242526"}
         rounded={"15px"}
 
         pl={["18px", "25px", "25px", "15px", "35px"]}
-        pr={["18px", "25px", "25px", "15px", "35px"]}
+        pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
@@ -118,7 +118,7 @@ const Main = ({ titlepath, subpath }) => {
                 w={["100%", "100%", "280px", "100%", "100%"]}
                 h={["130px", "150px", "225px", "225px", "225px"]}
                 rounded={"xl"}
-                p={"3"}
+                p={["3", "3", "3", "3", "4"]}
               >
                 <VStack
                   align={"left"}
@@ -129,7 +129,7 @@ const Main = ({ titlepath, subpath }) => {
                   <HStack>
                     <Text
                       w={"70%"}
-                      fontSize={["16px", "22px", "22px", "18px", "20px"]}
+                      fontSize={["16px", "22px", "22px", "18px", "22px"]}
                       fontWeight={"700"}
                       textAlign={"left"}
                     >
@@ -159,7 +159,7 @@ const Main = ({ titlepath, subpath }) => {
                     }}
                   >
                     <HStack align={"center"} mr={"5px"} w={"100%"}>
-                      <Text   fontSize={["12px", "12px", "14px", "11px", "14px"]}as={"span"} >
+                      <Text   fontSize={["12px", "12px", "14px", "11px", "13px"]}as={"span"} >
                        {nav}
                       </Text>{" "}
                       <HiArrowLongRight fontSize={"20px"} />
@@ -170,11 +170,9 @@ const Main = ({ titlepath, subpath }) => {
             </HStack>
           </Box>
 
+      
 
-         
-        </VStack>
-
-        <Box mt={"-20px"}>
+          <Box mt={["25px", "25px", "25px", "25px", "25px"]} >
             <HStack
               w={"100%"}
               h={"100%"}
@@ -215,9 +213,8 @@ const Main = ({ titlepath, subpath }) => {
               </Box>
             </HStack>
           </Box>
+        </VStack>
       </Box>
-
-      
     </>
   );
 };
