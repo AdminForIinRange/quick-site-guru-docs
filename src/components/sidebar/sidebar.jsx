@@ -278,22 +278,12 @@ const Sidebar = () => {
     },
   ];
 
-
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-
-
-
-
-    <VStack px={"20px"} >
+    <VStack px={"20px"}>
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
             <Box
-           
               key={`${index}-${sectionIndex}`}
               bg={"#242526"}
               w={"265px"}
@@ -352,10 +342,9 @@ const Sidebar = () => {
                             h={"100%"}
                             justify={"left"}
                             align={"left"}
-                          
                           >
                             <Box
-                           onClick={handleClick}
+                              onClick={() => router.replace(`/${sublink.path}`)}
                               cursor={"pointer"}
                               fontWeight={"400"}
                               w={"100%"}
@@ -380,7 +369,6 @@ const Sidebar = () => {
         )
       )}
     </VStack>
-
   );
 };
 

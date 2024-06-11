@@ -13,7 +13,7 @@ const BreadCrumbs = ({ titlePath, subPath }) => {
             {titlePath} 
           </Text>
           <Text color={"white"} fontSize={"18px"} textAlign={"center"}>
-/
+
           </Text>
           <Text color={"white"} fontSize={"18px"} textAlign={"center"}>
             {subPath} 
@@ -25,3 +25,4 @@ const BreadCrumbs = ({ titlePath, subPath }) => {
 };
 
 export default BreadCrumbs;
+
