@@ -28,11 +28,10 @@ const Main = ({ titlepath, subpath }) => {
     <>
       <Box
         w={["95%", "95%", "95%", "100%", "62.5%"]}
- //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
-        h={["980px", "1060px", "800px", "840px", "860px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+        //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+        h={["915px", "980px", "680px", "685px", "745px", "695px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
         bg={"#242526"}
         rounded={"15px"}
-
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
@@ -49,20 +48,17 @@ const Main = ({ titlepath, subpath }) => {
         >
           <Box>
             <Text
-              color={["red", "blue", "green", "yellow", "orange"]}
+              color={["red", "blue", "green", "yellow", "orange", "white"]}
               fontWeight={"600"}
               fontSize={["28px", "38px", "38px", "38px", "48px"]}
             >
               👋 Hello
             </Text>
-           
           </Box>
 
-          
-
           <Box>
-          <Text
-            mb={"25px"}
+            <Text
+              mb={"25px"}
               color={"white"}
               fontWeight={"600"}
               fontSize={["16px", "18px", "20px", "20px", "28px"]}
@@ -95,123 +91,90 @@ const Main = ({ titlepath, subpath }) => {
             </Text>
           </Box>
 
-          <Box  >
+          <Box>
             <HStack
               transition={"all 0.3s ease-in-out"}
               flexWrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
               w={"100%"}
               h={"100%"}
-              justify={["space-between", "space-between", "space-between", "space-between", "space-between"]}
+              justify={[
+                "space-between",
+                "space-between",
+                "space-between",
+                "space-between",
+                "space-between",
+              ]}
               align={"start"}
             >
-             {navBoxes.map(({ title, desc, nav}, index) => ( 
-              <Box key={index}
-                cursor={"pointer"}
-                transition={"all 0.3s ease-in-out"}
-                _hover={{
-                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
-                  h: ["35%", "38%", "110%", "110%", "110%"],
-                  bg: "rgb(255, 255, 255,0.05)",
-                }}
-                color={"white"}
-                bg={"#1B1B1D"}
-                border={"1px solid rgb(255, 255, 255,0.05)"}
-                w={["100%", "100%", "280px", "100%", "100%"]}
-                h={["130px", "150px", "225px", "225px", "225px"]}
-                rounded={"xl"}
-                p={["3", "3", "3", "3", "4"]}
-              >
-                <VStack
-                  align={"left"}
-                  w={"100%"}
-                  h={"100%"}
-                  gap={["5px", "5px", "15px", "15px", "15px"]}
+              {navBoxes.map(({ title, desc, nav }, index) => (
+                <Box
+                  key={index}
+                  cursor={"pointer"}
+                  transition={"all 0.3s ease-in-out"}
+                  _hover={{
+                    shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+                    h: ["35%", "38%", "110%", "110%", "110%"],
+                    bg: "rgb(255, 255, 255,0.05)",
+                  }}
+                  color={"white"}
+                  bg={"#1B1B1D"}
+                  border={"1px solid rgb(255, 255, 255,0.05)"}
+                  w={["100%", "100%", "280px", "100%", "100%"]}
+                  h={["130px", "150px", "225px", "225px", "225px"]}
+                  rounded={"xl"}
+                  p={["3", "3", "3", "3", "4"]}
                 >
-                  <HStack>
-                    <Text
-                      w={"70%"}
-                      fontSize={["16px", "22px", "22px", "18px", "22px"]}
-                      fontWeight={"700"}
-                      textAlign={"left"}
-                    >
-                      {title}
-                    </Text>
-                  </HStack>
-
-                  <HStack>
-                    <Text
-                      fontSize={["12px", "12px", "14px", "12px", "14px"]}
-                      textAlign={"left"}
-                       fontWeight={"300"}
-                    >
-                      {desc}
-                    </Text>
-                  </HStack>
-                  <HStack
-                    cursor={"pointer"}
+                  <VStack
+                    align={"left"}
                     w={"100%"}
                     h={"100%"}
-                    justify={"end"}
-                    align={"end"}
-                    fontWeight={"500"}
-                    transition="transform, 0.3s ease-in-out"
-                    _hover={{
-                      marginLeft: "10px",
-                    }}
+                    gap={["5px", "5px", "15px", "15px", "15px"]}
                   >
-                    <HStack align={"center"} mr={"5px"} w={"100%"}>
-                      <Text   fontSize={["12px", "12px", "14px", "11px", "13px"]}as={"span"} >
-                       {nav}
-                      </Text>{" "}
-                      <HiArrowLongRight fontSize={"20px"} />
+                    <HStack>
+                      <Text
+                        w={"70%"}
+                        fontSize={["16px", "22px", "22px", "18px", "22px"]}
+                        fontWeight={"700"}
+                        textAlign={"left"}
+                      >
+                        {title}
+                      </Text>
                     </HStack>
-                  </HStack>
-                </VStack>
-              </Box>))}
-            </HStack>
-          </Box>
 
-          <Box mt={["25px", "25px", "0", "0", "0"]} />
-
-          <Box mt={["25px", "25px", "25px", "25px", "25px"]} >
-            <HStack
-              w={"100%"}
-              h={"100%"}
-              justify={"right"}
-              transition={"all 0.3s ease-in-out"}
-            >
-              <Box
-                cursor={"pointer"}
-                transition={"all 0.3s ease-in-out"}
-                _hover={{
-                  w: "220px",
-                  bg: "rgb(255, 255, 255,0.1)",
-                }}
-                p={"10px"}
-                px={"20px"}
-                rounded={"15px"}
-                w={["180px", "180px", "195px", "195px", "195px"]}
-                h={["90%", "90%", "100%", "100%", "100%"]}
-                bg={"rgb(255, 255, 255,0.05)"}
-                border={"1px solid rgb(255, 255, 255,0.05)"}
-              >
-                <HStack
-                  align={"center"}
-                  w={"100%"}
-                  h={"100%"}
-                  justify={"space-between"}
-                >
-                  <Text
-                    fontSize={["12px", "12px", "14px", "11px", "14px"]}
-                    as={"span"}
-                    textAlign={"left"}
-                    color={"white"}
-                  >
-                    🧑‍💻 Introduction
-                  </Text>{" "}
-                  <HiArrowLongRight fontSize={"inherit"} color="white" />
-                </HStack>
-              </Box>
+                    <HStack>
+                      <Text
+                        fontSize={["12px", "12px", "14px", "12px", "14px"]}
+                        textAlign={"left"}
+                        fontWeight={"300"}
+                      >
+                        {desc}
+                      </Text>
+                    </HStack>
+                    <HStack
+                      cursor={"pointer"}
+                      w={"100%"}
+                      h={"100%"}
+                      justify={"end"}
+                      align={"end"}
+                      fontWeight={"500"}
+                      transition="transform, 0.3s ease-in-out"
+                      _hover={{
+                        marginLeft: "10px",
+                      }}
+                    >
+                      <HStack align={"center"} mr={"5px"} w={"100%"}>
+                        <Text
+                          fontSize={["12px", "14px", "14px", "11px", "13px"]}
+                          as={"span"}
+                        >
+                          {nav}
+                        </Text>{" "}
+                        <HiArrowLongRight fontSize={"20px"} />
+                      </HStack>
+                    </HStack>
+                  </VStack>
+                </Box>
+              ))}
             </HStack>
           </Box>
         </VStack>
