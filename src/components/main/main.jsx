@@ -27,7 +27,7 @@ const Main = ({ titlepath, subpath }) => {
   return (
     <>
       <Box
-           boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
+           boxShadow={"rgba(0, 0, 0, 0.25) 0px px 8px"}
         w={["95%", "95%", "95%", "100%", "62.5%"]}
         //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
         h={["930px", "980px", "680px", "685px", "745px", "700px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE

@@ -21,13 +21,14 @@ const Sidebar = ({titlepath, subpath}) => {
 
 
   return (
-    <VStack pl={"30px"}  >
+    <VStack pl={"30px"} >
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
           
 
             <Box
+       
             transition={"all .3s ease"}
               key={`${index}-${sectionIndex}`}
               bg={"rgb(255, 255, 255,0.05)"}
@@ -37,6 +38,7 @@ const Sidebar = ({titlepath, subpath}) => {
               p={"5px"}
               rounded={"8px"}
               _hover={{ width:"105%"}}
+              
             >
               <VStack justify={"left"} align={"left"} h={"100%"} >
                 <Accordion
