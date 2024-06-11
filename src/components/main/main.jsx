@@ -7,6 +7,8 @@ import Hello from "../mainContent/Welcome/hello";
 
 const Main = ({ titlepath, subpath }) => {
 
+  // OPTMIZE THIS LATER, LIKE THE TITLE OR COMPS SHOULD BE DYNAMIC AND 
+  //ONLY PROP NEEDS TO BE PASSED IN. MAYBE VIA GLOBAL/CONTENTDATA.JOSN IDK
 
   const RenderMain = () => {
     if (titlepath === "welcome" && subpath === "hello") {
