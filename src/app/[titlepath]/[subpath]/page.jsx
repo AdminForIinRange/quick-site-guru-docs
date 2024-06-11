@@ -7,19 +7,29 @@ import { useState } from "react";
 
 const Home = ( {params} ) => {
     console.log(params)
-  const [isTablet] = useMediaQuery("(max-width: 768px)");
+ 
   return (
     <Box mt={"25px"} h={"1200px"}>
     <HStack
       align={"start"}
-    
+    w={"100%"}
       mt={"15px"}
+      gap={["20px", "20px", "20px", "10px", "20px"]}
+      justify={"center"}
     >
-      {!isTablet ? <Sidebar titlepath={params.titlepath} subpath={params.subpath}  /> : null}
+
+      <Box display={["none", "none", "none", "block", "block"]}>
+    <Sidebar titlepath={params.titlepath} subpath={params.subpath}  /> 
+
+      </Box>
+
 
  <Main titlepath={params.titlepath} subpath={params.subpath} /> 
+ <Box display={["none", "none", "none", "block", "block"]}>
+ <RightSideNav /> 
 
- <RightSideNav />
+ </Box>
+
 
  {/* you can only get prams if you asking from the page.jsx  */}
     </HStack>

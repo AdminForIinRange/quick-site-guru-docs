@@ -21,7 +21,7 @@ const Sidebar = ({titlepath, subpath}) => {
 
 
   return (
-    <VStack pl={"30px"} pr={"20px"}>
+    <VStack pl={"30px"}  >
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
@@ -31,7 +31,7 @@ const Sidebar = ({titlepath, subpath}) => {
             transition={"all .3s ease"}
               key={`${index}-${sectionIndex}`}
               bg={"#242526"}
-              w={"265px"}
+              w={["265px", "265px", "265px", "225px", "265px"]}
               h={"100%"}
               p={"5px"}
               rounded={"8px"}
@@ -56,7 +56,7 @@ const Sidebar = ({titlepath, subpath}) => {
                         as="span"
                         flex="1"
                         textAlign="left"
-                        fontSize={"16px"}
+                        fontSize={["14px", "14px", "14px", "14px", "16px"]}
                         fontWeight={"400"}
                       >
                         {section.title}
@@ -94,17 +94,17 @@ const Sidebar = ({titlepath, subpath}) => {
                             align={"left"}
                           >
                             <Box
-
+rounded={"10px"}
                               onClick={() => router.replace(`/${subtitle.path}`)}
                               cursor={"pointer"}
                               fontWeight={"400"}
                               w={"100%"}
                               h={"100%"}
                               p={"10px"}
-                              rounded={"15px"}
                               _hover={{ background: "#3a3b3c" }}
-                              fontSize={"14px"}
-                              textIndent={"5px"}
+                              fontSize={["12px", "12px", "12px", "12px", "14px"]}
+
+                              textIndent={["5px", "5px", "5px", "0px", "5px"]}
                               textColor={subtitle.prams == subpath ? "#9896FF" : "white"}
                             >
                               {subtitle.subtitle}

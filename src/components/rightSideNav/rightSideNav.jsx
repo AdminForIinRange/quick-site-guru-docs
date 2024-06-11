@@ -14,15 +14,16 @@ import React from 'react';
 const RightSideNav = () => {
   return (
     <>
-      <VStack pr={"25px"}  >
+      <VStack  pr={"30px"}  >
     
 
-            <Box
+            <Box 
+            minW={["125px", "125px", "125px", "110px", "125px"]}
             py={"200px"}
             transition={"all .3s ease"}
              
               bg={"#242526"}
-              w={"265px"}
+             
               h={"100%"}
        
               rounded={"8px"}
