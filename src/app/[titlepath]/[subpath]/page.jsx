@@ -60,6 +60,7 @@ const Home = ( {params} ) => {
                 h={["90%", "90%", "100%", "100%", "100%"]}
                 bg={"rgb(255, 255, 255,0.05)"}
                 border={"1px solid rgb(255, 255, 255,0.05)"}
+                boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
               >
                 <HStack
                   align={"center"}
