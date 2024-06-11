@@ -2,6 +2,8 @@ import { Box, VStack, Text, HStack } from "@chakra-ui/react";
 import React from "react";
 import BreadCrumbs from "../breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { HiArrowLongLeft } from "react-icons/hi2";
+
 const Main = ({ titlepath, subpath }) => {
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
@@ -42,35 +44,43 @@ const Main = ({ titlepath, subpath }) => {
               fontWeight={"300"}
             >
               Hello and welcome to the official documentation for QuickSite.guru
-              – your gateway to effortless and innovative website creation! 🚀
-              This guide is your resource for understanding and utilizing all
-              the features of QuickSite.guru Our platform makes web development
-              accessible to everyone, regardless of technical expertise. Let's
-              start building amazing websites! 🌐
+              ⭐ This documentation provides all the information you need to
+              effectively use QuickSite.guru. Whether you're a beginner or
+              intern building your first website or an just exploring the
+              platform, this guide will help you navigate the platform with
+              ease. Check out the boxes below ↓
             </Text>
           </Box>
 
-          <Box>
+          <Box mt={"15px"}>
             {" "}
             <Text
               color={"white"}
-              fontWeight={"600"}
+              fontWeight={"400"}
               fontSize={["12px", "12px", "14px", "16px", "28px"]}
             >
-              Lets get started
+              Lets get you started
             </Text>
           </Box>
 
-          <Box>
-            <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
-
-
-
-            <Box
+          <Box mt={"15px"}>
+            <HStack
+              w={"100%"}
+              h={"100%"}
+              justify={"space-between"}
+              align={"start"}
+            >
+              <Box
+                cursor={"pointer"}
+                transition={"all 0.3s ease-in-out"}
+                _hover={{
+                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+                  h: "110%",
+                }}
                 color={"white"}
                 bg={"#161717"}
                 w={["260px", "260px", "260px", "280px", "290px"]}
-                h={["200px", "200px", "250px", "250px", "250px"]}
+                h={["200px", "200px", "225px", "225px", "225px"]}
                 rounded={"xl"}
                 p={["2", "2", "2", "3", "4"]}
               >
@@ -82,7 +92,7 @@ const Main = ({ titlepath, subpath }) => {
                       fontWeight={"700"}
                       textAlign={"left"}
                     >
-                      Connect
+                      Introduction
                     </Text>
                   </HStack>
 
@@ -91,7 +101,8 @@ const Main = ({ titlepath, subpath }) => {
                       fontSize={["12px", "12px", "12px", "12px", "14px"]}
                       textAlign={"left"}
                     >
-                   Click here to connect, join our community, share your ideas with others, receive feedback, and get help from our team.
+                      Lets get you started with a Introduction, understand the
+                      company and our gaols
                     </Text>
                   </HStack>
                   <HStack
@@ -108,7 +119,7 @@ const Main = ({ titlepath, subpath }) => {
                   >
                     <HStack align={"center"} mr={"5px"}>
                       <Text fontSize={"12px"} as={"span"}>
-                      🌐 Community/Support
+                        🧑‍💻 Introduction
                       </Text>{" "}
                       <HiArrowLongRight fontSize={"30px"} />
                     </HStack>
@@ -116,18 +127,17 @@ const Main = ({ titlepath, subpath }) => {
                 </VStack>
               </Box>
 
-
-
-
-
-
-
-
-            <Box
+              <Box
                 color={"white"}
                 bg={"#161717"}
+                cursor={"pointer"}
+                transition={"all 0.3s ease-in-out"}
+                _hover={{
+                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+                  h: "110%",
+                }}
                 w={["260px", "260px", "260px", "280px", "290px"]}
-                h={["200px", "200px", "250px", "250px", "250px"]}
+                h={["200px", "200px", "225px", "225px", "225px"]}
                 rounded={"xl"}
                 p={["2", "2", "2", "3", "4"]}
               >
@@ -148,8 +158,8 @@ const Main = ({ titlepath, subpath }) => {
                       fontSize={["12px", "12px", "12px", "12px", "14px"]}
                       textAlign={"left"}
                     >
-                      Want to learn how to use Quick Site Guru (QSG) Click here to learn all the features and know-hows
-                     
+                      Want to learn how to use Quick Site Guru (QSG) Click here
+                      to learn all the features and know-hows
                     </Text>
                   </HStack>
                   <HStack
@@ -173,12 +183,18 @@ const Main = ({ titlepath, subpath }) => {
                   </HStack>
                 </VStack>
               </Box>
-              
+
               <Box
                 color={"white"}
+                cursor={"pointer"}
+                transition={"all 0.3s ease-in-out"}
+                _hover={{
+                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+                  h: "110%",
+                }}
                 bg={"#161717"}
                 w={["260px", "260px", "260px", "280px", "290px"]}
-                h={["200px", "200px", "250px", "250px", "250px"]}
+                h={["200px", "200px", "225px", "225px", "225px"]}
                 rounded={"xl"}
                 p={["2", "2", "2", "3", "4"]}
               >
@@ -223,6 +239,30 @@ const Main = ({ titlepath, subpath }) => {
                     </HStack>
                   </HStack>
                 </VStack>
+              </Box>
+            </HStack>
+          </Box>
+
+          <Box>
+            <HStack w={"100%"} h={"100%"} justify={"space-between"}>
+              <Box
+                p={"10px"}
+                px={"20px"}
+                rounded={"10px"}
+                h={"100%"}
+                bg={"#161717"}
+              >
+                <HStack align={"center"} mr={"5px"}>
+                  <HiArrowLongLeft fontSize={"30px"} color="white" />
+                  <Text
+                    fontSize={["16px", "16px", "16px", "16px", "16px"]}
+                    as={"span"}
+                    textAlign={"left"}
+                    color={"white"}
+                  >
+                    🎉 Welcome
+                  </Text>{" "}
+                </HStack>
               </Box>
             </HStack>
           </Box>
