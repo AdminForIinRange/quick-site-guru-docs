@@ -30,7 +30,8 @@ const Sidebar = ({titlepath, subpath}) => {
             <Box
             transition={"all .3s ease"}
               key={`${index}-${sectionIndex}`}
-              bg={"#242526"}
+              bg={"rgb(255, 255, 255,0.05)"}
+              border={"1px solid rgb(255, 255, 255,0.05)"}
               w={["265px", "265px", "265px", "225px", "265px"]}
               h={"100%"}
               p={"5px"}
