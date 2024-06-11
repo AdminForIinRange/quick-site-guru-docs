@@ -11,7 +11,7 @@ const Home = ( {params} ) => {
     console.log(params)
  
   return (
-    <Box mt={"25px"} h={"1200px"}>
+    <Box mt={"15px"} h={"1200px"}>
     <HStack
       align={"start"}
     w={"100%"}
@@ -50,13 +50,13 @@ const Home = ( {params} ) => {
                 cursor={"pointer"}
                 transition={"all 0.3s ease-in-out"}
                 _hover={{
-                  w: "220px",
+                  w: ["190px", "190px", "220px", "220px", "220px"],
                   bg: "rgb(255, 255, 255,0.1)",
                 }}
                 p={"10px"}
                 px={"20px"}
                 rounded={"15px"}
-                w={["180px", "180px", "195px", "195px", "195px"]}
+                w={["160px", "180px", "195px", "195px", "195px"]}
                 h={["90%", "90%", "100%", "100%", "100%"]}
                 bg={"rgb(255, 255, 255,0.05)"}
                 border={"1px solid rgb(255, 255, 255,0.05)"}

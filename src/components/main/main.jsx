@@ -27,9 +27,10 @@ const Main = ({ titlepath, subpath }) => {
   return (
     <>
       <Box
+      
         w={["95%", "95%", "95%", "100%", "62.5%"]}
         //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
-        h={["915px", "980px", "680px", "685px", "745px", "695px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+        h={["930px", "980px", "680px", "685px", "745px", "695px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
         bg={"#242526"}
         rounded={"15px"}
         pl={["18px", "25px", "25px", "15px", "35px"]}
@@ -48,9 +49,9 @@ const Main = ({ titlepath, subpath }) => {
         >
           <Box>
             <Text
-              color={["red", "blue", "green", "yellow", "orange", "white"]}
+              color={["white", "blue", "green", "yellow", "orange", "white"]}
               fontWeight={"600"}
-              fontSize={["28px", "38px", "38px", "38px", "48px"]}
+              fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
               👋 Hello
             </Text>
@@ -58,17 +59,18 @@ const Main = ({ titlepath, subpath }) => {
 
           <Box>
             <Text
-              mb={"25px"}
+              mb={"15px"}
               color={"white"}
               fontWeight={"600"}
-              fontSize={["16px", "18px", "20px", "20px", "28px"]}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+      
             >
               Find What You Need
             </Text>
             <Text
               color={"white"}
-              fontSize={["12px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"26px"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
               fontWeight={"300"}
             >
               Hello and welcome to the official documentation for QuickSite.guru
@@ -85,7 +87,8 @@ const Main = ({ titlepath, subpath }) => {
             <Text
               color={"white"}
               fontWeight={"600"}
-              fontSize={["16px", "18px", "20px", "20px", "28px"]}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+     
             >
               Lets get you started {`↓`}
             </Text>
@@ -97,13 +100,9 @@ const Main = ({ titlepath, subpath }) => {
               flexWrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
               w={"100%"}
               h={"100%"}
-              justify={[
-                "space-between",
-                "space-between",
-                "space-between",
-                "space-between",
-                "space-between",
-              ]}
+              justify={
+                "space-between"
+          }
               align={"start"}
             >
               {navBoxes.map(({ title, desc, nav }, index) => (
