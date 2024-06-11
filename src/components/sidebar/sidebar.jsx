@@ -21,33 +21,38 @@ const Sidebar = ({titlepath, subpath}) => {
 
 
   return (
-    <VStack px={"20px"}>
+    <VStack pl={"30px"} pr={"20px"}>
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
           
 
             <Box
+            transition={"all .3s ease"}
               key={`${index}-${sectionIndex}`}
               bg={"#242526"}
               w={"265px"}
               h={"100%"}
               p={"5px"}
               rounded={"8px"}
+              _hover={{ width:"105%"}}
             >
-              <VStack justify={"left"} align={"left"} h={"100%"}>
+              <VStack justify={"left"} align={"left"} h={"100%"} >
                 <Accordion
                   transition={"all .3s ease"}
                   defaultIndex={[section.StartingPath == titlepath ? 0 : 1]}
                   allowMultiple
                   color={"white"}
                   border={"none"}
+                  _hover={{ background: "#2C2D2F"}}
+                  rounded={"10px"}
                 >
-                  <AccordionItem border={"none"}>
+                  <AccordionItem border={"none"} >
                     <AccordionButton
-                      _hover={{ background: "none", transform: "scale(1.05)" }}
+                      _hover={{ background: "none", transform: "scale(1.05)", }}
                     >
                       <Box
+
                         as="span"
                         flex="1"
                         textAlign="left"

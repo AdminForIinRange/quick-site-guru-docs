@@ -6,9 +6,9 @@
                 "StartingPath": "welcome",
                 "sublinks": [
                     {
-                        "subtitle": "🗺️ docs index",
-                        "prams": "docs-index",
-                        "path": "welcome/docs-index"
+                        "subtitle": "👋 Hello",
+                        "prams": "hello",
+                        "path": "welcome/hello"
                     }
                 ]
             }

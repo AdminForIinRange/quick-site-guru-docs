@@ -11,7 +11,7 @@ const Home = ( {params} ) => {
     <Box mt={"25px"} h={"1200px"}>
     <HStack
       align={"start"}
-      gap={["15px", "15px", "25px", "25px", "25px"]}
+    
       mt={"15px"}
     >
       {!isTablet ? <Sidebar titlepath={params.titlepath} subpath={params.subpath}  /> : null}
