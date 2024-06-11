@@ -119,6 +119,7 @@ const Navbar = () => {
         </HStack>{" "}
       </Box>
       
+  
       <Box display={["none", "none", "none", "block", "block"]}>
         {" "}
         <HStack

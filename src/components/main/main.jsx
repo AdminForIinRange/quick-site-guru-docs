@@ -28,7 +28,8 @@ const Main = ({ titlepath, subpath }) => {
     <>
       <Box
         w={["95%", "95%", "95%", "100%", "62.5%"]}
-        h={["980px", "1060px", "780px", "790px", "820px"]} // swith to 100% after testing
+ //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+        h={["980px", "1060px", "800px", "840px", "860px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
         bg={"#242526"}
         rounded={"15px"}
 
@@ -170,7 +171,7 @@ const Main = ({ titlepath, subpath }) => {
             </HStack>
           </Box>
 
-      
+          <Box mt={["25px", "25px", "0", "0", "0"]} />
 
           <Box mt={["25px", "25px", "25px", "25px", "25px"]} >
             <HStack
