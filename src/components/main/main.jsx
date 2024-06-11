@@ -10,7 +10,7 @@ const Main = ({ titlepath, subpath }) => {
     <>
       <Box
         w={"1200px"}
-        h={"700px"} // swith to 100% after testing
+        h={"750px"} // swith to 100% after testing
         bg={"#242526"}
         rounded={"15px"}
         px={"35px"}
@@ -63,7 +63,7 @@ const Main = ({ titlepath, subpath }) => {
             </Text>
           </Box>
 
-          <Box mt={"15px"}>
+          <Box mt={"10px"}>
             <HStack
               w={"100%"}
               h={"100%"}
@@ -76,9 +76,11 @@ const Main = ({ titlepath, subpath }) => {
                 _hover={{
                   shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
                   h: "110%",
+                  bg: "rgb(255, 255, 255,0.05)",
                 }}
                 color={"white"}
-                bg={"#161717"}
+                bg={"#1B1B1D"}
+                border={"1px solid rgb(255, 255, 255,0.05)"}
                 w={["260px", "260px", "260px", "280px", "290px"]}
                 h={["200px", "200px", "225px", "225px", "225px"]}
                 rounded={"xl"}
@@ -128,18 +130,21 @@ const Main = ({ titlepath, subpath }) => {
               </Box>
 
               <Box
-                color={"white"}
-                bg={"#161717"}
-                cursor={"pointer"}
-                transition={"all 0.3s ease-in-out"}
-                _hover={{
-                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
-                  h: "110%",
-                }}
-                w={["260px", "260px", "260px", "280px", "290px"]}
-                h={["200px", "200px", "225px", "225px", "225px"]}
-                rounded={"xl"}
-                p={["2", "2", "2", "3", "4"]}
+                 cursor={"pointer"}
+                 transition={"all 0.3s ease-in-out"}
+                 _hover={{
+                   shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+                   h: "110%",
+                   bg: "rgb(255, 255, 255,0.05)",
+                 }}
+                 color={"white"}
+                 bg={"#1B1B1D"}
+                 border={"1px solid rgb(255, 255, 255,0.05)"}
+                 w={["260px", "260px", "260px", "280px", "290px"]}
+                 h={["200px", "200px", "225px", "225px", "225px"]}
+                 rounded={"xl"}
+                 p={["2", "2", "2", "3", "4"]}
+           
               >
                 <VStack align={"left"} w={"100%"} h={"100%"} gap={"15px"}>
                   <HStack>
@@ -185,18 +190,20 @@ const Main = ({ titlepath, subpath }) => {
               </Box>
 
               <Box
-                color={"white"}
-                cursor={"pointer"}
-                transition={"all 0.3s ease-in-out"}
-                _hover={{
-                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
-                  h: "110%",
-                }}
-                bg={"#161717"}
-                w={["260px", "260px", "260px", "280px", "290px"]}
-                h={["200px", "200px", "225px", "225px", "225px"]}
-                rounded={"xl"}
-                p={["2", "2", "2", "3", "4"]}
+                 cursor={"pointer"}
+                 transition={"all 0.3s ease-in-out"}
+                 _hover={{
+                   shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+                   h: "110%",
+                   bg: "rgb(255, 255, 255,0.05)",
+                 }}
+                 color={"white"}
+                 bg={"#1B1B1D"}
+                 border={"1px solid rgb(255, 255, 255,0.05)"}
+                 w={["260px", "260px", "260px", "280px", "290px"]}
+                 h={["200px", "200px", "225px", "225px", "225px"]}
+                 rounded={"xl"}
+                 p={["2", "2", "2", "3", "4"]}
               >
                 <VStack align={"left"} w={"100%"} h={"100%"} gap={"15px"}>
                   <HStack>
@@ -243,24 +250,34 @@ const Main = ({ titlepath, subpath }) => {
             </HStack>
           </Box>
 
-          <Box>
-            <HStack w={"100%"} h={"100%"} justify={"space-between"}>
+          <Box mt={"65px"} >
+            <HStack  w={"100%"} h={"100%"} justify={"space-between"}  transition={"all 0.3s ease-in-out"}>
               <Box
+       
+                cursor={"pointer"}
+                transition={"all 0.3s ease-in-out"}
+                _hover={{
+                
+                  w: "200px",
+                  
+                }}
                 p={"10px"}
                 px={"20px"}
-                rounded={"10px"}
+                rounded={"15px"}
+                w={"190px"}
                 h={"100%"}
-                bg={"#161717"}
+                bg={"rgb(255, 255, 255,0.05)"}
+                border={"1px solid rgb(255, 255, 255,0.05)"}
               >
-                <HStack align={"center"} mr={"5px"}>
-                  <HiArrowLongLeft fontSize={"30px"} color="white" />
-                  <Text
+                <HStack align={"center"} w={"100%"} h={"100%"}  justify={"space-between"}   >
+                  <HiArrowLongLeft  fontSize={"40px"} color="white"   />
+                  <Text 
                     fontSize={["16px", "16px", "16px", "16px", "16px"]}
                     as={"span"}
                     textAlign={"left"}
                     color={"white"}
                   >
-                    🎉 Welcome
+                    🎉 Welcome 
                   </Text>{" "}
                 </HStack>
               </Box>
