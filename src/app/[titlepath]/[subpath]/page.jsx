@@ -23,7 +23,7 @@ const Home = ({ params }) => {
         >
           <Box
             display={["none", "none", "none", "block", "block"]}
-            h={"700px"}
+            h={"745px"}
             overflowY={"scroll"}
             pr="10px"
              pl="10px"
