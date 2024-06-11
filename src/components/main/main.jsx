@@ -59,7 +59,7 @@ const Main = ({ titlepath, subpath }) => {
               fontWeight={"400"}
               fontSize={["12px", "12px", "14px", "16px", "28px"]}
             >
-              Lets get you started
+              Lets get you started  {`↓`} 
             </Text>
           </Box>
 
@@ -103,7 +103,7 @@ const Main = ({ titlepath, subpath }) => {
                       fontSize={["12px", "12px", "12px", "12px", "14px"]}
                       textAlign={"left"}
                     >
-                      Lets get you started with a Introduction, understand the
+                    Lets get you started with a Introduction, understand the
                       company and our gaols
                     </Text>
                   </HStack>
