@@ -6,3 +6,29 @@
   font-family:  Roboto;
  
 }
+
+
+
+::-webkit-scrollbar {
+border-radius: 15px;
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  width: 1px;
+height: 5px;
+  background: rgba(189, 189, 189, 0.151);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+  width: 1px;
+  height: 5px;
+
+}
+body {
+  
+  overflow: overlay;
+}

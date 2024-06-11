@@ -17,7 +17,7 @@ const RightSideNav = () => {
     <>
       <VStack pr={"30px"}>
         <Box
-          minW={["125px", "125px", "125px", "110px", "125px"]}
+          minW={["125px", "125px", "125px", "50px", "50px"]}
           py={"200px"}
           transition={"all .3s ease"}
           

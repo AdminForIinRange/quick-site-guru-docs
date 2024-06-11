@@ -21,7 +21,7 @@ const Sidebar = ({titlepath, subpath}) => {
 
 
   return (
-    <VStack pl={"30px"} >
+    <VStack >
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (

@@ -11,40 +11,44 @@ const Home = ({ params }) => {
   console.log(params);
 
   return (
-
     <>
-    <Box mt={"15px"}  >
-      <HStack
-        align={"start"}
-        w={"100%"}
-        mt={"15px"}
-        gap={["20px", "20px", "20px", "10px", "20px"]}
-        justify={"center"}
-        
-      >
-        <Box display={["none", "none", "none", "block", "block"]} >
-          <Sidebar titlepath={params.titlepath} subpath={params.subpath} />
-        </Box>
+      <Box mt={"15px"}>
+        <HStack
+          align={"start"}
+          w={"100%"}
+          mt={"15px"}
+          gap={["15px", "15px", "15px", "10px", "10px"]}
+          justify={"center"}
+        >
+          <Box
+            display={["none", "none", "none", "block", "block"]}
+            h={"685px"}
+            overflowY={"scroll"}
+            pr="10px"
+             pl="10px"
+             borderRadius={"15px"}
+            overflowX={"hidden"}
+          
+            
+          >
+            <Sidebar titlepath={params.titlepath} subpath={params.subpath} />
+          </Box>
 
-        <Main titlepath={params.titlepath} subpath={params.subpath} />
-        <Box display={["none", "none", "none", "block", "block"]}>
-          <RightSideNav />
-        </Box>
+          <Main titlepath={params.titlepath} subpath={params.subpath} />
 
-        {/* you can only get prams if you asking from the page.jsx  */}
-      </HStack>
+          {/* you can only get prams if you asking from the page.jsx  */}
+        </HStack>
+      </Box>
 
-      
-    </Box>
-
-<Box ml={["0", "0", "0", "120px", "140px"]} mt={"15px"}>
+      <Box ml={["0", "0", "0", "265px", "306px"]} mt={"15px"}>
         <HStack w={"100%"} justify={"center"} align={"center"}>
           <HStack
-            w={["94%", "94%", "94%", "65%", "67%"]}
+            w={["94%", "94%", "94%", "88%", "74%"]}
             h={"100%"}
             justify={"right"}
             align={"center"}
             transition={"all 0.3s ease-in-out"}
+ 
           >
             <Box
               cursor={"pointer"}
@@ -53,10 +57,10 @@ const Home = ({ params }) => {
                 w: ["190px", "190px", "220px", "220px", "220px"],
                 bg: "rgb(255, 255, 255,0.1)",
               }}
-              p={"10px"}
+              p={"5px"}
               px={"20px"}
               rounded={"15px"}
-              w={["160px", "180px", "195px", "195px", "195px"]}
+              w={["190px", "190px", "205px", "205px", "205px"]}
               h={["90%", "90%", "100%", "100%", "100%"]}
               bg={"rgb(255, 255, 255,0.05)"}
               border={"1px solid rgb(255, 255, 255,0.05)"}
@@ -69,22 +73,20 @@ const Home = ({ params }) => {
                 justify={"space-between"}
               >
                 <Text
-                  fontSize={["14px", "14px", "16px", "11px", "15px"]}
+                  fontSize={["14px", "14px", "16px", "16px", "16px"]}
                   as={"span"}
                   textAlign={"left"}
                   color={"white"}
                 >
                   🧑‍💻 Introduction
                 </Text>{" "}
-                <HiArrowLongRight fontSize={"inherit"} color="white" />
+                <HiArrowLongRight fontSize={"40px"} color="white" />
               </HStack>
             </Box>
           </HStack>
         </HStack>
       </Box>
-
-
-</>
+    </>
   );
 };
 
