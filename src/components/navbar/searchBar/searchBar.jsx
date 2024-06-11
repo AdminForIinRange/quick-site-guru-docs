@@ -2,7 +2,7 @@ import { Box, Input } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 
 const SearchBar = () => {
-    const [os, setOS] = useState<string>('');
+    const [os, setOS] = useState('');
 
     useEffect(() => {
         const userAgent = window.navigator.userAgent;
