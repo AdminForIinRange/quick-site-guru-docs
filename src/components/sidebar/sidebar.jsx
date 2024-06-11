@@ -278,6 +278,11 @@ const Sidebar = () => {
     },
   ];
 
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
 
 
@@ -350,7 +355,7 @@ const Sidebar = () => {
                           
                           >
                             <Box
-                            onClick={() => router.push(sublink.path)}
+                           onClick={handleClick}
                               cursor={"pointer"}
                               fontWeight={"400"}
                               w={"100%"}
