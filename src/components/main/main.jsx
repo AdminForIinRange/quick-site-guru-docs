@@ -143,7 +143,7 @@ const Main = ({ titlepath, subpath }) => {
 
                     <HStack>
                       <Text
-                        fontSize={["12px", "12px", "14px", "12px", "14px"]}
+                        fontSize={["12px", "12px", "14px", "12px", "14px", "16px"]}
                         textAlign={"left"}
                         fontWeight={"300"}
                       >
@@ -164,7 +164,7 @@ const Main = ({ titlepath, subpath }) => {
                     >
                       <HStack align={"center"} mr={"5px"} w={"100%"}>
                         <Text
-                          fontSize={["12px", "14px", "14px", "11px", "13px"]}
+                          fontSize={["12px", "14px", "14px", "11px", "13px", "15px"]}
                           as={"span"}
                         >
                           {nav}

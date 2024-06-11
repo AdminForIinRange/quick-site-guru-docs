@@ -21,14 +21,14 @@ const Sidebar = ({titlepath, subpath}) => {
 
 
   return (
-    <VStack >
+    <VStack    >
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
           
 
             <Box
-       
+
             transition={"all .3s ease"}
               key={`${index}-${sectionIndex}`}
               bg={"rgb(255, 255, 255,0.05)"}

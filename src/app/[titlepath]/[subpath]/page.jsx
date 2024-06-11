@@ -28,8 +28,9 @@ const Home = ({ params }) => {
              pl="10px"
              borderRadius={"15px"}
             overflowX={"hidden"}
+            // Inner shadow style
           
-            
+            boxShadow="inset 0 10px 10px rgba(0, 0, 0, 0.05)"
           >
             <Sidebar titlepath={params.titlepath} subpath={params.subpath} />
           </Box>
@@ -60,7 +61,7 @@ const Home = ({ params }) => {
               p={"5px"}
               px={"20px"}
               rounded={"15px"}
-              w={["190px", "190px", "205px", "205px", "205px"]}
+              w={["190px", "190px", "205px", "205px", "205px", "225px"]}
               h={["90%", "90%", "100%", "100%", "100%"]}
               bg={"rgb(255, 255, 255,0.05)"}
               border={"1px solid rgb(255, 255, 255,0.05)"}
@@ -73,7 +74,7 @@ const Home = ({ params }) => {
                 justify={"space-between"}
               >
                 <Text
-                  fontSize={["14px", "14px", "16px", "16px", "16px"]}
+                  fontSize={["14px", "14px", "16px", "16px", "16px", "18px"]}
                   as={"span"}
                   textAlign={"left"}
                   color={"white"}
