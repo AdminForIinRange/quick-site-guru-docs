@@ -10,6 +10,7 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 
 const Home = ({ params }) => {
 
+  //after prop drilling test phase is done use context api !!!!!!!!!!!!!!!!!!
 
   return (
     <>
@@ -24,7 +25,7 @@ const Home = ({ params }) => {
         >
           <Box
             display={["none", "none", "none", "block", "block"]}
-            h={"780px"}
+            h={["0px", "0px", "0px", "657px", "720px", "648px"]}
             overflowY={"scroll"}
             pr="10px"
              pl="10px"

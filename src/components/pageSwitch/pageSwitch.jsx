@@ -5,14 +5,16 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 const PageSwitch = () => {
   return (
     <>
-       <Box ml={["0", "0", "0", "265px", "306px"]} mt={"-55px"}>
+       <Box ml={["0", "0", "0", "265px", "306px"]} mt={"15"}>
         <HStack w={"100%"} justify={"center"} align={"center"}>
           <HStack
-            w={["94%", "94%", "94%", "88%", "74%"]}
+            w={["94%", "94%", "94%", "88%", "62%", "75%"]}
+            minW={["300px", "300px", "300px", "300px", "803.75px", "964.375PX"]}
             h={"100%"}
             justify={"right"}
             align={"center"}
             transition={"all 0.3s ease-in-out"}
+            bgColor={"red"}
  
           >
             <Box
