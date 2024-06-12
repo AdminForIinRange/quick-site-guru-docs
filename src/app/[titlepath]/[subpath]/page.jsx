@@ -8,7 +8,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
 const Home = ({ params }) => {
-  console.log(params);
+
 
   return (
     <>
@@ -23,13 +23,13 @@ const Home = ({ params }) => {
         >
           <Box
             display={["none", "none", "none", "block", "block"]}
-            h={"745px"}
+            h={"805px"}
             overflowY={"scroll"}
             pr="10px"
              pl="10px"
              borderRadius={"15px"}
             overflowX={"hidden"}
-            // Inner shadow style
+         
           
        
           >

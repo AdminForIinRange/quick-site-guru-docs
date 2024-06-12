@@ -4,6 +4,7 @@ import BreadCrumbs from "../breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import Hello from "../mainContent/Welcome/hello";
+import SublinkNotFound from "../mainContent/sublinkNotFound/sublinkNotFound";
 
 const Main = ({ titlepath, subpath }) => {
 
@@ -16,13 +17,12 @@ const Main = ({ titlepath, subpath }) => {
     } else {
       return (
         <>
-          <Box> </Box>
+          <SublinkNotFound titlepath={titlepath} subpath={subpath} />
         </>
       );
     }
   };
 
-  console.log(titlepath, subpath);
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
     <>

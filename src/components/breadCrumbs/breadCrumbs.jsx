@@ -50,18 +50,20 @@ const BreadCrumbs = ({ titlePath, subPath }) => {
   const emojiTitle = getTitleWithEmoji();
   const emojiSublink = getSublinkWithEmoji();
 
+  console.log(titlePath, emojiSublink);
+
   return (
     <>
       <Box>
         <HStack justify={"start"} align={"center"} w={"100%"} h={"50px"} fontSize={"14px"} >
           <Text color={"white"} textAlign={"center"}>
-            {emojiTitle}
+            {emojiTitle === emojiTitle ?  `${titlePath}` : emojiTitle}
           </Text>
           <Text color={"white"} fontSize={"18px"} textAlign={"center"}>
          /
           </Text>
           <Text color={"#9896FF"}  textAlign={"center"} >
-            {emojiSublink}
+            {emojiSublink  === emojiSublink ?  `${subPath}` : emojiSublink }
           </Text>
         </HStack>
       </Box>
