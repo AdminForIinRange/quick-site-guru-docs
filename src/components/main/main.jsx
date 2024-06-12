@@ -8,19 +8,15 @@ import SublinkNotFound from "../mainContent/sublinkNotFound/sublinkNotFound";
 import Introduction from "../mainContent/getting-started/introduction";
 
 const Main = ({ titlepath, subpath }) => {
-
-  // OPTMIZE THIS LATER, LIKE THE TITLE OR COMPS SHOULD BE DYNAMIC AND 
+  // OPTMIZE THIS LATER, LIKE THE TITLE OR COMPS SHOULD BE DYNAMIC AND
   //ONLY PROP NEEDS TO BE PASSED IN. MAYBE VIA GLOBAL/CONTENTDATA.JOSN IDK
 
-  const RenderMain = () => {
+  const RenderMain = (titlepath, subpath) => {
     if (titlepath === "welcome" && subpath === "hello") {
       return <Hello titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "getting-started" && subpath === "introduction") {
-
- return <Introduction titlepath={titlepath} subpath={subpath} />;
-
-    }
-    else {
+      return <Introduction titlepath={titlepath} subpath={subpath} />;
+    } else {
       return (
         <>
           <SublinkNotFound titlepath={titlepath} subpath={subpath} />
@@ -30,12 +26,7 @@ const Main = ({ titlepath, subpath }) => {
   };
 
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
-  return (
-    <>
-      {RenderMain()}
-    </>
-  );
+  return <>{RenderMain(titlepath, subpath)}</>;
 };
 
 export default Main;
-
