@@ -9,7 +9,6 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
 const Home = ({ params }) => {
-
   //after prop drilling test phase is done use context api !!!!!!!!!!!!!!!!!!
 
   return (
@@ -21,31 +20,29 @@ const Home = ({ params }) => {
           mt={"15px"}
           gap={["15px", "15px", "15px", "10px", "10px"]}
           justify={"center"}
-  
         >
           <Box
             display={["none", "none", "none", "block", "block"]}
-            h={["0px", "0px", "0px", "657px", "720px", "648px"]}
+            h={["0px", "0px", "0px", "685px", "725px", "700px"]} // leave it as it is its already been optimized
             overflowY={"scroll"}
             pr="10px"
-             pl="10px"
-             borderRadius={"15px"}
+            pl="10px"
+            borderRadius={"15px"}
             overflowX={"hidden"}
-         
-          
-       
+            
           >
             <Sidebar titlepath={params.titlepath} subpath={params.subpath} />
           </Box>
 
-          <Main titlepath={params.titlepath} subpath={params.subpath} />
-          
+   
+            <Main titlepath={params.titlepath} subpath={params.subpath} />
+      
+    
 
           {/* you can only get prams if you asking from the page.jsx  */}
         </HStack>
+        <PageSwitch  titlepath={params.titlepath} subpath={params.subpath} />
       </Box>
-
-     <PageSwitch />
     </>
   );
 };

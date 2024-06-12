@@ -33,7 +33,7 @@ const Introduction = ({ titlepath, subpath }) => {
   return (
     <>
       <Box
-        boxShadow={"rgba(0, 0, 0, 0.25) 0px px 8px"}
+        boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
         w={["95%", "95%", "95%", "70%", "62.5%"]}
         //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
         h={"140%"} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE

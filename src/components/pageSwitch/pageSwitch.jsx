@@ -2,19 +2,26 @@ import { Box, HStack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
-const PageSwitch = () => {
+import  SideLink from "../../app/global/data/Sidelink.json";
+const PageSwitch = ({ titlepath, subpath }) => {
+
+  const fowardLink = () => {
+
+    
+  }
+
+
   return (
     <>
-       <Box ml={["0", "0", "0", "265px", "306px"]} mt={"15"}>
+      <Box ml={["0", "0", "0", "265px", "306px"]} mt={"15"}>
         <HStack w={"100%"} justify={"center"} align={"center"}>
           <HStack
-            w={["94%", "94%", "94%", "88%", "62%", "75%"]}
-            minW={["300px", "300px", "300px", "300px", "803.75px", "964.375PX"]}
+            w={["94%", "94%", "94%", "90%", "78%", "75%"]}
             h={"100%"}
             justify={"right"}
             align={"center"}
             transition={"all 0.3s ease-in-out"}
-            bgColor={"red"}
+        
  
           >
             

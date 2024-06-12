@@ -33,16 +33,17 @@ const SublinkNotFound = ({ titlepath, subpath }) => {
   return (
     <>
       <Box
-        boxShadow={"rgba(0, 0, 0, 0.25) 0px px 8px"}
-        w={["95%", "95%", "95%", "70%", "62.5%"]}
-        //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
-        h={["930px", "980px", "680px", "685px", "745px", "700px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
-        bg={"rgb(255, 255, 255,0.05)"}
-        border={"1px solid rgb(255, 255, 255,0.05)"}
-        rounded={"15px"}
-        pl={["18px", "25px", "25px", "15px", "35px"]}
-        pr={["18px", "25px", "25px", "15px", "10px"]}
-        py={"15px"}
+          boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
+          w={["95%", "95%", "95%", "70%", "62.5%"]}
+          //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+          h={["930px", "980px", "680px", "686px", "730px", "700px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          rounded={"15px"}
+          pl={["18px", "25px", "25px", "15px", "35px"]}
+          pr={["18px", "25px", "25px", "15px", "10px"]}
+          py={"15px"}
+          pb={"50px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
