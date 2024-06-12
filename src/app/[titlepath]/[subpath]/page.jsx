@@ -39,6 +39,7 @@ const Home = ({ params }) => {
           </Box>
 
           <Main titlepath={params.titlepath} subpath={params.subpath} />
+          
 
           {/* you can only get prams if you asking from the page.jsx  */}
         </HStack>

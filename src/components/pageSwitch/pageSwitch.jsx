@@ -17,6 +17,8 @@ const PageSwitch = () => {
             bgColor={"red"}
  
           >
+            
+            
             <Box
               cursor={"pointer"}
               transition={"all 0.3s ease-in-out"}

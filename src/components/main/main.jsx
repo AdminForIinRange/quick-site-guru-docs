@@ -21,12 +21,18 @@ const Main = ({ titlepath, subpath }) => {
         <>
           <SublinkNotFound titlepath={titlepath} subpath={subpath} />
         </>
+        
       );
     }
   };
 
+  
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return <>{RenderMain(titlepath, subpath)}</>;
+
+
 };
 
 export default Main;
+
+
