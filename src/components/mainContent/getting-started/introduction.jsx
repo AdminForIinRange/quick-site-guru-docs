@@ -64,6 +64,18 @@ const Introduction = ({ titlepath, subpath }) => {
             </Text>
           </Box>
 
+
+          <Box>
+          =
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+     Hello and welcome to the official documentation for QuickSite.guru – your gateway to effortless and innovative website creation! 🚀 This guide is your resource for understanding and utilizing all the features of QuickSite.guru. Our platform makes web development accessible to everyone, regardless of technical expertise. Let's start building amazing websites! 🌐
+            </Text>
+          </Box>
           <Box>
             <Text
               mb={"15px"}
@@ -71,7 +83,7 @@ const Introduction = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              Find What You Need
+       About
             </Text>
             <Text
               color={"white"}
@@ -79,120 +91,32 @@ const Introduction = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Hello and welcome to the official documentation for QuickSite.guru
-              ⭐ This documentation provides all the information you need to
-              effectively use QuickSite.guru. Whether you're a beginner or
-              intern building your first website or an just exploring the
-              platform, this guide will help you navigate the platform with
-              ease. Check out the boxes below ↓
-            </Text>
-          </Box>
-
-          <Box mt={"15px"}>
-            {" "}
-            <Text
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Lets get you started {`↓`}
+       QuickSite.guru simplifies the complex process of website creation, transforming it into a swift, seamless, and intuitive experience. Our mission is to empower startups, small businesses, and visionaries with the tools to establish a professional online presence without hassle or high costs. 💼
             </Text>
           </Box>
 
           <Box>
-            <HStack
-              transition={"all 0.3s ease-in-out"}
-              flexWrap={["wrap", "wrap", "nowrap", "nowrap", "nowrap"]}
-              w={"100%"}
-              h={"100%"}
-              justify={"space-between"}
-              align={"start"}
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              {navBoxes.map(({ title, desc, nav }, index) => (
-                <Box
-                  key={index}
-                  cursor={"pointer"}
-                  transition={"all 0.3s ease-in-out"}
-                  _hover={{
-                    shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
-                    h: ["35%", "38%", "110%", "110%", "110%"],
-                    bg: "rgb(255, 255, 255,0.05)",
-                  }}
-                  color={"white"}
-                  bg={"#1B1B1D"}
-                  border={"1px solid rgb(255, 255, 255,0.05)"}
-                  w={["100%", "100%", "280px", "100%", "100%"]}
-                  h={["130px", "150px", "225px", "225px", "225px"]}
-                  rounded={"xl"}
-                  p={["3", "3", "3", "3", "4"]}
-                >
-                  <VStack
-                    align={"left"}
-                    w={"100%"}
-                    h={"100%"}
-                    gap={["5px", "5px", "15px", "15px", "15px"]}
-                  >
-                    <HStack>
-                      <Text
-                        w={"70%"}
-                        fontSize={["16px", "22px", "22px", "18px", "22px"]}
-                        fontWeight={"700"}
-                        textAlign={"left"}
-                      >
-                        {title}
-                      </Text>
-                    </HStack>
-
-                    <HStack>
-                      <Text
-                        fontSize={[
-                          "12px",
-                          "12px",
-                          "14px",
-                          "12px",
-                          "14px",
-                          "16px",
-                        ]}
-                        textAlign={"left"}
-                        fontWeight={"300"}
-                      >
-                        {desc}
-                      </Text>
-                    </HStack>
-                    <HStack
-                      cursor={"pointer"}
-                      w={"100%"}
-                      h={"100%"}
-                      justify={"end"}
-                      align={"end"}
-                      fontWeight={"500"}
-                      transition="transform, 0.3s ease-in-out"
-                      _hover={{
-                        marginLeft: "10px",
-                      }}
-                    >
-                      <HStack align={"center"} mr={"5px"} w={"100%"}>
-                        <Text
-                          fontSize={[
-                            "12px",
-                            "14px",
-                            "14px",
-                            "11px",
-                            "13px",
-                            "15px",
-                          ]}
-                          as={"span"}
-                        >
-                          {nav}
-                        </Text>{" "}
-                        <HiArrowLongRight fontSize={"20px"} />
-                      </HStack>
-                    </HStack>
-                  </VStack>
-                </Box>
-              ))}
-            </HStack>
+Getting Started
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+  To begin your journey with QuickSite.guru, follow our step-by-step setup guide. This section will walk you through account creation, selecting a template, customizing your site, and launching it live. With clear instructions and helpful tips, you'll have your website up and running in no time. Ready to get started? Let's dive in!
+            </Text>
           </Box>
+
+
+         
+          
         </VStack>
       </Box>
     </>
