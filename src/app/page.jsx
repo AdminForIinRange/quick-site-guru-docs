@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 const Home = () => {
   const router = useRouter();
-  router.push("/welcome/scrimba");
+  router.push("/welcome/hello");
 };
 
 export default Home;

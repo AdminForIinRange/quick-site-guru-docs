@@ -1,10 +1,16 @@
+"use client";
+
 import { Box, VStack, Text, HStack } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
+
 const Hello = ({ titlepath, subpath }) => {
+
+
+
   const navBoxes = [
     {
       title: "Introduction",
