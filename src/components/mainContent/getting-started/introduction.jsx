@@ -10,7 +10,6 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 const Introduction = ({ titlepath, subpath }) => {
 
 
-
   const navBoxes = [
     {
       title: "Introduction",

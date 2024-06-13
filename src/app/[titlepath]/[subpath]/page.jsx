@@ -23,7 +23,7 @@ const Home = ({ params }) => {
         >
           <Box
             display={["none", "none", "none", "block", "block"]}
-            h={["0px", "0px", "0px", "685px", "725px", "700px"]} // leave it as it is its already been optimized
+            h={["0px", "0px", "0px", "685px", "725px", "700px"]} // leave it as it is its already been optimized <---- its always 700px 
             overflowY={"scroll"}
             pr="10px"
             pl="10px"
@@ -31,7 +31,7 @@ const Home = ({ params }) => {
             overflowX={"hidden"}
             
           >
-            <Sidebar titlepath={params.titlepath} subpath={params.subpath} />
+            <Sidebar titlepath={params.titlepath} subpath={params.subpath} /> 
           </Box>
 
    
