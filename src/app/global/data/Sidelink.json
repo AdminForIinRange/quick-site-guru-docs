@@ -190,6 +190,21 @@
         ]
     },
     {
+        "LearningMaterial": [
+            {
+                "title": "📗 Learning Material",
+                "StartingPath": "learning-material",
+                "sublinks": [
+                    {
+                        "subtitle": "⌨️ Scrimba",
+                        "prams": "scrimba",
+                        "path": "learning-material/scrimba"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "UsingQuickSite": [
             {
                 "title": "⚙️ Using QuickSite",
@@ -249,21 +264,6 @@
                         "subtitle": "🔗 Links/Scripts/Meta tags",
                         "prams": "links-scripts-meta",
                         "path": "using-quicksite/links-scripts-meta"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "LearningMaterial": [
-            {
-                "title": "📗 Learning Material",
-                "StartingPath": "learning-material",
-                "sublinks": [
-                    {
-                        "subtitle": "⌨️ Scrimba",
-                        "prams": "scrimba",
-                        "path": "using-quicksite/scrimba"
                     }
                 ]
             }

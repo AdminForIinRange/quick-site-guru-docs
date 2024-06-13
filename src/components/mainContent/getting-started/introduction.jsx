@@ -43,7 +43,7 @@ const Introduction = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-        pb={"50px"}
+        pb={"120px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
@@ -66,7 +66,7 @@ const Introduction = ({ titlepath, subpath }) => {
           </Box>
 
           <Box>
-            =
+            
             <Text
               color={"white"}
               fontSize={["14px", "14px", "14px", "14px", "16px"]}
