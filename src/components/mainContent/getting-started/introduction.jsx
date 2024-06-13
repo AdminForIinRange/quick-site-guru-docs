@@ -10,23 +10,7 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 const Introduction = ({ titlepath, subpath }) => {
 
 
-  const navBoxes = [
-    {
-      title: "Introduction",
-      desc: " Lets get you started with a Introduction, understand the company and our gaols",
-      nav: "   🧑‍💻 Introduction",
-    },
-    {
-      title: "QuickSite",
-      desc: " Want to learn how to use Quick Site Guru (QSG) Click here to learn all the features and know-hows",
-      nav: "  ⚙️ Using QuickSite",
-    },
-    {
-      title: "Internship",
-      desc: "  Click here if your interning at QuickSite.guru. Lest get you up and running in no time",
-      nav: "🎓 Internship Program",
-    },
-  ];
+
 
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
