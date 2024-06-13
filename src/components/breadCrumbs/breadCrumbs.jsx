@@ -50,11 +50,7 @@ const BreadCrumbs = ({ titlePath, subPath }) => {
   const emojiTitle = getTitleWithEmoji();
   const emojiSublink = getSublinkWithEmoji();
 
-  console.log(titlePath, subPath  + " raw test");
-  console.log(emojiTitle, emojiSublink  + " emoji test");
-
-  console.log(typeof(emojiTitle, emojiSublink));
-  return (
+ return (
     <>
       <Box>
         <HStack justify={"start"} align={"center"} w={"100%"} h={"50px"} fontSize={"14px"} >

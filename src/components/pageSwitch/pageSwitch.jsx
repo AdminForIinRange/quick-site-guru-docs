@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import  SideLink from "../../app/global/data/Sidelink.json";
+import Link from 'next/link';
 
 
 const PageSwitch = ({ titlepath, subpath }) => {
@@ -12,7 +13,8 @@ const PageSwitch = ({ titlepath, subpath }) => {
     title:"",
     fullPath:"",
     titlePath:"",
-    subPath:""
+    subPath:"",
+    CurrentLink:""
   });
   const [backwardSwitch, setbackwardSwitch] = useState(false);
 
@@ -20,26 +22,38 @@ const PageSwitch = ({ titlepath, subpath }) => {
 
 useEffect(() => {
 
-  
-    console.log(titlepath)
-    console.log(subpath)
+ 
+
+
+
   SideLink.forEach(section => {
   Object.keys(section).forEach(sectionKey => {
     const items = section[sectionKey];
-    items.forEach(item => {
+    items.forEach((item, index) =>  { // it double log in dev mode because of strict mode in NEXTJS/React
+console.log(item.sublinks[index].prams)
+
+if (item.sublinks[index]){
+  // console.log(item.sublinks[index])
+
+}
+// console.log(titlepath, subpath)
+
+
+
+
       if (item.StartingPath === titlepath && item.sublinks[0].prams === subpath) {
         setForwardSwitch(item.sublinks[0]);
+
       }
     });
   });
   
   })
   
-},[])
+},[]);
 
 
   const backwardsLink = () => {
-
     console.log(titlepath)
     console.log(subpath)
   }
@@ -83,15 +97,19 @@ useEffect(() => {
                 h={"100%"}
                 justify={"space-between"}
               >
+                <Link href={`backwardSwitch.link`}>
+                
                 <Text
                   fontSize={["14px", "14px", "16px", "16px", "16px", "18px"]}
                   as={"span"}
                   textAlign={"left"}
                   color={"white"}
                 >
-                  🧑‍💻 Introduction   
+                
+                {forwardSwitch.title}   
                 </Text>{" "}
                 <HiArrowLongRight fontSize={"40px"} color="white" />
+                </Link>
               </HStack>
             </Box>
           </HStack>
