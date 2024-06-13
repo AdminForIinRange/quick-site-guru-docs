@@ -1,14 +1,40 @@
 import { Box, HStack, Text } from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import  SideLink from "../../app/global/data/Sidelink.json";
+
+
 const PageSwitch = ({ titlepath, subpath }) => {
 
-  const fowardLink = () => {
+  const [forwardSwitch, setForwardSwitch] = useState({
+    link:"",
+    title:"",
+    fullPath:"",
+    titlePath:"",
+    subPath:""
+  });
+  const [backwardSwitch, setbackwardSwitch] = useState(false);
 
-    
+  const forwardLink = () => {
+
+    console.log(titlepath)
+    console.log(subpath)
+
+    if (titlepath === "getting-started" && subpath === "introduction") {
+      console.log("hello")
+    }
+
+
   }
+
+
+  const backwardsLink = () => {
+
+    console.log(titlepath)
+    console.log(subpath)
+  }
+
 
 
   return (
@@ -24,7 +50,7 @@ const PageSwitch = ({ titlepath, subpath }) => {
         
  
           >
-            
+      
             
             <Box
               cursor={"pointer"}
@@ -54,7 +80,7 @@ const PageSwitch = ({ titlepath, subpath }) => {
                   textAlign={"left"}
                   color={"white"}
                 >
-                  🧑‍💻 Introduction
+                  🧑‍💻 Introduction       {forwardLink()}
                 </Text>{" "}
                 <HiArrowLongRight fontSize={"40px"} color="white" />
               </HStack>
