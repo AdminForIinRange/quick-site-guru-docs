@@ -4,6 +4,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import  SideLink from "../../app/global/data/Sidelink.json";
 import Link from 'next/link';
+import { Router } from 'next/router';
 
 
 const PageSwitch = ({ titlepath, subpath }) => {
@@ -22,7 +23,7 @@ const PageSwitch = ({ titlepath, subpath }) => {
 
 useEffect(() => {
 
- 
+
 
 
 
@@ -30,19 +31,15 @@ useEffect(() => {
   Object.keys(section).forEach(sectionKey => {
     const items = section[sectionKey];
     items.forEach((item, index) =>  { // it double log in dev mode because of strict mode in NEXTJS/React
-console.log(item.sublinks[index].prams)
 
-if (item.sublinks[index]){
-  // console.log(item.sublinks[index])
 
-}
 // console.log(titlepath, subpath)
 
 
-
-
       if (item.StartingPath === titlepath && item.sublinks[0].prams === subpath) {
-        setForwardSwitch(item.sublinks[0]);
+console.log(item.sublinks[index + 1].prams)
+
+        setForwardSwitch({...item.sublinks[index + 1], title: item.sublinks[index + 1].subtitle})
 
       }
     });
@@ -50,7 +47,7 @@ if (item.sublinks[index]){
   
   })
   
-},[]);
+},[titlepath, subpath]);
 
 
   const backwardsLink = () => {
@@ -85,7 +82,7 @@ if (item.sublinks[index]){
               p={"5px"}
               px={"20px"}
               rounded={"15px"}
-              w={["190px", "190px", "205px", "205px", "205px", "225px"]}
+              w={["190px", "225px", "245px", "245px", "245px", "255px"]}
               h={["90%", "90%", "100%", "100%", "100%"]}
               bg={"rgb(255, 255, 255,0.05)"}
               border={"1px solid rgb(255, 255, 255,0.05)"}
@@ -97,17 +94,20 @@ if (item.sublinks[index]){
                 h={"100%"}
                 justify={"space-between"}
               >
-                <Link href={`backwardSwitch.link`}>
                 
-                <Text
+              
+                
+                <Text w={["100%", "100%", "100%", "100%", "100%"]}
                   fontSize={["14px", "14px", "16px", "16px", "16px", "18px"]}
                   as={"span"}
                   textAlign={"left"}
                   color={"white"}
-                >
+                  onClick={Router.push(`/${forwardSwitch.title}/`)}
+                  >
                 
-                {forwardSwitch.title}   
+                  {forwardSwitch.title}  
                 </Text>{" "}
+                <Link href={`backwardSwitch.link`}>
                 <HiArrowLongRight fontSize={"40px"} color="white" />
                 </Link>
               </HStack>
