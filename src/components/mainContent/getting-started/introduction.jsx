@@ -86,6 +86,27 @@ const Introduction = ({ titlepath, subpath }) => {
               presence without hassle or high costs. 💼
             </Text>
           </Box>
+          
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+        Our Internship Philosophy
+
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+            We believe in offering a hands-on, immersive experience that goes beyond conventional learning. Interns at QuickSite.guru aren't just observers; they're active participants in our journey to reshape the website creation industry. Through this program, interns gain not only professional experience but also contribute their unique ideas and perspectives to our mission.
+            </Text>
+          </Box>
+
 
           <Box>
             <Text
