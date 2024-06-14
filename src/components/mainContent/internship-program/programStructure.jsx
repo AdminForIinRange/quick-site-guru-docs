@@ -1,11 +1,31 @@
 "use client";
 
-import { Box, VStack, Text } from "@chakra-ui/react";
+import { Box, VStack, Text, HStack, Divider,   Step,
+  StepDescription,
+  StepIcon,
+  StepIndicator,
+  StepNumber,
+  StepSeparator,
+  StepStatus,
+  StepTitle,
+  Stepper,
+  useSteps, } from "@chakra-ui/react";
 import React from "react";
 import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import Link from "next/link";
 
 const ProgramStructure = ({ titlepath, subpath }) => {
+
+  const steps = [
+    { title: 'Stage 1: Orientation and Integration', description: 'Contact Info' },
+    { title: 'Second', description: 'Date & Time' },
+    { title: 'Third', description: 'Select Rooms' },
+  ]
+
+  const { activeStep } = useSteps({
+    index: 1,
+    count: steps.length,
+  })
   return (
     <>
       <Box
@@ -150,6 +170,42 @@ const ProgramStructure = ({ titlepath, subpath }) => {
               The internship is divided into four stages. Each stage focuses on different aspects of web development, gradually increasing in complexity and responsibility.
             </Text>
 
+           <HStack justify={"left"}>
+           <VStack
+                            h={"100%"}
+                            justify={"left"}
+                            align={"left"}
+                           
+                          >
+                           <Stepper index={activeStep} orientation='vertical' height='400px' gap='0'>
+      {steps.map((step, index) => (
+        <Step key={index}>
+          <StepIndicator>
+            <StepStatus
+              complete={<StepIcon />}
+              incomplete={<StepNumber />}
+              active={<StepNumber />}
+            />
+          </StepIndicator>
+
+          <Box flexShrink='0'>
+            <StepTitle  mb={"15px"}
+                color={"white"}
+                fontWeight={"600"}
+                fontSize={["16px", "16px", "18px", "18px", "20px"]} >{step.title}</StepTitle>
+            <StepDescription color={"white"} fontSize={["14px", "14px", "14px", "14px", "16px"]} lineHeight={"24px"} fontWeight={"300"} >{step.description}</StepDescription>
+          </Box>
+
+          <StepSeparator />
+        </Step>
+      ))}
+    </Stepper>
+                          </VStack>
+                 
+            
+            <VStack>
+
+       
             <Box>
               <Text
                 mb={"15px"}
@@ -217,7 +273,8 @@ const ProgramStructure = ({ titlepath, subpath }) => {
                 <strong>Focus:</strong> Participate in a real project for real start-ups! Sometimes we develop websites for free to help start-ups. This helps us better understand real users and their needs. If participating, you will learn how to be part of a project team, collaborate with different stakeholders, and achieve success together.
               </Text>
             </Box>
-
+            </VStack>
+            </HStack>
           </Box>
         </VStack>
       </Box>
