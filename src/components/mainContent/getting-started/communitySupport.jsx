@@ -36,7 +36,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-        pb={"120px"}
+        pb={"40px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
@@ -108,6 +108,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               <Box
                 transition={"all 0.3s ease-in-out"}
                 _hover={{
+                  shadow: "0 0 15px 0px #424549",
                   cursor: "pointer",
                   color: "teal.500",
                   transform: "scale(1.05)",
@@ -153,7 +154,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               <Box  mb={"15px"}
                 transition={"all 0.3s ease-in-out"}
                 _hover={{
-         boxShadow: "rgba(0, 0, 0, 0.25) 0px 0px 8px",
+                  shadow: "0 0 15px 0px #0078c7",
                   cursor: "pointer",
                   color: "teal.500",
                   transform: "scale(1.05)",

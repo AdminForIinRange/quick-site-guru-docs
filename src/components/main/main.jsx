@@ -22,7 +22,7 @@ import SublinkNotFound from "../mainContent/sublinkNotFound/sublinkNotFound";
 import Introduction from "../mainContent/getting-started/introduction";
 import CompanyValues from "../mainContent/getting-started/companyValues";
 import CommunitySupport from "../mainContent/getting-started/communitySupport";
-import ProgramingStructure from "../mainContent/internship-program/programingStructure";
+import ProgramStructure from "../mainContent/internship-program/programStructure";
 import WhatToExpect from "../mainContent/internship-program/whatToExpect";
 import MeetingFeedback from "../mainContent/internship-program/meetingFeedback";
 import WelcomeToStage1 from "../mainContent/stage-1/welcomeToStage1";
@@ -82,7 +82,7 @@ const Main = ({ titlepath, subpath }) => {
       titlepath === "internship-program" &&
       subpath === "program-structure"
     ) {
-      return <ProgramingStructure titlepath={titlepath} subpath={subpath} />;
+      return <ProgramStructure titlepath={titlepath} subpath={subpath} />;
     } 
     
     else if (
