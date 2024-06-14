@@ -36,7 +36,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-        pb={"40px"}
+        pb={"50px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
