@@ -21,7 +21,7 @@ const CompanyValues = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-        pb={"120px"}
+        pb={"40px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
@@ -50,34 +50,7 @@ const CompanyValues = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Hello and welcome to the official documentation for QuickSite.guru
-              – your gateway to effortless and innovative website creation! 🚀
-              This guide is your resource for understanding and utilizing all
-              the features of QuickSite.guru. Our platform makes web development
-              accessible to everyone, regardless of technical expertise. Let's
-              start building amazing websites! 🌐
-            </Text>
-          </Box>
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              About
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              QuickSite.guru simplifies the complex process of website creation,
-              transforming it into a swift, seamless, and intuitive experience.
-              Our mission is to empower startups, small businesses, and
-              visionaries with the tools to establish a professional online
-              presence without hassle or high costs. 💼
+              At QuickSite.guru, our values shape everything we do, guiding our actions and decisions. We believe in innovation, accessibility, and integrity, striving to make website creation a seamless and enjoyable experience for everyone.
             </Text>
           </Box>
 
@@ -88,7 +61,7 @@ const CompanyValues = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              Getting Started
+              Innovation
             </Text>
             <Text
               color={"white"}
@@ -96,12 +69,64 @@ const CompanyValues = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              To begin your journey with QuickSite.guru, follow our step-by-step
-              setup guide. This section will walk you through account creation,
-              selecting a template, customizing your site, and launching it
-              live. With clear instructions and helpful tips, you'll have your
-              website up and running in no time. Ready to get started? Let's
-              dive in!
+              We embrace cutting-edge technologies and creative solutions to stay ahead in the website creation industry. Our platform leverages AI to transform complex web development processes into user-friendly experiences, enabling anyone to build and manage their online presence effortlessly.
+            </Text>
+          </Box>
+
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+              Accessibility
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+              Our mission is to democratize website creation. We believe that everyone, regardless of technical expertise or budget, should have access to the tools needed to establish a professional online presence. QuickSite.guru makes this possible through intuitive design and affordable solutions.
+            </Text>
+          </Box>
+
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+              Integrity
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+              We operate with transparency, honesty, and respect in all our interactions. Our commitment to integrity ensures that we build trust with our users, partners, and team members. We value feedback and continuously work to improve our platform and services.
+            </Text>
+          </Box>
+
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+              Collaboration
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+              We believe in the power of teamwork. By fostering a collaborative environment, we harness the diverse talents and perspectives of our team to drive innovation and achieve our goals. Together, we create value for our users and contribute to the success of QuickSite.guru.
             </Text>
           </Box>
         </VStack>

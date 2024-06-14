@@ -6,7 +6,7 @@ import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
-const ProposeAdesign = ({ titlepath, subpath }) => {
+const ProposeATemplate = ({ titlepath, subpath }) => {
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
     <>
@@ -110,4 +110,4 @@ const ProposeAdesign = ({ titlepath, subpath }) => {
   );
 };
 
-export default ProposeAdesign;
+export default ProposeATemplate;
