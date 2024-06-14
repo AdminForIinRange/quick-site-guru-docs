@@ -13,7 +13,7 @@ const Home = ({ params }) => {
 
   return (
     <>
-      <Box mt={"15px"}>
+      <Box mt={"15px"} mb={"35px"}>
         <HStack
           align={"start"}
           w={"100%"}

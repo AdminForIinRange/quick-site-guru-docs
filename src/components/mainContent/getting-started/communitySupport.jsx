@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
+import Link from "next/link";
 
 const CommunitySupport = ({ titlepath, subpath }) => {
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
@@ -39,7 +40,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              🏢 Community/Support
+              🤝 Community & Support
             </Text>
           </Box>
 
@@ -50,34 +51,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Hello and welcome to the official documentation for QuickSite.guru
-              – your gateway to effortless and innovative website creation! 🚀
-              This guide is your resource for understanding and utilizing all
-              the features of QuickSite.guru. Our platform makes web development
-              accessible to everyone, regardless of technical expertise. Let's
-              start building amazing websites! 🌐
-            </Text>
-          </Box>
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              About
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              QuickSite.guru simplifies the complex process of website creation,
-              transforming it into a swift, seamless, and intuitive experience.
-              Our mission is to empower startups, small businesses, and
-              visionaries with the tools to establish a professional online
-              presence without hassle or high costs. 💼
+              At QuickSite.guru, we prioritize effective communication and community support to ensure our team and users are always connected and informed. Join our community and stay updated through our primary communication channels.
             </Text>
           </Box>
 
@@ -88,7 +62,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              Getting Started
+              Discord
             </Text>
             <Text
               color={"white"}
@@ -96,12 +70,64 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              To begin your journey with QuickSite.guru, follow our step-by-step
-              setup guide. This section will walk you through account creation,
-              selecting a template, customizing your site, and launching it
-              live. With clear instructions and helpful tips, you'll have your
-              website up and running in no time. Ready to get started? Let's
-              dive in!
+              Discord is our main communication platform where we interact 80% of the time. Join our Discord server to stay connected, participate in discussions, and get instant support from our team and community.
+              <br />
+              <Text as={Link} color={"teal.500"} href="https://discord.gg/bPtbBVAw" isExternal>
+                Join our Discord Server
+              </Text>
+            </Text>
+
+            <Box h={"300px"} w={"300px"}> </Box>
+ 
+          </Box>
+
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+              LinkedIn
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+              Connect with us on LinkedIn for professional updates, news, and networking opportunities. While it's not as frequently used as Discord, LinkedIn remains an important part of our online presence.
+              <br />
+              <Link color={"teal.500"} href="https://www.linkedin.com/company/quicksite-guru/mycompany/" isExternal>
+                Visit our LinkedIn Page
+              </Link>
+            </Text>
+          </Box>
+
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+              Google Meet
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+              All our meetings are conducted via Google Meet. Below is our meeting schedule:
+              <br />
+              - Monday: 7:30 AM
+              <br />
+              - Thursday: 8:00 AM
+              <br />
+              - Saturday: 9:30 AM and 10:30 AM
+              <br />
+              Please ensure you are on time for all scheduled meetings.
             </Text>
           </Box>
         </VStack>
