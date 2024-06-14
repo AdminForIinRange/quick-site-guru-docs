@@ -86,8 +86,8 @@ const Hello = ({ titlepath, subpath }) => {
               ⭐ This documentation provides all the information you need to
               about QuickSite.guru and the company itself, Whether you're a beginner or intern building
               your first website or an just exploring the platform, this guide
-              will help you navigate the platform with ease. <Text as={"span"} color={"orange.300"}>Please Dont Skim it.</Text>{" "}
-               Check out the boxes below ↓
+              will help you navigate the platform with ease. <Text as={"span"} color={"orange.300"}>Please Dont Skim it. </Text>{" "}
+              Check out the boxes below ↓
             </Text>
           </Box>
 

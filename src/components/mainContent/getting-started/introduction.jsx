@@ -56,12 +56,12 @@ const Introduction = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Hello and welcome to the official documentation for QuickSite.guru
-              – your gateway to effortless and innovative website creation! 🚀
+              Hello and welcome to the official documentation for QuickSite.guru 
+              – your gateway to effortless and innovative website creation! 🚀  <Text as={"span"} color={"orange.300"}>Please Dont Skim it. </Text>
               This guide is your resource for understanding and utilizing all
               the features of QuickSite.guru. Our platform makes web development
-              accessible to everyone, regardless of technical expertise. Let's
-              start building amazing websites! 🌐
+              accessible to everyone, regardless of technical expertise.  Let's
+              start building amazing websites! 🌐 
             </Text>
           </Box>
           <Box>
@@ -94,7 +94,7 @@ const Introduction = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-        Our Internship Philosophy
+Our Product
 
             </Text>
             <Text
@@ -103,7 +103,7 @@ const Introduction = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-            We believe in offering a hands-on, immersive experience that goes beyond conventional learning. Interns at QuickSite.guru aren't just observers; they're active participants in our journey to reshape the website creation industry. Through this program, interns gain not only professional experience but also contribute their unique ideas and perspectives to our mission.
+          QuickSite.guru enables users to launch a website in just 5 minutes. We provide one year of free custom domain hosting (with domain purchase) and use ChatGPT-like prompting for continuous improvement. Our platform is designed for ease of use, offering beautiful templates for quick cloning and hosting. Perfect for startups and small businesses, our intuitive interface guides users through the process effortlessly, ensuring a professional online presence.
             </Text>
           </Box>
 
