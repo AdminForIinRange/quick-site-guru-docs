@@ -6,7 +6,10 @@ import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import Link from "next/link";
-
+import quicksite_guru_logo from "../../../img/quicksite_guru_logo.jpeg";
+import { FaDiscord, FaLongArrowAltRight } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 const CommunitySupport = ({ titlepath, subpath }) => {
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
@@ -40,7 +43,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              🤝 Community & Support
+              🌐 Community & Support
             </Text>
           </Box>
 
@@ -51,34 +54,11 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              At QuickSite.guru, we prioritize effective communication and community support to ensure our team and users are always connected and informed. Join our community and stay updated through our primary communication channels.
+              At QuickSite.guru, we prioritize effective communication and
+              community support to ensure our team and users are always
+              connected and informed. Join our community and stay updated
+              through our primary communication channels.
             </Text>
-          </Box>
-
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Discord
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Discord is our main communication platform where we interact 80% of the time. Join our Discord server to stay connected, participate in discussions, and get instant support from our team and community.
-              <br />
-              <Text as={Link} color={"teal.500"} href="https://discord.gg/bPtbBVAw" isExternal>
-                Join our Discord Server
-              </Text>
-            </Text>
-
-            <Box h={"300px"} w={"300px"}> </Box>
- 
           </Box>
 
           <Box>
@@ -88,7 +68,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              LinkedIn
+              Connect
             </Text>
             <Text
               color={"white"}
@@ -96,12 +76,79 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Connect with us on LinkedIn for professional updates, news, and networking opportunities. While it's not as frequently used as Discord, LinkedIn remains an important part of our online presence.
+              Discord serves as our primary communication platform, where we
+              engage with our community 80% of the time. Joining our Discord
+              server ensures you stay connected, participate in discussions, and
+              receive instant support from our team and community members.
+              Additionally, connect with us on LinkedIn for professional
+              updates, news, and networking opportunities. While Discord is our
+              main hub for interaction, LinkedIn remains integral to our online
+              presence, albeit with less frequent use.
               <br />
-              <Link color={"teal.500"} href="https://www.linkedin.com/company/quicksite-guru/mycompany/" isExternal>
-                Visit our LinkedIn Page
-              </Link>
             </Text>
+            <HStack
+              mt={"30px"}
+              gap={"30px"}
+              justify={"left"}
+              align={"start"}>
+              w={"100%"}
+              h={"100%"}
+            >
+              <Box h={"65px"} w={"300px"} borderRadius={"10px"} bg={"#424549"}>
+                <HStack
+                  p={"10px"}
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"space-between"}
+                  align={"center"}
+                  px={"15px"}
+                >
+                  <FaDiscord as={"span"} fontSize={"45px"} color="#7289DA" />
+                  <Box
+                    transition={"all 0.3s ease-in-out"}
+                    _hover={{
+                      cursor: "pointer",
+                      color: "teal.500",
+                      transform: "scale(1.08)",
+                    }}
+                  >
+                    <VStack gap={"0px"}>
+                      <Text
+                        as={Link}
+                        color={"white"}
+                        href="https://discord.gg/bPtbBVAw"
+                        isExternal
+                        fontSize={"20px"}
+                        fontWeight={"500"}
+                        w={"100%"}
+                      >
+                        QuickSite Guru
+                      </Text>
+                      <Text
+                        color={"white"}
+                        fontSize={"12px"}
+                        w={"100%"}
+                        textAlign={"left"}
+                        pr={"40px"}
+                      >
+                        Join Our Community
+                      </Text>
+                    </VStack>
+                  </Box>
+                  <HiArrowLongRight fontSize={"40px"} color="white" />
+                </HStack>
+              </Box>
+              <Box h={"65px"} w={"300px"} borderRadius={"10px"} bg={"#0078c7"}>
+                {" "}
+                <HStack
+                  p={"10px"}
+                  w={"100%"}
+                  h={"100%"}
+                  justify={"left"}
+                  align={"center"}
+                ></HStack>{" "}
+              </Box>
+            </HStack>
           </Box>
 
           <Box>
@@ -119,7 +166,8 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              All our meetings are conducted via Google Meet. Below is our meeting schedule:
+              All our meetings are conducted via Google Meet. Below is our
+              meeting schedule:
               <br />
               - Monday: 7:30 AM
               <br />
