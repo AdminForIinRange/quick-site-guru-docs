@@ -21,7 +21,7 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-       pb={"50px"}
+        pb={"50px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
@@ -39,7 +39,7 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              🏢 Mentorship Guidance
+              👨‍🏫 Mentorship/Guidance
             </Text>
           </Box>
 
@@ -50,34 +50,9 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Hello and welcome to the official documentation for QuickSite.guru
-              – your gateway to effortless and innovative website creation! 🚀
-              This guide is your resource for understanding and utilizing all
-              the features of QuickSite.guru. Our platform makes web development
-              accessible to everyone, regardless of technical expertise. Let's
-              start building amazing websites! 🌐
-            </Text>
-          </Box>
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              About
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              QuickSite.guru simplifies the complex process of website creation,
-              transforming it into a swift, seamless, and intuitive experience.
-              Our mission is to empower startups, small businesses, and
-              visionaries with the tools to establish a professional online
-              presence without hassle or high costs. 💼
+              Mentorship and guidance are at the heart of our approach at
+              QuickSite.guru. Our dedicated mentors bring years of industry
+              experience and a passion for nurturing talent.
             </Text>
           </Box>
 
@@ -88,7 +63,7 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              Getting Started
+              Project Reviews and Support
             </Text>
             <Text
               color={"white"}
@@ -96,12 +71,41 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              To begin your journey with QuickSite.guru, follow our step-by-step
-              setup guide. This section will walk you through account creation,
-              selecting a template, customizing your site, and launching it
-              live. With clear instructions and helpful tips, you'll have your
-              website up and running in no time. Ready to get started? Let's
-              dive in!
+              During stage reviews, our mentors carefully examine your designs,
+              provide constructive advice, and ensure your projects meet our
+              design and template standards. Whether optimizing for deployment
+              or troubleshooting coding issues, they're here to help you achieve
+              excellence. Count on our mentors to support your growth by
+              offering personalized feedback and guidance, committed to helping
+              you succeed in mastering the skills needed for effective website
+              deployment.
+            </Text>
+          </Box>
+
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+              Experienced Mentors and Personalized Support
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
+              At QuickSite.guru, our interns are dedicated, proactive, and eager
+              to assist you throughout your internship journey. They bring years
+              of versatile experience to the table, ensuring you receive
+              comprehensive support. Count on our mentors to support your growth
+              by offering personalized feedback and guidance. They are committed
+              to helping you succeed in mastering the skills needed for
+              effective website deployment. You can connect with them directly
+              in the "Stage 1 Mentors" Discord channel or schedule meetings
+              here.
             </Text>
           </Box>
         </VStack>

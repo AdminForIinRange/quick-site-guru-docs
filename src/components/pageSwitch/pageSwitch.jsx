@@ -1,9 +1,9 @@
-import { Box, HStack, Text } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
+import { Box, HStack, Text } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 import { HiArrowLongRight, HiArrowLongLeft } from "react-icons/hi2";
 import SideLink from "../../app/global/data/Sidelink.json";
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const PageSwitch = ({ titlepath, subpath }) => {
   const router = useRouter();
@@ -14,7 +14,7 @@ const PageSwitch = ({ titlepath, subpath }) => {
     fullPath: "",
     titlePath: "",
     subPath: "",
-    CurrentLink: ""
+    CurrentLink: "",
   });
 
   const [backwardSwitch, setbackwardSwitch] = useState({
@@ -23,9 +23,9 @@ const PageSwitch = ({ titlepath, subpath }) => {
     fullPath: "",
     titlePath: "",
     subPath: "",
-    CurrentLink: ""
+    CurrentLink: "",
   });
-useEffect(() => {
+  useEffect(() => {
     let found = false;
 
     for (let sectionIndex = 0; sectionIndex < SideLink.length; sectionIndex++) {
@@ -38,7 +38,11 @@ useEffect(() => {
         const sublinks = item.sublinks;
 
         if (item.StartingPath === titlepath) {
-          for (let sublinkIndex = 0; sublinkIndex < sublinks.length; sublinkIndex++) {
+          for (
+            let sublinkIndex = 0;
+            sublinkIndex < sublinks.length;
+            sublinkIndex++
+          ) {
             if (sublinks[sublinkIndex].prams === subpath) {
               found = true;
 
@@ -50,9 +54,8 @@ useEffect(() => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: item.StartingPath,
                   subPath: sublinks[sublinkIndex + 1].prams,
-                  fullPath: `${item.StartingPath}/${sublinks[sublinkIndex + 1].prams}`
+                  fullPath: `${item.StartingPath}/${sublinks[sublinkIndex + 1].prams}`,
                 });
-
               } else if (itemIndex + 1 < items.length) {
                 // Move to the first sublink of the next item in the same section
                 const nextItem = items[itemIndex + 1];
@@ -62,7 +65,7 @@ useEffect(() => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: nextItem.StartingPath,
                   subPath: nextItem.sublinks[0].prams,
-                  fullPath: `${nextItem.StartingPath}/${nextItem.sublinks[0].prams}`
+                  fullPath: `${nextItem.StartingPath}/${nextItem.sublinks[0].prams}`,
                 });
               } else if (sectionIndex + 1 < SideLink.length) {
                 // Move to the first sublink of the first item in the next section
@@ -77,7 +80,7 @@ useEffect(() => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: nextItem.StartingPath,
                   subPath: nextItem.sublinks[0].prams,
-                  fullPath: `${nextItem.StartingPath}/${nextItem.sublinks[0].prams}`
+                  fullPath: `${nextItem.StartingPath}/${nextItem.sublinks[0].prams}`,
                 });
               }
 
@@ -90,7 +93,7 @@ useEffect(() => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: item.StartingPath,
                   subPath: sublinks[sublinkIndex - 1].prams,
-                  fullPath: `${item.StartingPath}/${sublinks[sublinkIndex - 1].prams}`
+                  fullPath: `${item.StartingPath}/${sublinks[sublinkIndex - 1].prams}`,
                 });
               } else if (itemIndex - 1 >= 0) {
                 // Move to the last sublink of the previous item in the same section
@@ -102,7 +105,7 @@ useEffect(() => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: prevItem.StartingPath,
                   subPath: prevItem.sublinks[lastSublinkIndex].prams,
-                  fullPath: `${prevItem.StartingPath}/${prevItem.sublinks[lastSublinkIndex].prams}`
+                  fullPath: `${prevItem.StartingPath}/${prevItem.sublinks[lastSublinkIndex].prams}`,
                 });
               } else if (sectionIndex - 1 >= 0) {
                 // Move to the last sublink of the last item in the previous section
@@ -118,7 +121,7 @@ useEffect(() => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: prevItem.StartingPath,
                   subPath: prevItem.sublinks[lastSublinkIndex].prams,
-                  fullPath: `${prevItem.StartingPath}/${prevItem.sublinks[lastSublinkIndex].prams}`
+                  fullPath: `${prevItem.StartingPath}/${prevItem.sublinks[lastSublinkIndex].prams}`,
                 });
               }
               break;
@@ -131,9 +134,7 @@ useEffect(() => {
     }
   }, [titlepath, subpath]);
 
-  const backwardsLink = () => {
- 
-  };
+  const backwardsLink = () => {};
 
   return (
     <>
@@ -142,14 +143,20 @@ useEffect(() => {
           <HStack
             w={["94%", "94%", "94%", "90%", "78%", "75%"]}
             h={"100%"}
-            justify={["center", "center", "space-between", "space-between", "space-between"]}
+            justify={[
+              "center",
+              "center",
+              "space-between",
+              "space-between",
+              "space-between",
+            ]}
             align={"center"}
             transition={"all 0.3s ease-in-out"}
             flex={"wrap"}
             wrap={"wrap"}
           >
-            
-             <Box
+            <Box
+              onClick={() => router.push(`/${backwardSwitch.fullPath}`)}
               cursor={"pointer"}
               transition={"all 0.3s ease-in-out"}
               _hover={{
@@ -172,7 +179,6 @@ useEffect(() => {
                 h={"100%"}
                 justify={"space-between"}
               >
-          
                 <HiArrowLongLeft fontSize={"40px"} color="white" />
                 <Text
                   w={["100%", "100%", "100%", "100%", "100%"]}
@@ -180,17 +186,14 @@ useEffect(() => {
                   as={"span"}
                   textAlign={"right"}
                   color={"white"}
-                  onClick={() => router.push(`/${backwardSwitch.fullPath}`)}
                 >
-                  { backwardSwitch.title }
+                  {backwardSwitch.title}
                 </Text>
-
               </HStack>
             </Box>
 
-        
-
-         <Box
+            <Box
+              onClick={() => router.push(`/${forwardSwitch.fullPath}`)}
               cursor={"pointer"}
               transition={"all 0.3s ease-in-out"}
               _hover={{
@@ -219,11 +222,10 @@ useEffect(() => {
                   as={"span"}
                   textAlign={"left"}
                   color={"white"}
-                  onClick={() => router.push(`/${forwardSwitch.fullPath}`)}
                 >
-                  {forwardSwitch.title }
+                  {forwardSwitch.title}
                 </Text>
-           <HiArrowLongRight fontSize={"40px"} color="white" />
+                <HiArrowLongRight fontSize={"40px"} color="white" />
               </HStack>
             </Box>
           </HStack>

@@ -50,6 +50,7 @@ import Embedding from "../mainContent/using-quicksite/embedding";
 import SvgAssets from "../mainContent/using-quicksite/svgAssets";
 import Contact from "../mainContent/using-quicksite/contact";
 import LinksScriptsMetaTags from "../mainContent/using-quicksite/linksScriptsMetaTags";
+import MentorshipGuidance from "../mainContent/internship-program/mentorshipGuidance";
 
 const Main = ({ titlepath, subpath }) => {
   // OPTMIZE THIS LATER, LIKE THE TITLE OR COMPS SHOULD BE DYNAMIC AND
@@ -96,7 +97,7 @@ const Main = ({ titlepath, subpath }) => {
       titlepath === "internship-program" &&
       subpath === "mentorship-guidance"
     ) {
-      return <Introduction titlepath={titlepath} subpath={subpath} />;
+      return <MentorshipGuidance titlepath={titlepath} subpath={subpath} />;
     } 
     
     else if (
