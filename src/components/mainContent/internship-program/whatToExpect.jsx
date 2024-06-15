@@ -50,6 +50,30 @@ const WhatToExpect = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
+              During your internship at QuickSite.guru, you'll gain hands-on
+              experience in website creation, receive feedback from experienced
+              developers, work on real projects for start-ups, and operate
+              independently in a flexible, remote environment. Successful
+              completion may lead to future opportunities at QuickSite.guru,
+              depending on company needs and funding.{" "}
+            </Text>
+          </Box>
+        
+          <Box>
+            <Text
+              mb={"15px"}
+              color={"white"}
+              fontWeight={"600"}
+              fontSize={["18px", "18px", "20px", "20px", "28px"]}
+            >
+              Learning Experience
+            </Text>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+            >
               Engage in hands-on learning by creating websites with HTML/CSS,
               meta tags, layout design, animations, hosting, and more. Receive
               extensive feedback from experienced developers and designers. You
@@ -58,26 +82,13 @@ const WhatToExpect = ({ titlepath, subpath }) => {
             </Text>
           </Box>
           <Box>
-            <Text mb={"15px"} color={"white"}>
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}> About
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            ></Text>
-          </Box>
-
-          <Box>
             <Text
               mb={"15px"}
               color={"white"}
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              Getting Started
+              Expectations and OpportunitiesGetting Started
             </Text>
             <Text
               color={"white"}

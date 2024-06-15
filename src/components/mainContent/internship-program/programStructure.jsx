@@ -19,7 +19,9 @@ import {
 import React from "react";
 import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import Link from "next/link";
+import { FaCss3 } from "react-icons/fa";
 
+import {FaHtml5} from "react-icons/fa";
 const ProgramStructure = ({ titlepath, subpath }) => {
   const steps = [
     {
@@ -143,11 +145,12 @@ const ProgramStructure = ({ titlepath, subpath }) => {
               fontSize={["14px", "14px", "14px", "14px", "16px"]}
               lineHeight={"24px"}
               fontWeight={"300"}
+              as={"span"}
             >
               During the internship, you will gain hands-on experience in web
               development by working on real-world projects. Our mentors will
               guide you in front-end and back-end development, user experience
-              design, HTML/CSS (Bootstrap, Tailwind, etc.), layout design,
+              design,<Text as={"span"} color={"orange.400"}> HTML </Text> / <Text as={"span"} color={"blue.400"}> CSS </Text>  (<Text as={"span"} color={"purple.400"}> BootStrap </Text> <Text as={"span"} color={"cyan.400"}> Tailwind </Text> etc.), layout design,
               animations, hosting, content writing, and domain management.
               You'll create responsive, emphasizing
               practical learning and teamwork, with projects ranging from
