@@ -61,7 +61,7 @@ const Navbar = () => {
             mt={"16.5px"}
           >
             <Box
-            transition={"all 0.3s ease-in-out"}
+              transition={"all 0.3s ease-in-out"}
               bg={"rgb(255, 255, 255,0.05)"}
               border={"1px solid rgb(255, 255, 255,0.05)"}
               boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
@@ -69,7 +69,6 @@ const Navbar = () => {
               w={"55px"}
               h={"45px"}
               borderRadius={"15px"}
-              
             >
               <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
                 <FaBars size={"25px"} color="rgb(255, 255, 255,0.5)" />
@@ -94,7 +93,7 @@ const Navbar = () => {
           >
             <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
               <Box
-              transition={"all 0.3s ease-in-out"}
+                transition={"all 0.3s ease-in-out"}
                 bg={"rgb(255, 255, 255,0.05)"}
                 border={"1px solid rgb(255, 255, 255,0.05)"}
                 rounded={"15px"}
@@ -135,7 +134,7 @@ const Navbar = () => {
 
                   {IconsLinks.map(({ icon, link, color }, index) => (
                     <Box
-                    transition={"all 0.3s ease-in-out"}
+                      transition={"all 0.3s ease-in-out"}
                       key={index}
                       color={color}
                       cursor={"pointer"}
@@ -148,7 +147,7 @@ const Navbar = () => {
                   ))}
 
                   <Box
-                  transition={"all 0.3s ease-in-out"}
+                    transition={"all 0.3s ease-in-out"}
                     cursor={"pointer"}
                     color={night ? "#656565" : "#D69E2E"}
                     _hover={{ transform: "scale(1.3)", color: "white" }}

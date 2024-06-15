@@ -6,12 +6,7 @@ import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
-
 const Introduction = ({ titlepath, subpath }) => {
-
-
-
-
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
     <>
@@ -49,19 +44,21 @@ const Introduction = ({ titlepath, subpath }) => {
           </Box>
 
           <Box>
-            
             <Text
               color={"white"}
               fontSize={["14px", "14px", "14px", "14px", "16px"]}
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Hello and welcome to the official documentation for QuickSite.guru 
-              – your gateway to effortless and innovative website creation! 🚀  <Text as={"span"} color={"orange.300"}>Please Dont Skim it. </Text>
+              Hello and welcome to the official documentation for QuickSite.guru
+              – your gateway to effortless and innovative website creation! 🚀{" "}
+              <Text as={"span"} color={"orange.300"}>
+                Please Dont Skim it.{" "}
+              </Text>
               This guide is your resource for understanding and utilizing all
               the features of QuickSite.guru. Our platform makes web development
-              accessible to everyone, regardless of technical expertise.  Let's
-              start building amazing websites! 🌐 
+              accessible to everyone, regardless of technical expertise. Let's
+              start building amazing websites! 🌐
             </Text>
           </Box>
           <Box>
@@ -86,7 +83,7 @@ const Introduction = ({ titlepath, subpath }) => {
               presence without hassle or high costs. 💼
             </Text>
           </Box>
-          
+
           <Box>
             <Text
               mb={"15px"}
@@ -94,8 +91,7 @@ const Introduction = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-Our Product
-
+              Our Product
             </Text>
             <Text
               color={"white"}
@@ -103,10 +99,16 @@ Our Product
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-          QuickSite.guru enables users to launch a website in just 5 minutes. We provide one year of free custom domain hosting (with domain purchase) and use ChatGPT-like prompting for continuous improvement. Our platform is designed for ease of use, offering beautiful templates for quick cloning and hosting. Perfect for startups and small businesses, our intuitive interface guides users through the process effortlessly, ensuring a professional online presence.
+              QuickSite.guru enables users to launch a website in just 5
+              minutes. We provide one year of free custom domain hosting (with
+              domain purchase) and use ChatGPT-like prompting for continuous
+              improvement. Our platform is designed for ease of use, offering
+              beautiful templates for quick cloning and hosting. Perfect for
+              startups and small businesses, our intuitive interface guides
+              users through the process effortlessly, ensuring a professional
+              online presence.
             </Text>
           </Box>
-
 
           <Box>
             <Text
@@ -138,4 +140,3 @@ Our Product
 };
 
 export default Introduction;
-

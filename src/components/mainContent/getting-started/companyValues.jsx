@@ -50,7 +50,10 @@ const CompanyValues = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              At QuickSite.guru, our values shape everything we do, guiding our actions and decisions. We believe in innovation, accessibility, and integrity, striving to make website creation a seamless and enjoyable experience for everyone.
+              At QuickSite.guru, our values shape everything we do, guiding our
+              actions and decisions. We believe in innovation, accessibility,
+              and integrity, striving to make website creation a seamless and
+              enjoyable experience for everyone.
             </Text>
           </Box>
 
@@ -69,7 +72,11 @@ const CompanyValues = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              We embrace cutting-edge technologies and creative solutions to stay ahead in the website creation industry. Our platform leverages AI to transform complex web development processes into user-friendly experiences, enabling anyone to build and manage their online presence effortlessly.
+              We embrace cutting-edge technologies and creative solutions to
+              stay ahead in the website creation industry. Our platform
+              leverages AI to transform complex web development processes into
+              user-friendly experiences, enabling anyone to build and manage
+              their online presence effortlessly.
             </Text>
           </Box>
 
@@ -88,7 +95,11 @@ const CompanyValues = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Our mission is to democratize website creation. We believe that everyone, regardless of technical expertise or budget, should have access to the tools needed to establish a professional online presence. QuickSite.guru makes this possible through intuitive design and affordable solutions.
+              Our mission is to democratize website creation. We believe that
+              everyone, regardless of technical expertise or budget, should have
+              access to the tools needed to establish a professional online
+              presence. QuickSite.guru makes this possible through intuitive
+              design and affordable solutions.
             </Text>
           </Box>
 
@@ -107,7 +118,11 @@ const CompanyValues = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              We operate with transparency, honesty, and respect in all our interactions. Our commitment to integrity ensures that we build trust with our users, partners, and team members. We value feedback and continuously work to improve our platform and services.
+              We operate with transparency, honesty, and respect in all our
+              interactions. Our commitment to integrity ensures that we build
+              trust with our users, partners, and team members. We value
+              feedback and continuously work to improve our platform and
+              services.
             </Text>
           </Box>
 
@@ -126,7 +141,11 @@ const CompanyValues = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              We believe in the power of teamwork. By fostering a collaborative environment, we harness the diverse talents and perspectives of our team to drive innovation and achieve our goals. Together, we create value for our users and contribute to the success of QuickSite.guru.
+              We believe in the power of teamwork. By fostering a collaborative
+              environment, we harness the diverse talents and perspectives of
+              our team to drive innovation and achieve our goals. Together, we
+              create value for our users and contribute to the success of
+              QuickSite.guru.
             </Text>
           </Box>
         </VStack>

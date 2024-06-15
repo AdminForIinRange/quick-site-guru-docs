@@ -1,6 +1,5 @@
 //##########################################################################
 
-
 ///_   _  ____ _______    ____  _____ _______ _____ __  __ _____ ____________ _____  //
 //| \ | |/ __ \__   __|  / __ \|  __ \__   __|_   _|  \/  |_   _|___  /  ____|  __ \ //
 //|  \| | |  | | | |    | |  | | |__) | | |    | | | \  / | | |    / /| |__  | |  | |//
@@ -8,9 +7,7 @@
 //| |\  | |__| | | |    | |__| | |      | |   _| |_| |  | |_| |_ / /__| |____| |__| |//
 //|_| \_|\____/  |_|     \____/|_|      |_|  |_____|_|  |_|_____/_____|______|_____/ //
 
-
 //##########################################################################
-
 
 import { Box, VStack, Text, HStack } from "@chakra-ui/react";
 import React from "react";
@@ -59,160 +56,90 @@ const Main = ({ titlepath, subpath }) => {
   const RenderMain = (titlepath, subpath) => {
     if (titlepath === "welcome" && subpath === "hello") {
       return <Hello titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "getting-started" && subpath === "introduction") {
+    } else if (titlepath === "getting-started" && subpath === "introduction") {
       return <Introduction titlepath={titlepath} subpath={subpath} />;
-    } 
-    
-    else if (
+    } else if (
       titlepath === "getting-started" &&
       subpath === "company-values"
     ) {
       return <CompanyValues titlepath={titlepath} subpath={subpath} />;
-    } 
-    
-    else if (
+    } else if (
       titlepath === "getting-started" &&
       subpath === "community-support"
     ) {
       return <CommunitySupport titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (
+    } else if (
       titlepath === "internship-program" &&
       subpath === "program-structure"
     ) {
       return <ProgramStructure titlepath={titlepath} subpath={subpath} />;
-    } 
-    
-    else if (
+    } else if (
       titlepath === "internship-program" &&
       subpath === "what-to-expect"
     ) {
       return <WhatToExpect titlepath={titlepath} subpath={subpath} />;
-    } 
-    
-    else if (
+    } else if (
       titlepath === "internship-program" &&
       subpath === "mentorship-guidance"
     ) {
       return <MentorshipGuidance titlepath={titlepath} subpath={subpath} />;
-    } 
-    
-    else if (
+    } else if (
       titlepath === "internship-program" &&
       subpath === "meetings-feedback"
     ) {
       return <MeetingFeedback titlepath={titlepath} subpath={subpath} />;
-    } 
-    
-    else if (titlepath === "stage-1" && subpath === "welcome-stage-1") {
+    } else if (titlepath === "stage-1" && subpath === "welcome-stage-1") {
       return <WelcomeToStage1 titlepath={titlepath} subpath={subpath} />;
-    } 
-    
-    else if (titlepath === "stage-1" && subpath === "mission-vision") {
+    } else if (titlepath === "stage-1" && subpath === "mission-vision") {
       return <OurMissionVison titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-1" && subpath === "joining-discord") {
+    } else if (titlepath === "stage-1" && subpath === "joining-discord") {
       return <JoiningDiscord titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-1" && subpath === "talking-to-mentors") {
+    } else if (titlepath === "stage-1" && subpath === "talking-to-mentors") {
       return <TalkingToMentors titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-2" && subpath === "welcome-stage-2") {
+    } else if (titlepath === "stage-2" && subpath === "welcome-stage-2") {
       return <WelcomeToStage2 titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-2" && subpath === "propose-design") {
+    } else if (titlepath === "stage-2" && subpath === "propose-design") {
       return <ProposeAdesign titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-2" && subpath === "coding-in-quicksite") {
+    } else if (titlepath === "stage-2" && subpath === "coding-in-quicksite") {
       return <CodingInQuicksite titlepath={titlepath} subpath={subpath} />;
-    }
-    
-   
-    
-    else if (titlepath === "stage-3" && subpath === "welcome-stage-3") {
+    } else if (titlepath === "stage-3" && subpath === "welcome-stage-3") {
       return <WelcomeToStage3 titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-3" && subpath === "propose-template") {
+    } else if (titlepath === "stage-3" && subpath === "propose-template") {
       return <ProposeATemplate titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-3" && subpath === "business-templates") {
+    } else if (titlepath === "stage-3" && subpath === "business-templates") {
       return <BusinessTemplates titlepath={titlepath} subpath={subpath} />;
-    }
-    
- 
-    
-    else if (titlepath === "stage-4" && subpath === "welcome-stage-4") {
+    } else if (titlepath === "stage-4" && subpath === "welcome-stage-4") {
       return <WelcomeToStage4 titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-4" && subpath === "propose-template") {
+    } else if (titlepath === "stage-4" && subpath === "propose-template") {
       return <ProposeATemplate titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "stage-4" && subpath === "business-templates") {
+    } else if (titlepath === "stage-4" && subpath === "business-templates") {
       return <BusinessTemplates titlepath={titlepath} subpath={subpath} />;
-    }
-    
-   
-    
-    else if (titlepath === "learning-material" && subpath === "scrimba") {
+    } else if (titlepath === "learning-material" && subpath === "scrimba") {
       return <Scrimba titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "get-started") {
+    } else if (titlepath === "using-quicksite" && subpath === "get-started") {
       return <GetStarted titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (
+    } else if (
       titlepath === "using-quicksite" &&
       subpath === "responsiveness"
     ) {
       return <Responsiveness titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "content") {
+    } else if (titlepath === "using-quicksite" && subpath === "content") {
       return <Content titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "hosting") {
+    } else if (titlepath === "using-quicksite" && subpath === "hosting") {
       return <Hosting titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "publishing") {
+    } else if (titlepath === "using-quicksite" && subpath === "publishing") {
       return <Publishing titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "cloning") {
+    } else if (titlepath === "using-quicksite" && subpath === "cloning") {
       return <Cloning titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "domain") {
+    } else if (titlepath === "using-quicksite" && subpath === "domain") {
       return <Domain titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "embedding") {
+    } else if (titlepath === "using-quicksite" && subpath === "embedding") {
       return <Embedding titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "svg-assets") {
+    } else if (titlepath === "using-quicksite" && subpath === "svg-assets") {
       return <SvgAssets titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (titlepath === "using-quicksite" && subpath === "contact") {
+    } else if (titlepath === "using-quicksite" && subpath === "contact") {
       return <Contact titlepath={titlepath} subpath={subpath} />;
-    }
-    
-    else if (
+    } else if (
       titlepath === "using-quicksite" &&
       subpath === "links-scripts-meta"
     ) {

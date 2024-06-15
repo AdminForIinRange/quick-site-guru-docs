@@ -6,11 +6,7 @@ import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
-
 const SublinkNotFound = ({ titlepath, subpath }) => {
-
-
-
   const navBoxes = [
     {
       title: "Introduction",
@@ -33,17 +29,17 @@ const SublinkNotFound = ({ titlepath, subpath }) => {
   return (
     <>
       <Box
-          boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
-          w={["95%", "95%", "95%", "70%", "62.5%"]}
-          //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
-          h={["930px", "980px", "680px", "686px", "730px", "700px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
-          bg={"rgb(255, 255, 255,0.05)"}
-          border={"1px solid rgb(255, 255, 255,0.05)"}
-          rounded={"15px"}
-          pl={["18px", "25px", "25px", "15px", "35px"]}
-          pr={["18px", "25px", "25px", "15px", "10px"]}
-          py={"15px"}
-          pb={"50px"}
+        boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
+        w={["95%", "95%", "95%", "70%", "62.5%"]}
+        //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+        h={["930px", "980px", "680px", "686px", "730px", "700px"]} //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
+        bg={"rgb(255, 255, 255,0.05)"}
+        border={"1px solid rgb(255, 255, 255,0.05)"}
+        rounded={"15px"}
+        pl={["18px", "25px", "25px", "15px", "35px"]}
+        pr={["18px", "25px", "25px", "15px", "10px"]}
+        py={"15px"}
+        pb={"50px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
@@ -61,7 +57,7 @@ const SublinkNotFound = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-             😕 Oop's 
+              😕 Oop's
             </Text>
           </Box>
 
@@ -72,8 +68,7 @@ const SublinkNotFound = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-      Sorry, not found
-
+              Sorry, not found
             </Text>
             <Text
               color={"white"}
@@ -92,7 +87,7 @@ const SublinkNotFound = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-             Here are some useful pages {`↓`}
+              Here are some useful pages {`↓`}
             </Text>
           </Box>
 

@@ -25,7 +25,8 @@ const CommunitySupport = ({ titlepath, subpath }) => {
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
     <>
-      <Box transition={"all 0.3s ease-in-out"}
+      <Box
+        transition={"all 0.3s ease-in-out"}
         boxShadow={"rgba(0, 0, 0, 0.25) 0px 0px 8px"}
         w={["95%", "95%", "95%", "70%", "62.5%"]}
         //DONT AJUST THIS NOW, DO IT WHEN ITS DONE
@@ -98,7 +99,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               presence, albeit with less frequent utilization.
             </Text>
             <HStack
-            flexWrap={"wrap"}
+              flexWrap={"wrap"}
               mt={"30px"}
               gap={"30px"}
               justify={"left"}
@@ -123,7 +124,14 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   p={"10px"}
                   w={"100%"}
                   h={"100%"}
-                  justify={["space-between", "space-between", "space-between", "space-between", "space-between", "space-between"]}
+                  justify={[
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                  ]}
                   align={"center"}
                   px={"15px"}
                 >
@@ -159,7 +167,8 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   <HiArrowLongRight fontSize={"50px"} color="white" />
                 </HStack>
               </Box>
-              <Box  mb={"15px"}
+              <Box
+                mb={"15px"}
                 transition={"all 0.3s ease-in-out"}
                 _hover={{
                   shadow: "0 0 15px 0px #0078c7",
@@ -177,7 +186,14 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   p={"10px"}
                   w={"100%"}
                   h={"100%"}
-                  justify={["space-between", "space-between", "space-between", "space-between", "space-between", "space-between"]}
+                  justify={[
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                    "space-between",
+                  ]}
                   align={"center"}
                   px={"15px"}
                 >
@@ -227,7 +243,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
             >
               Google Meet Schedule
             </Text>
-       
+
             <Text
               color={"white"}
               fontSize={["14px", "14px", "14px", "14px", "16px"]}
@@ -235,11 +251,13 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               fontWeight={"300"}
             >
               All meetings are conducted via Google Meet. Please ensure
-              punctuality for all scheduled meetings. <Text color={"teal.300"} as={"span"}> To Accesss the google meet link ...................  </Text>
-                 
+              punctuality for all scheduled meetings.{" "}
+              <Text color={"teal.300"} as={"span"}>
+                {" "}
+                To Accesss the google meet link ...................{" "}
+              </Text>
             </Text>
             <Box
-    
               px={["10px", "10px", "15px", "15px", "20px"]}
               py={["10px", "10px", "15px", "15px", "20px"]}
               bg={"rgb(255, 255, 255,0.05)"}
@@ -247,28 +265,33 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               mt={["10px", "10px", "15px", "15px", "20px"]}
               rounded={"10px"}
             >
-              <Table       
+              <Table
                 variant="simple"
                 borderColor={"rgb(255, 255, 255,0.05)"}
                 fontSize={["14px", "14px", "14px", "14px", "16px"]}
               >
-                <Thead >
-                  <Tr >
+                <Thead>
+                  <Tr>
                     <Th
                       borderColor={"rgb(255, 255, 255,0.5)"}
-                      fontSize={["24px", "24px", "24px", "24px", "24px"," 24px"]}
+                      fontSize={[
+                        "24px",
+                        "24px",
+                        "24px",
+                        "24px",
+                        "24px",
+                        " 24px",
+                      ]}
                       color={"white"}
                       pb={"20px"}
-                     
                     >
                       Day
                     </Th>
                     <Th
-                    pb={"20px"}
+                      pb={"20px"}
                       borderColor={"rgb(255, 255, 255,0.5)"}
                       color={"white"}
                       fontSize={["24px", "24px", "24", "24px", "24px", "24px"]}
-              
                     >
                       Time
                     </Th>
@@ -276,7 +299,13 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td borderColor={"rgb(255, 255, 255,0.5)"} fontSize={["18px", "18px", "18px", "18px", "18px"]} fontWeight={"600"} >Monday</Td>
+                    <Td
+                      borderColor={"rgb(255, 255, 255,0.5)"}
+                      fontSize={["18px", "18px", "18px", "18px", "18px"]}
+                      fontWeight={"600"}
+                    >
+                      Monday
+                    </Td>
                     <Td borderColor={"rgb(255, 255, 255,0.5)"}>
                       {" "}
                       <Text
@@ -294,7 +323,13 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td borderColor={"rgb(255, 255, 255,0.5)"}  fontWeight={"600"} fontSize={["18px", "18px", "18px", "18px", "18px"]}>Thursday</Td>
+                    <Td
+                      borderColor={"rgb(255, 255, 255,0.5)"}
+                      fontWeight={"600"}
+                      fontSize={["18px", "18px", "18px", "18px", "18px"]}
+                    >
+                      Thursday
+                    </Td>
                     <Td borderColor={"rgb(255, 255, 255,0.5)"}>
                       <Text
                         p={"10px"}
@@ -311,10 +346,16 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td borderColor={"rgb(255, 255, 255,0)"} fontWeight={"600"} fontSize={["18px", "18px", "18px", "18px", "18px"]}  >Saturday</Td>
+                    <Td
+                      borderColor={"rgb(255, 255, 255,0)"}
+                      fontWeight={"600"}
+                      fontSize={["18px", "18px", "18px", "18px", "18px"]}
+                    >
+                      Saturday
+                    </Td>
                     <Td borderColor={"rgb(255, 255, 255,0)"}>
                       {" "}
-                      <HStack wrap={"wrap"}  >
+                      <HStack wrap={"wrap"}>
                         {" "}
                         <Text
                           p={"10px"}

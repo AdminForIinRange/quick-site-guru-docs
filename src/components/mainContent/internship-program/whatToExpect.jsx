@@ -58,7 +58,7 @@ const WhatToExpect = ({ titlepath, subpath }) => {
               depending on company needs and funding.{" "}
             </Text>
           </Box>
-        
+
           <Box>
             <Text
               mb={"15px"}
@@ -96,11 +96,12 @@ const WhatToExpect = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Be proactive and independent but dont hessatite to ask fro help. Attend Meetings and interact with the community and mentors. Regular reviews and feedback will
-              help you grow. Successful completion may lead to future job
-              opportunities at QuickSite.guru, subject to funding and company
-              needs. We're excited to support your growth during this
-              internship.
+              Be proactive and independent but dont hessatite to ask fro help.
+              Attend Meetings and interact with the community and mentors.
+              Regular reviews and feedback will help you grow. Successful
+              completion may lead to future job opportunities at QuickSite.guru,
+              subject to funding and company needs. We're excited to support
+              your growth during this internship.
             </Text>
           </Box>
         </VStack>

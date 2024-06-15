@@ -23,25 +23,21 @@ const Home = ({ params }) => {
         >
           <Box
             display={["none", "none", "none", "block", "block"]}
-            h={["0px", "0px", "0px", "685px", "725px", "700px"]} // leave it as it is its already been optimized <---- its always 700px 
+            h={["0px", "0px", "0px", "685px", "725px", "700px"]} // leave it as it is its already been optimized <---- its always 700px
             overflowY={"scroll"}
             pr="10px"
             pl="10px"
             borderRadius={"15px"}
             overflowX={"hidden"}
-            
           >
-            <Sidebar titlepath={params.titlepath} subpath={params.subpath} /> 
+            <Sidebar titlepath={params.titlepath} subpath={params.subpath} />
           </Box>
 
-   
-            <Main titlepath={params.titlepath} subpath={params.subpath} />
-      
-    
+          <Main titlepath={params.titlepath} subpath={params.subpath} />
 
           {/* you can only get prams if you asking from the page.jsx  */}
         </HStack>
-        <PageSwitch  titlepath={params.titlepath} subpath={params.subpath} />
+        <PageSwitch titlepath={params.titlepath} subpath={params.subpath} />
       </Box>
     </>
   );

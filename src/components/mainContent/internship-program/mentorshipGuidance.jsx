@@ -19,26 +19,26 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
       imgAvt: Serge,
       desc: "Years of software development and project delivery experience. Loves coding, paddleboarding and ambitious projects 😉",
     },
-  
+
     {
       name: "Rayyan",
       imgAvt: Rayyan,
       desc: "3 years in the design space known for being versatile in the fintech startup scene in indonesia, Extrovert and loves teamwork haha 🥳",
     },
-  
+
     {
       name: "Anthony",
       imgAvt: Anthony,
       desc: "I'm a Full Stack Web Developer with 10+ years experience and currently a Uni Lecturer teaching UX Design and Front-End Development as part of the Design Bachelor's Degree. 😊",
     },
-  
+
     {
       name: "Anjesh",
       imgAvt: Anjesh,
       desc: "I'm a self-taught Full Stack Developer specializing in Frontend, I currently do Contracting/Freelancing for companies and startups. 💻",
     },
   ];
-  
+
   return (
     <>
       <Box
@@ -159,7 +159,7 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
               h={"100%"}
             >
               {mentors.map(({ name, imgAvt, desc }, index) => (
-                <Box 
+                <Box
                   key={index}
                   transition={"all 0.3s ease-in-out"}
                   _hover={{
@@ -175,15 +175,14 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
                   border={"1px solid rgb(255, 255, 255,0.05)"}
                 >
                   <HStack
-                   w={"100%"}
+                    w={"100%"}
                     h={"100%"}
                     justify={"space-between"}
                     align={"left"}
-                    
                     p={"15px"}
                   >
                     <Box>
-                      <VStack gap={"2px"} align={"left"} justify={"left"} >
+                      <VStack gap={"2px"} align={"left"} justify={"left"}>
                         <Box w={"55px"} h={"55px"} mb={"10px"}>
                           <Image
                             alt="mentors"

@@ -8,26 +8,25 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 import { useRouter } from "next/navigation";
 
 const Hello = ({ titlepath, subpath }) => {
-
   const router = useRouter();
   const navBoxes = [
     {
       title: "Introduction",
       desc: " Lets get you started with a Introduction, understand the company and our gaols",
       nav: "   🧑‍💻 Introduction",
-      fullPath:"/getting-started/introduction",
+      fullPath: "/getting-started/introduction",
     },
     {
       title: "QuickSite",
       desc: " Want to learn how to use Quick Site Guru (QSG) Click here to learn all the features and know-hows",
       nav: "  ⚙️ Using QuickSite",
-      fullPath:"/using-quicksite/get-started",
+      fullPath: "/using-quicksite/get-started",
     },
     {
       title: "Internship",
       desc: "  Click here if your interning at QuickSite.guru. Lest get you up and running in no time",
       nav: "🎓 Internship Program",
-      fullPath:"/internship-program/program-structure",
+      fullPath: "/internship-program/program-structure",
     },
   ];
 
@@ -84,9 +83,13 @@ const Hello = ({ titlepath, subpath }) => {
             >
               Hello and welcome to the official documentation for QuickSite.guru
               ⭐ This documentation provides all the information you need to
-              about QuickSite.guru and the company itself, Whether you're a beginner or intern building
-              your first website or an just exploring the platform, this guide
-              will help you navigate the platform with ease. <Text as={"span"} color={"orange.300"}>Please Dont Skim it. </Text>{" "}
+              about QuickSite.guru and the company itself, Whether you're a
+              beginner or intern building your first website or an just
+              exploring the platform, this guide will help you navigate the
+              platform with ease.{" "}
+              <Text as={"span"} color={"orange.300"}>
+                Please Dont Skim it.{" "}
+              </Text>{" "}
               Check out the boxes below ↓
             </Text>
           </Box>

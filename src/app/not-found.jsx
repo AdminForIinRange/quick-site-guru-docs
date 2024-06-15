@@ -9,7 +9,6 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 import Home from "./page";
 
 const NotFound = () => {
-
   console.log("sending you to / wich will push you to welcome/hello");
 
   return (

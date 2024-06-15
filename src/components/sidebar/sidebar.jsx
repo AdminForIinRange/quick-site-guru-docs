@@ -14,22 +14,17 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import  SideLink  from "../../app/global/data/Sidelink";
-const Sidebar = ({titlepath, subpath}) => {
-
-    const router = useRouter();
-
+import SideLink from "../../app/global/data/Sidelink";
+const Sidebar = ({ titlepath, subpath }) => {
+  const router = useRouter();
 
   return (
-    <VStack    >
+    <VStack>
       {SideLink.map((item, index) =>
         Object.keys(item).map((key) =>
           item[key].map((section, sectionIndex) => (
-          
-
             <Box
-
-            transition={"all .3s ease"}
+              transition={"all .3s ease"}
               key={`${index}-${sectionIndex}`}
               bg={"rgb(255, 255, 255,0.05)"}
               border={"1px solid rgb(255, 255, 255,0.05)"}
@@ -37,25 +32,23 @@ const Sidebar = ({titlepath, subpath}) => {
               h={"100%"}
               p={"5px"}
               rounded={"8px"}
-              _hover={{ width:"105%"}}
-              
+              _hover={{ width: "105%" }}
             >
-              <VStack justify={"left"} align={"left"} h={"100%"} >
+              <VStack justify={"left"} align={"left"} h={"100%"}>
                 <Accordion
                   transition={"all .3s ease"}
                   defaultIndex={[section.StartingPath == titlepath ? 0 : 1]}
                   allowMultiple
                   color={"white"}
                   border={"none"}
-                  _hover={{ background: "#2C2D2F"}}
+                  _hover={{ background: "#2C2D2F" }}
                   rounded={"10px"}
                 >
-                  <AccordionItem border={"none"} >
+                  <AccordionItem border={"none"}>
                     <AccordionButton
-                      _hover={{ background: "none", transform: "scale(1.05)", }}
+                      _hover={{ background: "none", transform: "scale(1.05)" }}
                     >
                       <Box
-
                         as="span"
                         flex="1"
                         textAlign="left"
@@ -69,7 +62,6 @@ const Sidebar = ({titlepath, subpath}) => {
 
                     <AccordionPanel py={"5px"}>
                       {section.sublinks.map((subtitle, sublinkIndex) => (
-
                         <HStack
                           justify={"left"}
                           align={"left"}
@@ -97,18 +89,27 @@ const Sidebar = ({titlepath, subpath}) => {
                             align={"left"}
                           >
                             <Box
-rounded={"10px"}
-                              onClick={() => router.replace(`/${subtitle.path}`)}
+                              rounded={"10px"}
+                              onClick={() =>
+                                router.replace(`/${subtitle.path}`)
+                              }
                               cursor={"pointer"}
                               fontWeight={"400"}
                               w={"100%"}
                               h={"100%"}
                               p={"10px"}
                               _hover={{ background: "#3a3b3c" }}
-                              fontSize={["12px", "12px", "12px", "12px", "14px"]}
-
+                              fontSize={[
+                                "12px",
+                                "12px",
+                                "12px",
+                                "12px",
+                                "14px",
+                              ]}
                               textIndent={["5px", "5px", "5px", "0px", "5px"]}
-                              textColor={subtitle.prams == subpath ? "#9896FF" : "white"}
+                              textColor={
+                                subtitle.prams == subpath ? "#9896FF" : "white"
+                              }
                             >
                               {subtitle.subtitle}
                             </Box>
@@ -120,8 +121,8 @@ rounded={"10px"}
                 </Accordion>
               </VStack>
             </Box>
-          ))
-        )
+          )),
+        ),
       )}
     </VStack>
   );

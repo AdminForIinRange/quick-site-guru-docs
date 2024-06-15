@@ -21,7 +21,7 @@ import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import Link from "next/link";
 import { FaCss3 } from "react-icons/fa";
 
-import {FaHtml5} from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
 const ProgramStructure = ({ titlepath, subpath }) => {
   const steps = [
     {
@@ -150,11 +150,29 @@ const ProgramStructure = ({ titlepath, subpath }) => {
               During the internship, you will gain hands-on experience in web
               development by working on real-world projects. Our mentors will
               guide you in front-end and back-end development, user experience
-              design,<Text as={"span"} color={"orange.400"}> HTML </Text> / <Text as={"span"} color={"blue.400"}> CSS </Text>  (<Text as={"span"} color={"purple.400"}> BootStrap </Text> <Text as={"span"} color={"cyan.400"}> Tailwind </Text> etc.), layout design,
-              animations, hosting, content writing, and domain management.
-              You'll create responsive, emphasizing
-              practical learning and teamwork, with projects ranging from
-              personal websites to real-world applications.
+              design,
+              <Text as={"span"} color={"orange.400"}>
+                {" "}
+                HTML{" "}
+              </Text>{" "}
+              /{" "}
+              <Text as={"span"} color={"blue.400"}>
+                {" "}
+                CSS{" "}
+              </Text>{" "}
+              (
+              <Text as={"span"} color={"purple.400"}>
+                {" "}
+                BootStrap{" "}
+              </Text>{" "}
+              <Text as={"span"} color={"cyan.400"}>
+                {" "}
+                Tailwind{" "}
+              </Text>{" "}
+              etc.), layout design, animations, hosting, content writing, and
+              domain management. You'll create responsive, emphasizing practical
+              learning and teamwork, with projects ranging from personal
+              websites to real-world applications.
             </Text>
           </Box>
 
@@ -169,7 +187,7 @@ const ProgramStructure = ({ titlepath, subpath }) => {
             </Text>
 
             <HStack justify={"left"} mt={"50px"}>
-              <VStack h={"100%"} justify={"left"}  align={"centre"}>
+              <VStack h={"100%"} justify={"left"} align={"centre"}>
                 <Stepper
                   index={activeStep}
                   orientation="vertical"
@@ -187,9 +205,9 @@ const ProgramStructure = ({ titlepath, subpath }) => {
                         />
                       </StepIndicator>
 
-                      <Box       w={["90%", "90%", "90%", "90%", "80%", "80%"]}
+                      <Box
+                        w={["90%", "90%", "90%", "90%", "80%", "80%"]}
                         flexShrink="0"
-                  
                         mb={"15px"}
                       >
                         <StepTitle

@@ -46,7 +46,9 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Stage 1 is all about learning: you about us and us about you! You have 1 week to complete this stage from the time you have joined. Here's your detailed, step-by-step guide to get started:
+              Stage 1 is all about learning: you about us and us about you! You
+              have 1 week to complete this stage from the time you have joined.
+              Here's your detailed, step-by-step guide to get started:
             </Text>
           </Box>
 
@@ -65,9 +67,14 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Start by going through the materials provided in the ⁠mission and ⁠product channels. Engage with the team by asking at least one insightful question about our mission in ⁠org-feedback.
+              Start by going through the materials provided in the ⁠mission and
+              ⁠product channels. Engage with the team by asking at least one
+              insightful question about our mission in ⁠org-feedback.
               <br />
-              Visit: <a href="/🌍 Our Mission/Vision" style={{ color: "white" }}>Our Mission/Vision</a>
+              Visit:{" "}
+              <a href="/🌍 Our Mission/Vision" style={{ color: "white" }}>
+                Our Mission/Vision
+              </a>
             </Text>
           </Box>
 
@@ -86,9 +93,14 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Share a brief introduction about yourself in the ⁠stage1-hello channel. Include your background, interests, and what you hope to learn during your internship.
+              Share a brief introduction about yourself in the ⁠stage1-hello
+              channel. Include your background, interests, and what you hope to
+              learn during your internship.
               <br />
-              Visit: <a href="/🧑‍💻 Introduction" style={{ color: "white" }}>Introduction</a>
+              Visit:{" "}
+              <a href="/🧑‍💻 Introduction" style={{ color: "white" }}>
+                Introduction
+              </a>
             </Text>
           </Box>
 
@@ -107,9 +119,13 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Read the bios in the ⁠stage1-mentors channel and send a direct message to your chosen mentor to schedule a one-on-one meeting.
+              Read the bios in the ⁠stage1-mentors channel and send a direct
+              message to your chosen mentor to schedule a one-on-one meeting.
               <br />
-              Visit: <a href="/👨‍🏫 Mentorship/Guidance" style={{ color: "white" }}>Mentorship/Guidance</a>
+              Visit:{" "}
+              <a href="/👨‍🏫 Mentorship/Guidance" style={{ color: "white" }}>
+                Mentorship/Guidance
+              </a>
             </Text>
           </Box>
 
@@ -128,9 +144,14 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Find your team's channel and join their next scheduled meeting. This will help you understand current projects and see where you can contribute.
+              Find your team's channel and join their next scheduled meeting.
+              This will help you understand current projects and see where you
+              can contribute.
               <br />
-              Visit: <a href="/📅 Meetings/Feedback" style={{ color: "white" }}>Meetings/Feedback</a>
+              Visit:{" "}
+              <a href="/📅 Meetings/Feedback" style={{ color: "white" }}>
+                Meetings/Feedback
+              </a>
             </Text>
           </Box>
 
@@ -149,9 +170,13 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Take the fun quiz in the ⁠culture-quiz channel to get familiar with QuickSite.guru's company culture and values.
+              Take the fun quiz in the ⁠culture-quiz channel to get familiar
+              with QuickSite.guru's company culture and values.
               <br />
-              Visit: <a href="/🏢 Company Values" style={{ color: "white" }}>Company Values</a>
+              Visit:{" "}
+              <a href="/🏢 Company Values" style={{ color: "white" }}>
+                Company Values
+              </a>
             </Text>
           </Box>
 
@@ -170,9 +195,14 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              Spend some time navigating the QuickSite.guru platform as if you were a new user. Share any insights or suggestions for improvement in the ⁠product-feedback channel.
+              Spend some time navigating the QuickSite.guru platform as if you
+              were a new user. Share any insights or suggestions for improvement
+              in the ⁠product-feedback channel.
               <br />
-              Visit: <a href="/⚙️ Using QuickSite" style={{ color: "white" }}>Using QuickSite</a>
+              Visit:{" "}
+              <a href="/⚙️ Using QuickSite" style={{ color: "white" }}>
+                Using QuickSite
+              </a>
             </Text>
           </Box>
 
@@ -193,9 +223,23 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
             >
               Follow QuickSite.guru on our social media accounts:
               <br />
-              <a href="https://x.com/quicksiteguru" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>Twitter</a>
+              <a
+                href="https://x.com/quicksiteguru"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                Twitter
+              </a>
               <br />
-              <a href="https://www.linkedin.com/company/quicksite-guru/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/company/quicksite-guru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                LinkedIn
+              </a>
             </Text>
           </Box>
 
@@ -214,9 +258,14 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              After completing all the steps, visit the "Feedback" channel to share your thoughts on the orientation process. Your feedback is invaluable for making continuous improvements.
+              After completing all the steps, visit the "Feedback" channel to
+              share your thoughts on the orientation process. Your feedback is
+              invaluable for making continuous improvements.
               <br />
-              Visit: <a href="/📅 Meetings/Feedback" style={{ color: "white" }}>Feedback</a>
+              Visit:{" "}
+              <a href="/📅 Meetings/Feedback" style={{ color: "white" }}>
+                Feedback
+              </a>
             </Text>
           </Box>
 
@@ -235,7 +284,17 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-              To complete Stage 1, please fill out the Stage 1 Completion Gate Form: <a href="https://forms.gle/AGAa6ideTx98ucFw6" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>Stage 1 Completion Form</a>.
+              To complete Stage 1, please fill out the Stage 1 Completion Gate
+              Form:{" "}
+              <a
+                href="https://forms.gle/AGAa6ideTx98ucFw6"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                Stage 1 Completion Form
+              </a>
+              .
             </Text>
           </Box>
         </VStack>

@@ -100,10 +100,10 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
               feedback to foster your professional development. These sessions
               provide valuable opportunities to discuss your progress, address
               any challenges you may encounter, and refine your skills under the
-              guidance of experienced mentors. 
+              guidance of experienced mentors.
             </Text>
           </Box>
-         
+
           <Box>
             <Text
               mb={"15px"}
@@ -119,9 +119,12 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
-
               {/* Mayebe a small box with teh logo of the Sidelink  */}
-              <Text color={"teal.300"} as={"span"}> Click here to see meeting list </Text> Feel free to reach out to them whenever you have questions or need
+              <Text color={"teal.300"} as={"span"}>
+                {" "}
+                Click here to see meeting list{" "}
+              </Text>{" "}
+              Feel free to reach out to them whenever you have questions or need
               guidance. They're experienced professionals dedicated to helping
               you navigate challenges, improve your designs, and gain valuable
               career insights. Open communication with your mentors enhances
@@ -130,9 +133,8 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
             </Text>
           </Box>
 
-          <VStack h={"100%"} justify={"left"} align={"left"} >
-
-          <Text
+          <VStack h={"100%"} justify={"left"} align={"left"}>
+            <Text
               mb={"15px"}
               color={"white"}
               fontWeight={"600"}
@@ -141,19 +143,16 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
               How to Upload to "Stage Reviews"
             </Text>
             <Stepper
-            h={"100%"}
-            w={"100%"}
+              h={"100%"}
+              w={"100%"}
               index={activeStep}
               orientation="vertical"
               height="400px"
               gap="0px"
               colorScheme={"gray"}
             >
-
-
-
               {ReviewFormat.map(({ image, desc }, index) => (
-                <Step key={index} >
+                <Step key={index}>
                   <StepIndicator>
                     <StepStatus
                       complete={<StepNumber />}
@@ -167,8 +166,6 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
                     flexShrink="0"
                     mb={"20px"}
                   >
-
-                    
                     <StepTitle
                       mb={"15px"}
                       color={"white"}
@@ -179,12 +176,15 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
                     </StepTitle>
 
                     <StepDescription mb={"15px"}>
-                    <Image
-                          style={{ borderRadius: "15px", width:"100%", height:"100%" }}
-                          src={image}
-                          alt="image"
-                       
-                        />
+                      <Image
+                        style={{
+                          borderRadius: "15px",
+                          width: "100%",
+                          height: "100%",
+                        }}
+                        src={image}
+                        alt="image"
+                      />
                     </StepDescription>
                   </Box>
 
@@ -193,7 +193,6 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
               ))}
             </Stepper>
           </VStack>
-
         </VStack>
       </Box>
     </>
