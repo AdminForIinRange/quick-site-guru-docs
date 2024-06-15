@@ -119,12 +119,8 @@
                         "subtitle": "💻 Coding in QuickSite",
                         "prams": "coding-in-quicksite",
                         "path": "stage-2/coding-in-quicksite"
-                    },
-                    {
-                        "subtitle": "📅 Meetings/Feedback",
-                        "prams": "meetings-feedback",
-                        "path": "stage-2/meetings-feedback"
                     }
+                   
                 ]
             }
         ]
@@ -149,11 +145,6 @@
                         "subtitle": "🎨 Propose a template",
                         "prams": "propose-template",
                         "path": "stage-3/propose-template"
-                    },
-                    {
-                        "subtitle": "📅 Meetings/Feedback",
-                        "prams": "meetings-feedback",
-                        "path": "stage-3/meetings-feedback"
                     }
                 ]
             }
@@ -179,11 +170,6 @@
                         "subtitle": "🎨 Propose a template ",
                         "prams": "propose-template",
                         "path": "stage-4/propose-template"
-                    },
-                    {
-                        "subtitle": "📅 Meetings/Feedback",
-                        "prams": "meetings-feedback",
-                        "path": "stage-4/meetings-feedback"
                     }
                 ]
             }

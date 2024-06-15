@@ -135,9 +135,7 @@ const Main = ({ titlepath, subpath }) => {
       return <CodingInQuicksite titlepath={titlepath} subpath={subpath} />;
     }
     
-    else if (titlepath === "stage-2" && subpath === "meetings-feedback") {
-      return <MeetingFeedback titlepath={titlepath} subpath={subpath} />;
-    }
+   
     
     else if (titlepath === "stage-3" && subpath === "welcome-stage-3") {
       return <WelcomeToStage3 titlepath={titlepath} subpath={subpath} />;
@@ -151,9 +149,7 @@ const Main = ({ titlepath, subpath }) => {
       return <BusinessTemplates titlepath={titlepath} subpath={subpath} />;
     }
     
-    else if (titlepath === "stage-3" && subpath === "meetings-feedback") {
-      return <MeetingFeedback titlepath={titlepath} subpath={subpath} />;
-    }
+ 
     
     else if (titlepath === "stage-4" && subpath === "welcome-stage-4") {
       return <WelcomeToStage4 titlepath={titlepath} subpath={subpath} />;
@@ -167,9 +163,7 @@ const Main = ({ titlepath, subpath }) => {
       return <BusinessTemplates titlepath={titlepath} subpath={subpath} />;
     }
     
-    else if (titlepath === "stage-4" && subpath === "meetings-feedback") {
-      return <MeetingFeedback titlepath={titlepath} subpath={subpath} />;
-    }
+   
     
     else if (titlepath === "learning-material" && subpath === "scrimba") {
       return <Scrimba titlepath={titlepath} subpath={subpath} />;
