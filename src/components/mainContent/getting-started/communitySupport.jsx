@@ -115,7 +115,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   transform: "scale(1.05)",
                 }}
                 h={"65px"}
-                w={"300px"}
+                w={["300px", "100%", "300px", "300px", "300px", "300px"]}
                 borderRadius={"10px"}
                 bg={"#424549"}
               >
@@ -123,7 +123,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   p={"10px"}
                   w={"100%"}
                   h={"100%"}
-                  justify={"space-between"}
+                  justify={["space-between", "space-between", "space-between", "space-between", "space-between", "space-between"]}
                   align={"center"}
                   px={"15px"}
                 >
@@ -132,7 +132,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                     <VStack gap={"0px"}>
                       <Text
                         color={"white"}
-                        fontSize={["16px", "22px", "22px", "18px", "22px"]}
+                        fontSize={["16px", "18px", "18px", "18px", "22px"]}
                         fontWeight={"500"}
                         w={"100%"}
                       >
@@ -168,7 +168,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   transform: "scale(1.05)",
                 }}
                 h={"65px"}
-                w={["300px", "100%", "270px", "270px", "300px", "300px"]}
+                w={["300px", "100%", "300px", "300px", "300px", "300px"]}
                 borderRadius={"10px"}
                 bg={"#0078c7"}
               >
