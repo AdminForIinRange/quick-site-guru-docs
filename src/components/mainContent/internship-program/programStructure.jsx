@@ -71,7 +71,7 @@ const ProgramStructure = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-        pb={["525px", "465px", "325px", "325px", "425px", "330px"]}
+        pb={"40px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
@@ -191,7 +191,7 @@ const ProgramStructure = ({ titlepath, subpath }) => {
                 <Stepper
                   index={activeStep}
                   orientation="vertical"
-                  height="400px"
+                
                   gap="0"
                   colorScheme={"gray"}
                 >

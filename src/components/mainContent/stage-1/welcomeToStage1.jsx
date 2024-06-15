@@ -1,10 +1,60 @@
 "use client";
 
-import { Box, VStack, Text } from "@chakra-ui/react";
+import { Box, VStack, Text, Step,
+  StepDescription,
+  StepIcon,
+  StepIndicator,
+  StepNumber,
+  StepSeparator,
+  StepStatus,
+  StepTitle,
+  Stepper,
+  useSteps, } from "@chakra-ui/react";
 import React from "react";
 import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 
-const WelcomeToStage1 = ({ titlepath, subpath }) => {
+
+  const WelcomeToStage1 = ({ titlepath, subpath }) => {
+    const Stage1 = [
+      {
+        text: "Start by going through the materials provided in the ⁠mission and ⁠product channels. Engage with the team by asking at least one insightful question about our mission in ⁠org-feedback.\nVisit: Our Mission/Vision",
+        title: "Understand Our Mission",
+      },
+      {
+        text: "Share a brief introduction about yourself in the ⁠stage1-hello channel. Include your background, interests, and what you hope to learn during your internship.\nVisit: Introduction",
+        title: "Introduce Yourself",
+      },
+      {
+        text: "Read the bios in the ⁠stage1-mentors channel and send a direct message to your chosen mentor to schedule a one-on-one meeting.\nVisit: Mentorship/Guidance",
+        title: "Choose a Mentor",
+      },
+      {
+        text: "Find your team's channel and join their next scheduled meeting. This will help you understand current projects and see where you can contribute.\nVisit: Meetings/Feedback",
+        title: "Start Joining Team Meetings",
+      },
+      {
+        text: "Take the fun quiz in the ⁠culture-quiz channel to get familiar with QuickSite.guru's company culture and values.\nVisit: Company Values",
+        title: "Participate in the Culture Quiz",
+      },
+      {
+        text: "Spend some time navigating the QuickSite.guru platform as if you were a new user. Share any insights or suggestions for improvement in the ⁠product-feedback channel.\nVisit: Using QuickSite",
+        title: "Explore the QuickSite.guru Platform",
+      },
+      {
+        text: "Follow QuickSite.guru on our social media accounts:\nTwitter\nLinkedIn",
+        title: "Follow Us on Social Media",
+      },
+      {
+        text: 'After completing all the steps, visit the "Feedback" channel to share your thoughts on the orientation process. Your feedback is invaluable for making continuous improvements.\nVisit: Feedback',
+        title: "Provide Orientation Feedback",
+      },
+    ];
+    
+    const { activeStep } = useSteps({
+      index: 8,
+      count: Stage1.length,
+    });
+
   return (
     <>
       <Box
@@ -17,10 +67,10 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-        pb={"50px"}
+        pb={"40px"}
       >
-        <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
+        <BreadCrumbs titlePath={titlepath} subPath={subpath} />
         <VStack
           justify={"start"}
           align={"left"}
@@ -39,7 +89,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
             </Text>
           </Box>
 
-          <Box>
+          <Box >
             <Text
               color={"white"}
               fontSize={["14px", "14px", "14px", "14px", "16px"]}
@@ -52,251 +102,62 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
             </Text>
           </Box>
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Review Our Mission, Vision, and Product
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Start by going through the materials provided in the ⁠mission and
-              ⁠product channels. Engage with the team by asking at least one
-              insightful question about our mission in ⁠org-feedback.
-              <br />
-              Visit:{" "}
-              <a href="/🌍 Our Mission/Vision" style={{ color: "white" }}>
-                Our Mission/Vision
-              </a>
-            </Text>
-          </Box>
+          <Stepper
+              h={"100%"}
+              w={"100%"}
+              index={activeStep}
+              orientation="vertical"
+            
+              gap="0px"
+              colorScheme={"gray"}
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
             >
-              Introduce Yourself
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Share a brief introduction about yourself in the ⁠stage1-hello
-              channel. Include your background, interests, and what you hope to
-              learn during your internship.
-              <br />
-              Visit:{" "}
-              <a href="/🧑‍💻 Introduction" style={{ color: "white" }}>
-                Introduction
-              </a>
-            </Text>
-          </Box>
+              {Stage1.map(({ image, title, text }, index) => (
+                <Step key={index} >
+                  <StepIndicator>
+                    <StepStatus
+                      complete={<StepNumber />}
+                      incomplete={<StepNumber />}
+                      active={<StepNumber />}
+                    />
+                  </StepIndicator>
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Choose a Mentor
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Read the bios in the ⁠stage1-mentors channel and send a direct
-              message to your chosen mentor to schedule a one-on-one meeting.
-              <br />
-              Visit:{" "}
-              <a href="/👨‍🏫 Mentorship/Guidance" style={{ color: "white" }}>
-                Mentorship/Guidance
-              </a>
-            </Text>
-          </Box>
+                  <Box
+            
+                    w={["90%", "90%", "90%", "90%", "80%", "80%"]}
+                    flexShrink="0"
+                    mb={"20px"}
+                  >
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Start Joining Team Meetings
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Find your team's channel and join their next scheduled meeting.
-              This will help you understand current projects and see where you
-              can contribute.
-              <br />
-              Visit:{" "}
-              <a href="/📅 Meetings/Feedback" style={{ color: "white" }}>
-                Meetings/Feedback
-              </a>
-            </Text>
-          </Box>
+<StepTitle
+                          mb={"15px"}
+                          color={"white"}
+                          fontWeight={"600"}
+                          fontSize={["16px", "16px", "18px", "18px", "20px"]}
+                        >
+                          {title}
+                        </StepTitle>
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Participate in the Culture Quiz
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Take the fun quiz in the ⁠culture-quiz channel to get familiar
-              with QuickSite.guru's company culture and values.
-              <br />
-              Visit:{" "}
-              <a href="/🏢 Company Values" style={{ color: "white" }}>
-                Company Values
-              </a>
-            </Text>
-          </Box>
+                    <StepTitle
+                      mb={"15px"}
+                      color={"white"}
+                      fontWeight={"300"}
+                      fontSize={["14px", "14px", "14px", "14px", "16px"]}
+                    >
+                      {text}
+                    </StepTitle>
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Explore the QuickSite.guru Platform
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Spend some time navigating the QuickSite.guru platform as if you
-              were a new user. Share any insights or suggestions for improvement
-              in the ⁠product-feedback channel.
-              <br />
-              Visit:{" "}
-              <a href="/⚙️ Using QuickSite" style={{ color: "white" }}>
-                Using QuickSite
-              </a>
-            </Text>
-          </Box>
+                    <StepDescription mb={"15px"}>
+                     
+                    </StepDescription>
+                  </Box>
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Follow Us on Social Media
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              Follow QuickSite.guru on our social media accounts:
-              <br />
-              <a
-                href="https://x.com/quicksiteguru"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "white" }}
-              >
-                Twitter
-              </a>
-              <br />
-              <a
-                href="https://www.linkedin.com/company/quicksite-guru/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "white" }}
-              >
-                LinkedIn
-              </a>
-            </Text>
-          </Box>
+                  <StepSeparator />
+                </Step>
+              ))}
+            </Stepper>
 
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Provide Orientation Feedback
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              After completing all the steps, visit the "Feedback" channel to
-              share your thoughts on the orientation process. Your feedback is
-              invaluable for making continuous improvements.
-              <br />
-              Visit:{" "}
-              <a href="/📅 Meetings/Feedback" style={{ color: "white" }}>
-                Feedback
-              </a>
-            </Text>
-          </Box>
-
-          <Box>
-            <Text
-              mb={"15px"}
-              color={"white"}
-              fontWeight={"600"}
-              fontSize={["18px", "18px", "20px", "20px", "28px"]}
-            >
-              Complete Stage 1
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
-              fontWeight={"300"}
-            >
-              To complete Stage 1, please fill out the Stage 1 Completion Gate
-              Form:{" "}
-              <a
-                href="https://forms.gle/AGAa6ideTx98ucFw6"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "white" }}
-              >
-                Stage 1 Completion Form
-              </a>
-              .
-            </Text>
-          </Box>
+       
         </VStack>
       </Box>
     </>

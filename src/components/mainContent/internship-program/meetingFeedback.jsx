@@ -67,7 +67,7 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
         pl={["18px", "25px", "25px", "15px", "35px"]}
         pr={["18px", "25px", "25px", "15px", "10px"]}
         py={"15px"}
-        pb={["150px", "230px", "360px", "330px", "325px", "385px"]}
+        pb={"40px"}
       >
         <BreadCrumbs titlePath={titlepath} subPath={subpath} />
 
@@ -147,7 +147,7 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
               w={"100%"}
               index={activeStep}
               orientation="vertical"
-              height="400px"
+
               gap="0px"
               colorScheme={"gray"}
             >
