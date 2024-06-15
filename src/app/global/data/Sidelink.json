@@ -269,4 +269,21 @@
             }
         ]
     }
+,
+    {
+        "FunQuiz": [
+            {
+                "title": "🎈 Fun Quiz",
+                "StartingPath": "fun-quiz",
+                "sublinks": [
+                    {
+                        "subtitle": "😁 Quiz",
+                        "prams": "quiz",
+                        "path": "fun-quiz/quiz"
+                    }
+                   
+                ]
+            }
+        ]
+    }
 ]
