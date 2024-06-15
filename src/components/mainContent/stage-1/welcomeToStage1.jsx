@@ -25,32 +25,32 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
       text: "Welcome to Stage 1, start by going though all of the Getting Started as well internship Program, going thoug them will allwo you to get a greater sese of the internship and teh company ",
     },
     {
-      text: "Share a brief introduction about yourself in the ⁠stage1-hello channel. Include your background, interests, and what you hope to learn during your internship.\nVisit: Introduction",
       title: "Introduce Yourself",
+      text: "Share a brief introduction about yourself in the ⁠stage1-hello channel. Include your background, interests, and what you hope to learn during your internship.\nVisit: Introduction",
     },
     {
-      text: "Read the bios in the ⁠stage1-mentors channel and send a direct message to your chosen mentor to schedule a one-on-one meeting.\nVisit: Mentorship/Guidance",
       title: "Choose a Mentor",
+      text: "Read the bios in the ⁠stage1-mentors channel and send a direct message to your chosen mentor to schedule a one-on-one meeting.\nVisit: Mentorship/Guidance",
     },
     {
-      text: "Find your team's channel and join their next scheduled meeting. This will help you understand current projects and see where you can contribute.\nVisit: Meetings/Feedback",
       title: "Start Joining Team Meetings",
+      text: "Find your team's channel and join their next scheduled meeting. This will help you understand current projects and see where you can contribute.\nVisit: Meetings/Feedback",
     },
     {
-      text: "Take the fun quiz in the ⁠culture-quiz channel to get familiar with QuickSite.guru's company culture and values.\nVisit: Company Values",
       title: "Participate in the Culture Quiz",
+      text: "Take the fun quiz in the ⁠culture-quiz channel to get familiar with QuickSite.guru's company culture and values.\nVisit: Company Values",
     },
     {
-      text: "Spend some time navigating the QuickSite.guru platform as if you were a new user. Share any insights or suggestions for improvement in the ⁠product-feedback channel.\nVisit: Using QuickSite",
       title: "Explore the QuickSite.guru Platform",
+      text: "Spend some time navigating the QuickSite.guru platform as if you were a new user. Share any insights or suggestions for improvement in the ⁠product-feedback channel.\nVisit: Using QuickSite",
     },
     {
-      text: "Follow QuickSite.guru on our social media accounts:\nTwitter\nLinkedIn",
       title: "Follow Us on Social Media",
+      text: "Follow QuickSite.guru on our social media accounts:\nTwitter\nLinkedIn",
     },
     {
-      text: 'After completing all the steps, visit the "Feedback" channel to share your thoughts on the orientation process. Your feedback is invaluable for making continuous improvements.\nVisit: Feedback',
       title: "Provide Orientation Feedback",
+      text: 'After completing all the steps, visit the "Feedback" channel to share your thoughts on the orientation process. Your feedback is invaluable for making continuous improvements.\nVisit: Feedback',
     },
   ];
 
@@ -137,16 +137,13 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
                     {title}
                   </StepTitle>
 
-                  <StepTitle
-                    mb={"15px"}
+
+                  <StepDescription mb={"15px"}      
                     color={"white"}
                     fontWeight={"300"}
-                    fontSize={["14px", "14px", "14px", "14px", "16px"]}
-                  >
+                    fontSize={["14px", "14px", "14px", "14px", "16px"]}>
                     {text}
-                  </StepTitle>
-
-                  <StepDescription mb={"15px"}></StepDescription>
+                    </StepDescription>
                 </Box>
 
                 <StepSeparator />
