@@ -34,6 +34,11 @@
             "subtitle": "🌐 Community/Support",
             "prams": "community-support",
             "path": "getting-started/community-support"
+          },
+          {
+            "subtitle": "🔊 Joining Discord",
+            "prams": "joining-discord",
+            "path": "getting-started/joining-discord"
           }
         ]
       }
@@ -85,11 +90,7 @@
             "prams": "mission-vision",
             "path": "stage-1/mission-vision"
           },
-          {
-            "subtitle": "🔊 Joining Discord",
-            "prams": "joining-discord",
-            "path": "stage-1/joining-discord"
-          },
+         
           {
             "subtitle": "🗣️ Talking to mentors",
             "prams": "talking-to-mentors",
