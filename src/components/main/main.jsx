@@ -87,7 +87,7 @@ const Main = ({ titlepath, subpath }) => {
     
     else if (
       titlepath === "internship-program" &&
-      subpath === "what-we-expect"
+      subpath === "what-to-expect"
     ) {
       return <WhatToExpect titlepath={titlepath} subpath={subpath} />;
     } 

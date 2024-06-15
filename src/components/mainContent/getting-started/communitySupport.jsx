@@ -98,6 +98,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               presence, albeit with less frequent utilization.
             </Text>
             <HStack
+            flexWrap={"wrap"}
               mt={"30px"}
               gap={"30px"}
               justify={"left"}
@@ -131,7 +132,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                     <VStack gap={"0px"}>
                       <Text
                         color={"white"}
-                        fontSize={"20px"}
+                        fontSize={["16px", "22px", "22px", "18px", "22px"]}
                         fontWeight={"500"}
                         w={"100%"}
                       >
@@ -139,7 +140,14 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                       </Text>
                       <Text
                         color={"white"}
-                        fontSize={"12px"}
+                        fontSize={[
+                          "12px",
+                          "12px",
+                          "12px",
+                          "12px",
+                          "12px",
+                          "12px",
+                        ]}
                         w={"100%"}
                         textAlign={"left"}
                         pr={"40px"}
@@ -160,7 +168,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   transform: "scale(1.05)",
                 }}
                 h={"65px"}
-                w={"300px"}
+                w={["300px", "100%", "270px", "270px", "300px", "300px"]}
                 borderRadius={"10px"}
                 bg={"#0078c7"}
               >
@@ -169,7 +177,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                   p={"10px"}
                   w={"100%"}
                   h={"100%"}
-                  justify={"space-between"}
+                  justify={["space-between", "space-between", "space-between", "space-between", "space-between", "space-between"]}
                   align={"center"}
                   px={"15px"}
                 >
@@ -180,7 +188,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                         color={"white"}
                         href="https://discord.gg/bPtbBVAw"
                         isExternal
-                        fontSize={"20px"}
+                        fontSize={["16px", "18px", "18px", "18px", "22px"]}
                         fontWeight={"500"}
                         w={"100%"}
                       >
@@ -188,12 +196,19 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                       </Text>
                       <Text
                         color={"white"}
-                        fontSize={"12px"}
+                        fontSize={[
+                          "12px",
+                          "12px",
+                          "12px",
+                          "12px",
+                          "12px",
+                          "12px",
+                        ]}
                         w={"100%"}
                         textAlign={"left"}
                         pr={"40px"}
                       >
-                        Web Startup
+                        Check us out
                       </Text>
                     </VStack>
                   </Box>
@@ -224,6 +239,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                  
             </Text>
             <Box
+    
               px={["10px", "10px", "15px", "15px", "20px"]}
               py={["10px", "10px", "15px", "15px", "20px"]}
               bg={"rgb(255, 255, 255,0.05)"}
@@ -231,7 +247,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
               mt={["10px", "10px", "15px", "15px", "20px"]}
               rounded={"10px"}
             >
-              <Table
+              <Table       
                 variant="simple"
                 borderColor={"rgb(255, 255, 255,0.05)"}
                 fontSize={["14px", "14px", "14px", "14px", "16px"]}
@@ -298,7 +314,7 @@ const CommunitySupport = ({ titlepath, subpath }) => {
                     <Td borderColor={"rgb(255, 255, 255,0)"} fontWeight={"600"} fontSize={["18px", "18px", "18px", "18px", "18px"]}  >Saturday</Td>
                     <Td borderColor={"rgb(255, 255, 255,0)"}>
                       {" "}
-                      <HStack>
+                      <HStack wrap={"wrap"}  >
                         {" "}
                         <Text
                           p={"10px"}
