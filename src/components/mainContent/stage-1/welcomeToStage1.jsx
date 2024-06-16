@@ -7,6 +7,7 @@ import {
   Step,
   StepDescription,
   StepIcon,
+  Icon,
   StepIndicator,
   StepNumber,
   StepSeparator,
@@ -14,46 +15,368 @@ import {
   StepTitle,
   Stepper,
   useSteps,
+  HStack,
 } from "@chakra-ui/react";
 import React from "react";
 import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
-
+import {FaDiscord} from "react-icons/fa";
 const WelcomeToStage1 = ({ titlepath, subpath }) => {
   const Stage1 = [
     {
       title: "Understand Who We Are",
-      text: "Welcome to Stage 1, start by going though all of the Getting Started as well internship Program, going thoug them will allwo you to get a greater sese of the internship and teh company ",
+      text: (
+        <Text                   transition={"all 0.3s ease"}>
+          {" "}
+          "Welcome to Stage 1! Start by going through all of the{" "}
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}👋 Getting Started{" "}
+          </Text>{" "}
+          and{" "}
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}🎓 Internship Program{" "}
+          </Text>{" "}
+          materials. This will give you a greater sense of the internship and
+          the company. After that, complete this signup form."{" "}
+        </Text>
+      ),
     },
     {
       title: "Introduce Yourself",
-      text: "Share a brief introduction about yourself in the ⁠stage1-hello channel. Include your background, interests, and what you hope to learn during your internship.\nVisit: Introduction",
+      text: (
+        <Text                   transition={"all 0.3s ease"}>
+          Share a brief introduction about yourself in the
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            color={"blue.800"}
+            p={1.5}
+            rounded={"8px"}
+            bg={"blue.300"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}#stage1-hello{" "}
+          </Text>{" "}
+          channel on Discord. Include your background, interests, and what you
+          hope to learn during your internship. Visit:{" "}
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}🧑‍💻 Introduction{" "}
+          </Text>
+        </Text>
+      ),
     },
     {
-      title: "Choose a Mentor",
-      text: "Read the bios in the ⁠stage1-mentors channel and send a direct message to your chosen mentor to schedule a one-on-one meeting.\nVisit: Mentorship/Guidance",
+      title: "Connect with a Mentor",
+      text: (
+        <Text                   transition={"all 0.3s ease"}>
+          Check out the
+          <Text               transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}👨‍🏫 Mentorship/Guidance{" "}
+          </Text>{" "}
+          and
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}📅 Meetings/Feedback{" "}
+          </Text>{" "}
+          sections to get a clear understanding of the processes. After that, reach
+          out to mentors on Discord and send a direct message to your chosen mentor
+          to schedule a one-on-one meeting.
+        </Text>
+      ),
     },
     {
       title: "Start Joining Team Meetings",
-      text: "Find your team's channel and join their next scheduled meeting. This will help you understand current projects and see where you can contribute.\nVisit: Meetings/Feedback",
+      text: (
+        <Text                   transition={"all 0.3s ease"}>
+          Go to the
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}👨‍🏫 Mentorship/Guidance{" "}
+          </Text>{" "}
+          section and start joining team meetings via the Google Meet link. This
+          will help you understand current projects and see where you can contribute.
+        </Text>
+      ),
     },
     {
       title: "Participate in the Culture Quiz",
-      text: "Take the fun quiz in the ⁠culture-quiz channel to get familiar with QuickSite.guru's company culture and values.\nVisit: Company Values",
+      text: (
+        <Text                   transition={"all 0.3s ease"} lineHeight={"26px"}>
+          Take the fun quiz in the
+          
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            color={"blue.800"}
+            p={1.5}
+            rounded={"8px"}
+            bg={"#7289DA"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+  
+            {" "} #culture-quiz{" "} 
+          </Text>
+          channel on
+          <Text                   transition={"all 0.3s ease"} as={"span"} color={"blue.500"}>
+            {" "}Discord{" "}
+          </Text>
+          to get familiar with QuickSite.guru's company culture and values. If
+          you're unsure, go through the
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}👋 Getting Started{" "}
+          </Text>{" "}
+          and
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}🎓 Internship Program{" "}
+          </Text>{" "}
+          sections.
+        </Text>
+      ),
     },
     {
       title: "Explore the QuickSite.guru Platform",
-      text: "Spend some time navigating the QuickSite.guru platform as if you were a new user. Share any insights or suggestions for improvement in the ⁠product-feedback channel.\nVisit: Using QuickSite",
+      text: (
+        <Text                   transition={"all 0.3s ease"}>
+          Check out the
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}⚙️ Using QuickSite{" "}
+          </Text>{" "}
+          section and spend some time navigating the QuickSite.guru platform 
+         . Share any insights or suggestions for
+          improvement in the 
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            color={"blue.800"}
+            p={1.5}
+            rounded={"8px"}
+            bg={"blue.300"}
+            align={"center"}
+
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+                 
+                    
+          >
+          
+              <Icon fontSize={"27px"} a as={FaDiscord}  /> #product-feedback{" "}
+    
+            {" "}
+          </Text>
+
+       
+        </Text>
+      ),
     },
     {
       title: "Follow Us on Social Media",
-      text: "Follow QuickSite.guru on our social media accounts:\nTwitter\nLinkedIn",
+      text: (
+        <Text                   transition={"all 0.3s ease"}>
+          Visit our
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}🌐 Community/Support{" "}
+          </Text>
+          channel and follow QuickSite.guru on our social media accounts.
+        </Text>
+      ),
     },
     {
       title: "Provide Orientation Feedback",
-      text: 'After completing all the steps, visit the "Feedback" channel to share your thoughts on the orientation process. Your feedback is invaluable for making continuous improvements.\nVisit: Feedback',
+      text: (
+        <Text                   transition={"all 0.3s ease"}>
+          After completing all the steps, visit the
+          <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            color={"blue.800"}
+            p={1.5}
+            rounded={"8px"}
+            bg={"blue.300"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}#feedback{" "}
+          </Text>
+          channel on Discord to share your thoughts on the orientation process. Your
+          feedback is invaluable for making continuous improvements.
+        </Text>
+      ),
     },
   ];
-
+  
   const { activeStep } = useSteps({
     index: 8,
     count: Stage1.length,
@@ -83,7 +406,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
           gap={"30px"}
         >
           <Box>
-            <Text
+            <Text                  
               color={["white", "blue", "green", "yellow", "orange", "white"]}
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
@@ -93,10 +416,10 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
           </Box>
 
           <Box>
-            <Text
+            <Text                  
               color={"white"}
               fontSize={["14px", "14px", "14px", "14px", "16px"]}
-              lineHeight={"24px"}
+            
               fontWeight={"300"}
             >
               Stage 1 is all about learning: you about us and us about you! You
@@ -124,26 +447,30 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
                 </StepIndicator>
 
                 <Box
+                 transition={"all 0.3s ease"}
                   w={["90%", "90%", "90%", "90%", "80%", "80%"]}
                   flexShrink="0"
                   mb={"20px"}
                 >
-                  <StepTitle
+                  <Box
                     mb={"15px"}
                     color={"white"}
                     fontWeight={"600"}
                     fontSize={["16px", "16px", "18px", "18px", "20px"]}
                   >
                     {title}
-                  </StepTitle>
+                  </Box>
 
+                  <Box
 
-                  <StepDescription mb={"15px"}      
+                  lineHeight={["35px", "30px", "30px", "30px", "30px", "30px"]}
+                    mb={"15px"}
                     color={"white"}
                     fontWeight={"300"}
-                    fontSize={["14px", "14px", "14px", "14px", "16px"]}>
+                    fontSize={["14px", "14px", "14px", "14px", "16px"]}
+                  >
                     {text}
-                    </StepDescription>
+                  </Box>
                 </Box>
 
                 <StepSeparator />
