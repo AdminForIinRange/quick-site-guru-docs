@@ -81,17 +81,17 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
             cursor={"pointer"}
             textAlign={"center"}
             fontWeight={"bold"}
-            color={"blue.800"}
+            color={"white"}
             p={1.5}
             rounded={"8px"}
-            bg={"blue.300"}
+            bg={"#7289DA"}
             _hover={{
               transform: "scale(1.05)",
               shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
             }}
                       whiteSpace={"nowrap"}
           >
-            {" "}#stage1-hello{" "}
+    {" "}#stage1-hello{" "}
           </Text>{" "}
           channel on Discord. Include your background, interests, and what you
           hope to learn during your internship. Visit:{" "}
@@ -204,7 +204,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
             cursor={"pointer"}
             textAlign={"center"}
             fontWeight={"bold"}
-            color={"blue.800"}
+            color={"white"}
             p={1.5}
             rounded={"8px"}
             bg={"#7289DA"}
@@ -289,17 +289,17 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
           </Text>{" "}
           section and spend some time navigating the QuickSite.guru platform 
          . Share any insights or suggestions for
-          improvement in the 
+          improvement in the               
           <Text                   transition={"all 0.3s ease"}
             mx={1.5}
             as={"span"}
             cursor={"pointer"}
             textAlign={"center"}
             fontWeight={"bold"}
-            color={"blue.800"}
+            color={"white"}
             p={1.5}
             rounded={"8px"}
-            bg={"blue.300"}
+            bg={"#7289DA"}
             align={"center"}
 
             _hover={{
@@ -311,7 +311,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
                     
           >
           
-              <Icon fontSize={"27px"} a as={FaDiscord}  /> #product-feedback{" "}
+ #product-feedback{" "}
     
             {" "}
           </Text>
@@ -358,10 +358,10 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
             cursor={"pointer"}
             textAlign={"center"}
             fontWeight={"bold"}
-            color={"blue.800"}
+            color={"white"}
             p={1.5}
             rounded={"8px"}
-            bg={"blue.300"}
+            bg={"#7289DA"}
             _hover={{
               transform: "scale(1.05)",
               shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
@@ -460,17 +460,19 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
                   >
                     {title}
                   </Box>
+<HStack justify={"start"} align={"left"} w={"100%"} h={"100%"}>
+<Box
 
-                  <Box
-
-                  lineHeight={["35px", "30px", "30px", "30px", "30px", "30px"]}
-                    mb={"15px"}
-                    color={"white"}
-                    fontWeight={"300"}
-                    fontSize={["14px", "14px", "14px", "14px", "16px"]}
-                  >
-                    {text}
-                  </Box>
+lineHeight={["35px", "30px", "30px", "30px", "30px", "30px"]}
+  mb={"15px"}
+  color={"white"}
+  fontWeight={"300"}
+  fontSize={["14px", "14px", "14px", "14px", "16px"]}
+>
+  {text}
+</Box>
+</HStack>
+              
                 </Box>
 
                 <StepSeparator />
