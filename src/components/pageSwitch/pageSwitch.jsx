@@ -54,7 +54,9 @@ const PageSwitch = ({ titlepath, subpath }) => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: item.StartingPath,
                   subPath: sublinks[sublinkIndex + 1].prams,
-                  fullPath: `${item.StartingPath}/${sublinks[sublinkIndex + 1].prams}`,
+                  fullPath: `${item.StartingPath}/${
+                    sublinks[sublinkIndex + 1].prams
+                  }`,
                 });
               } else if (itemIndex + 1 < items.length) {
                 // Move to the first sublink of the next item in the same section
@@ -93,7 +95,9 @@ const PageSwitch = ({ titlepath, subpath }) => {
                   CurrentLink: sublinks[sublinkIndex].path,
                   titlePath: item.StartingPath,
                   subPath: sublinks[sublinkIndex - 1].prams,
-                  fullPath: `${item.StartingPath}/${sublinks[sublinkIndex - 1].prams}`,
+                  fullPath: `${item.StartingPath}/${
+                    sublinks[sublinkIndex - 1].prams
+                  }`,
                 });
               } else if (itemIndex - 1 >= 0) {
                 // Move to the last sublink of the previous item in the same section

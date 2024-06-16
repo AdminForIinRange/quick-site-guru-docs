@@ -121,8 +121,8 @@ const Sidebar = ({ titlepath, subpath }) => {
                 </Accordion>
               </VStack>
             </Box>
-          )),
-        ),
+          ))
+        )
       )}
     </VStack>
   );

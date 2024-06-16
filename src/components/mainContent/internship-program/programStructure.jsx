@@ -191,7 +191,6 @@ const ProgramStructure = ({ titlepath, subpath }) => {
                 <Stepper
                   index={activeStep}
                   orientation="vertical"
-                
                   gap="0"
                   colorScheme={"gray"}
                 >

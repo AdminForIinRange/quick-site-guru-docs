@@ -88,12 +88,12 @@ const Main = ({ titlepath, subpath }) => {
       subpath === "meetings-feedback"
     ) {
       return <MeetingFeedback titlepath={titlepath} subpath={subpath} />;
-      
-    } 
-    else if (titlepath === "getting-started" && subpath === "joining-discord") {
+    } else if (
+      titlepath === "getting-started" &&
+      subpath === "joining-discord"
+    ) {
       return <JoiningDiscord titlepath={titlepath} subpath={subpath} />;
-    }
-    else if (titlepath === "stage-1" && subpath === "welcome-stage-1") {
+    } else if (titlepath === "stage-1" && subpath === "welcome-stage-1") {
       return <WelcomeToStage1 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-1" && subpath === "mission-vision") {
       return <OurMissionVison titlepath={titlepath} subpath={subpath} />;

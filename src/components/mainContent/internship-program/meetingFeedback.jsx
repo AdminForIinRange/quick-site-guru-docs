@@ -147,7 +147,6 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
               w={"100%"}
               index={activeStep}
               orientation="vertical"
-
               gap="0px"
               colorScheme={"gray"}
             >
