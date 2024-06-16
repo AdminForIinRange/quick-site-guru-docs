@@ -27,7 +27,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
       text: (
         <Text                   transition={"all 0.3s ease"}>
           {" "}
-          "Welcome to Stage 1! Start by going through all of the{" "}
+          Welcome to Stage 1! Start by going through all of the{" "}
           <Text                   transition={"all 0.3s ease"}
             mx={1.5}
             as={"span"}
@@ -187,7 +187,24 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
           >
             {" "}👨‍🏫 Mentorship/Guidance{" "}
           </Text>{" "}
-          section and start joining team meetings via the Google Meet link. This
+          section and start joining team meetings via the Google Meet link in  <Text                   transition={"all 0.3s ease"}
+            mx={1.5}
+            as={"span"}
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.05)",
+            }}
+                      whiteSpace={"nowrap"}
+          >
+            {" "}📅 Meetings/Feedback{" "}
+          </Text>{" "}. This
           will help you understand current projects and see where you can contribute.
         </Text>
       ),
@@ -463,7 +480,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
 <HStack justify={"start"} align={"left"} w={"100%"} h={"100%"}>
 <Box
 
-lineHeight={["35px", "30px", "30px", "30px", "30px", "30px"]}
+lineHeight={["35px", "35px", "35px", "35px", "35px", "35px"]}
   mb={"15px"}
   color={"white"}
   fontWeight={"300"}
