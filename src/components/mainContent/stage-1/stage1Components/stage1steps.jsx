@@ -55,7 +55,29 @@ const Stage1steps = [
           🎓 Internship Program{" "}
         </Text>{" "}
         materials. This will give you a greater sense of the internship and the
-        company. After that, complete this signup form."{" "}
+        company. After that, complete this signup form 
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="https://forms.gle/AGAa6ideTx98ucFw6"
+          target="_blank"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(103,58,1830)"}
+          border={"1px solid rgb(103,58,183, 0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(103,58,1830.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          Orientation Form {""}
+        </Text>{" "}.   "{" "} 
       </Text>
     ),
   },
@@ -223,75 +245,32 @@ const Stage1steps = [
     title: "Participate in the Culture Quiz",
     text: (
       <Text transition={"all 0.3s ease"} lineHeight={"26px"}>
-        Take the fun quiz in the
+        Take the fun
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
-          href="/https://discord.com/channels/1223592781235359764/1224803630771867832"
+          href="https://forms.gle/pd88EJYtZKYeJ5pq7"
           target="_blank"
           cursor={"pointer"}
           textAlign={"center"}
           fontWeight={"bold"}
-          color={"white"}
-          p={1.5}
-          rounded={"8px"}
-          bg={"#7289DA"}
-          _hover={{
-            transform: "scale(1.05)",
-            shadow: "0 0 25px 0px rgb(114,137,218,0.5)",
-          }}
-          whiteSpace={"nowrap"}
-        >
-          {" "}
-          #culture-quiz{" "}
-        </Text>
-        channel on Discord to get familiar with QuickSite.guru's company culture
-        and values. If you're unsure, go through the
-        <Text
-          transition={"all 0.3s ease"}
-          mx={1.5}
-          as={Link}
-          href="/getting-started/introduction"
-          cursor={"pointer"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-          bg={"rgb(255, 255, 255,0.05)"}
-          border={"1px solid rgb(255, 255, 255,0.05)"}
+          bg={"rgb(103,58,1830)"}
+          border={"1px solid rgb(103,58,183, 0.05)"}
           p={1.5}
           rounded={"8px"}
           _hover={{
             transform: "scale(1.05)",
-            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+            shadow: "0 0 25px 0px rgb(103,58,1830.2)",
           }}
           whiteSpace={"nowrap"}
         >
           {" "}
-          👋 Getting Started{" "}
-        </Text>{" "}
-        and
-        <Text
-          transition={"all 0.3s ease"}
-          mx={1.5}
-          as={Link}
-          href="/internship-program/program-structure"
-          cursor={"pointer"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-          bg={"rgb(255, 255, 255,0.05)"}
-          border={"1px solid rgb(255, 255, 255,0.05)"}
-          p={1.5}
-          rounded={"8px"}
-          _hover={{
-            transform: "scale(1.05)",
-            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
-          }}
-          whiteSpace={"nowrap"}
-        >
-          {" "}
-          🎓 Internship Program{" "}
-        </Text>{" "}
-        sections.
+          Culture Quiz {""}
+        </Text>{" "}.   {" "} 
+        to get familiar with QuickSite.guru's company culture
+        and values. 
+     
       </Text>
     ),
   },

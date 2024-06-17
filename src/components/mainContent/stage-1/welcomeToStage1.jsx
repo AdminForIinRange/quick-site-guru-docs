@@ -69,8 +69,8 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               fontSize={["14px", "14px", "14px", "14px", "16px"]}
               fontWeight={"300"}
             >
-              Stage 1 is all about learning: you about us and us about you! You
-              have 1 week to complete this stage from the time you have joined.
+              Stage 1 is all about learning. We want you to learn about us and us about you! You
+              have 1 week to complete this stage from the time you have joined however it should take 45 - 60 min to complete.
               Here's your detailed, step-by-step guide to get started:
             </Text>
           </Box>
