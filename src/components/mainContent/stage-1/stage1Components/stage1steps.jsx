@@ -4,6 +4,8 @@ import { Box,
     Step, } from '@chakra-ui/react';
 import React from 'react';
 import { useRouter } from "next/navigation";
+import { useHistory } from 'react-router-dom';
+import Link from 'next/link';
 
 const Stage1steps = [
         {
@@ -13,13 +15,14 @@ const Stage1steps = [
               {" "}
               Welcome to Stage 1! Start by going through all of the{" "}
               <Text
-        onClick={() => {
-            const router = useRouter();
-          router.push(`/getting-started/introduction`);
-        }}
+         as={Link}
+         href='/getting-started/introduction'
+        // onClick={() => {
+        //     window.location.href = '/getting-started/introduction';
+        // }}
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
