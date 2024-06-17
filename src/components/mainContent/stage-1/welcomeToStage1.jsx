@@ -21,8 +21,9 @@ import React from "react";
 import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { FaDiscord } from "react-icons/fa";
 import {Stage1steps} from "./stage1Components/stage1steps";
+
+
 const WelcomeToStage1 = ({ titlepath, subpath }) => {
- 
 
   const { activeStep } = useSteps({
     index: 8,

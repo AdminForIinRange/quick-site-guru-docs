@@ -3,6 +3,7 @@ import { Box,
     Text,
     Step, } from '@chakra-ui/react';
 import React from 'react';
+import { useRouter } from "next/navigation";
 
 const Stage1steps = [
         {
@@ -12,6 +13,10 @@ const Stage1steps = [
               {" "}
               Welcome to Stage 1! Start by going through all of the{" "}
               <Text
+        onClick={() => {
+            const router = useRouter();
+          router.push(`/getting-started/introduction`);
+        }}
                 transition={"all 0.3s ease"}
                 mx={1.5}
                 as={"span"}
@@ -236,10 +241,10 @@ const Stage1steps = [
                 #culture-quiz{" "}
               </Text>
               channel on
-              <Text transition={"all 0.3s ease"} as={"span"} color={"blue.500"}>
-                {" "}
-                Discord{" "}
-              </Text>
+           
+             
+                Discord
+   
               to get familiar with QuickSite.guru's company culture and values. If
               you're unsure, go through the
               <Text
