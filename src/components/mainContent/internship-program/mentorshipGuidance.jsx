@@ -15,7 +15,9 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
 
   const mentors = [
     {
-      name: "Serge",
+      name: "Serge", 
+      sub:'- founder',
+    
       imgAvt: Serge,
       desc: "Years of software development and project delivery experience. Loves coding, paddleboarding and ambitious projects 😉",
     },
@@ -158,7 +160,7 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
               w={"100%"}
               h={"100%"}
             >
-              {mentors.map(({ name, imgAvt, desc }, index) => (
+              {mentors.map(({ name, imgAvt, desc, sub }, index) => (
                 <Box
                   key={index}
                   transition={"all 0.3s ease-in-out"}
@@ -191,14 +193,29 @@ const MentorshipGuidance = ({ titlepath, subpath }) => {
                             style={{ borderRadius: "100%" }}
                           />
                         </Box>
+                     
                         <Text
                           color={"white"}
                           fontSize={["18px", "22px", "22px", "18px", "22px"]}
                           fontWeight={"500"}
-                          w={"100%"}
+     
                         >
                           {name}
+
+                          <Text as={"span"}
+                          color={"white"}
+                          fontSize={["14px", "14px", "14px", "14px", "14px"]}
+                          fontWeight={"500"}
+             
+                        >
+                          {" "} {sub}
                         </Text>
+                        
+                        </Text>
+                    
+                  
+                        
+             
                         <Text
                           color={"white"}
                           fontSize={[
