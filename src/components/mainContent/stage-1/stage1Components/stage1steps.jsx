@@ -16,10 +16,9 @@ const Stage1steps = [
               Welcome to Stage 1! Start by going through all of the{" "}
               <Text
          as={Link}
+
          href='/getting-started/introduction'
-        // onClick={() => {
-        //     window.location.href = '/getting-started/introduction';
-        // }}
+
                 transition={"all 0.3s ease"}
                 mx={1.5}
                 
@@ -43,7 +42,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='/internship-program/program-structure'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -73,7 +73,9 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                target='_blank'
+           as={Link}
+                   href='https://discord.com/channels/1223592781235359764/1224788718221787136'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -95,7 +97,9 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='getting-started/introduction'
+
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -123,7 +127,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='internship-program/mentorship-guidance'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -144,7 +149,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='internship-program/meetings-feedback'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -175,7 +181,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='internship-program/mentorship-guidance'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -196,7 +203,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='internship-program/meetings-feedback'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -226,7 +234,9 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='https://discord.com/channels/1223592781235359764/1224803630771867832'
+                   target='_blank'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -253,7 +263,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='/getting-started/introduction'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -274,7 +285,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='internship-program/program-structure'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -303,7 +315,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='using-quicksite/get-started'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -325,7 +338,9 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                 target='_blank'
+                   href='https://discord.com/channels/1223592781235359764/1224795814962925740'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -353,7 +368,8 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                   href='getting-started/community-support'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -382,7 +398,9 @@ const Stage1steps = [
               <Text
                 transition={"all 0.3s ease"}
                 mx={1.5}
-                as={"span"}
+                 as={Link}
+                 target='_blank'
+                   href='https://discord.com/channels/1223592781235359764/1224795787985420298'
                 cursor={"pointer"}
                 textAlign={"center"}
                 fontWeight={"bold"}
@@ -397,7 +415,7 @@ const Stage1steps = [
                 whiteSpace={"nowrap"}
               >
                 {" "}
-                #feedback{" "}
+                #org-feedback{" "}
               </Text>
               channel on Discord to share your thoughts on the orientation process.
               Your feedback is invaluable for making continuous improvements.
