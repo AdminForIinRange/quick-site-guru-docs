@@ -31,6 +31,8 @@ import Image from "next/image";
 import ReviewTitle from "../../../img/discord/ReviewTitle.png";
 import Review from "../../../img/discord/Review.png";
 import ReviewBody from "../../../img/discord/ReviewBody.png";
+import Link from "next/link";
+
 const MeetingFeedback = ({ titlepath, subpath }) => {
   const ReviewFormat = [
     {
@@ -40,7 +42,55 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
 
     {
       image: ReviewBody,
-      desc: " Include your website link (which must be formatted in QSG and published with it ... This is how you can publish in QSG), and provide a description of your site, along with a image.",
+      desc: (
+        <Text>
+          Include your website link which must be formatted in QSG and
+          published, if you dont know see{" "}
+          <Text
+            transition={"all 0.3s ease"}
+            mx={1.5}
+            as={Link}
+            href="/using-quicksite/hosting"
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+            }}
+            whiteSpace={"nowrap"}
+          >
+            {" "}
+            🌐 Hosting{" "}
+          </Text>{" "}
+          <Text
+            transition={"all 0.3s ease"}
+            mx={1.5}
+            as={Link}
+            href="/using-quicksite/publishing"
+            cursor={"pointer"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+            bg={"rgb(255, 255, 255,0.05)"}
+            border={"1px solid rgb(255, 255, 255,0.05)"}
+            p={1.5}
+            rounded={"8px"}
+            _hover={{
+              transform: "scale(1.05)",
+              shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+            }}
+            whiteSpace={"nowrap"}
+          >
+            {" "}
+            📰 Publishing{" "}
+          </Text>{" "}
+          and provide a description of your site, along with a image."{" "}
+        </Text>
+      ),
     },
 
     {
@@ -119,11 +169,31 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
               lineHeight={"24px"}
               fontWeight={"300"}
             >
+
+              Click here to see our meeting schedule
               {/* Mayebe a small box with teh logo of the Sidelink  */}
-              <Text color={"teal.300"} as={"span"}>
+              <Text
+                transition={"all 0.3s ease"}
+                lineHeight={"35px"}
+                mx={1.5}
+                as={Link}
+                href="/getting-started/community-support"
+                cursor={"pointer"}
+                textAlign={"center"}
+                fontWeight={"bold"}
+                bg={"rgb(255, 255, 255,0.05)"}
+                border={"1px solid rgb(255, 255, 255,0.05)"}
+                p={1.5}
+                rounded={"8px"}
+                _hover={{
+                  transform: "scale(1.05)",
+                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+                }}
+                whiteSpace={"nowrap"}
+              >
                 {" "}
-                Click here to see meeting list{" "}
-              </Text>{" "}
+                🌐 Community/Support{" "}
+              </Text>
               Feel free to reach out to them whenever you have questions or need
               guidance. They're experienced professionals dedicated to helping
               you navigate challenges, improve your designs, and gain valuable
@@ -165,14 +235,22 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
                     flexShrink="0"
                     mb={"20px"}
                   >
-                    <StepTitle
+                    <Box
+                      lineHeight={[
+                        "35px",
+                        "35px",
+                        "35px",
+                        "35px",
+                        "35px",
+                        "35px",
+                      ]}
                       mb={"15px"}
                       color={"white"}
                       fontWeight={"300"}
                       fontSize={["14px", "14px", "14px", "14px", "16px"]}
                     >
                       {desc}
-                    </StepTitle>
+                    </Box>
 
                     <StepDescription mb={"15px"}>
                       <Image
