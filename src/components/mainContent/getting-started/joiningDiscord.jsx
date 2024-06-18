@@ -28,31 +28,25 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import Image from "next/image";
 
-import ReviewTitle from "../../../img/discord/ReviewTitle.png";
-import Review from "../../../img/discord/Review.png";
-import ReviewBody from "../../../img/discord/ReviewBody.png";
-import ReviewBody from "../../../img/discord/ReviewBody.png";
+import mute from "../../../img/discord/mute.png";
+import editServerProfile from "../../../img/discord/editServerProfile.png";
+import serverNameChange from "../../../img/discord/serverNameChange.png";
+
 
 const JoiningDiscord = ({ titlepath, subpath }) => {
   const ReviewFormat = [
+   
+
     {
-      image: ReviewTitle,
-      desc: " When you're planning to upload your site for any of the stage reviews, make sure to follow this format Use your Discord name and your website name as the title. ",
+      image: editServerProfile,
+      desc: " Right click on the your profile and press 'profile', then press the pencil icon to edit your server's profile. ",
     },
 
     {
-      image: ReviewBody,
-      desc: " Include your website link (which must be formatted in QSG and published with it ... This is how you can publish in QSG), and provide a description of your site, along with a image.",
+      image: serverNameChange,
+      desc: " Enter your new Name and click save changes, (if you require help or its different in your device, reach out to one of the mentors). ",
     },
-
-    {
-      image: Review,
-      desc: " This format ensures clarity and helps our team provide effective feedback to enhance your project, now all thats left is to wait for a mentor to respond.",
-    },
-    {
-      image: Review,
-      desc: " This format ensures clarity and helps our team provide effective feedback to enhance your project, now all thats left is to wait for a mentor to respond.",
-    },
+  
   ];
 
   const { activeStep } = useSteps({
@@ -117,6 +111,19 @@ const JoiningDiscord = ({ titlepath, subpath }) => {
             >
               What you need to do
             </Text>
+
+            <Box>
+            <Text
+              color={"white"}
+              fontSize={["14px", "14px", "14px", "14px", "16px"]}
+              lineHeight={"24px"}
+              fontWeight={"300"}
+              mb={"15px"}
+            >
+It's important that we could relate to you by your server profile name in meetings. This will not change your name on any other discrod servers, just on QSG server.
+This is how you do it:
+            </Text>
+          </Box>
             <Stepper
               h={"100%"}
               w={"100%"}
@@ -153,8 +160,7 @@ const JoiningDiscord = ({ titlepath, subpath }) => {
                       <Image
                         style={{
                           borderRadius: "15px",
-                          width: "100%",
-                          height: "100%",
+                      
                         }}
                         src={image}
                         alt="image"
