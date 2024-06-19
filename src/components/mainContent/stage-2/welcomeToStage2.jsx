@@ -69,15 +69,65 @@ const WelcomeToStage2 = ({ titlepath, subpath }) => {
               fontWeight={"300"}
             >
               Stage 2 of your QuickSite.guru internship is a two-week hands-on
-              learning phase where you'll build a website from scratch. We expect you have alredy gone through  <Text
+              learning phase where you'll build a website from scratch. We
+              expect you have already gone through{" "}
+              <Text
+                transition={"all 0.3s ease"}
+                mx={1.5}
+                lineHeight={"35px"}
+                as={Link}
+                href="/stage-1/welcome-stage-1"
+                cursor={"pointer"}
+                textAlign={"center"}
+                fontWeight={"bold"}
+                bg={"rgb(255, 255, 255,0.05)"}
+                border={"1px solid rgb(255, 255, 255,0.05)"}
+                p={1.5}
+                rounded={"8px"}
+                _hover={{
+                  transform: "scale(1.05)",
+                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+                }}
+                whiteSpace={"nowrap"}
+              >
+                {" "}
+                🧠 Stage 1 Learning{" "}
+              </Text>{" "}
+              and a little bit of{" "}
+              <Text
+                transition={"all 0.3s ease"}
+                lineHeight={"35px"}
+                mx={1.5}
+                as={Link}
+                href="/using-quicksite/get-started"
+                cursor={"pointer"}
+                textAlign={"center"}
+                fontWeight={"bold"}
+                bg={"rgb(255, 255, 255,0.05)"}
+                border={"1px solid rgb(255, 255, 255,0.05)"}
+                p={1.5}
+                rounded={"8px"}
+                _hover={{
+                  transform: "scale(1.05)",
+                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+                }}
+                whiteSpace={"nowrap"}
+              >
+                {" "}
+                ⚙️ Using QuickSite{" "}
+              </Text>{" "}
+              . You'll use minimal HTML and CSS to master web development
+              basics, explore QuickSite.guru's features like content management
+              and image handling, and understand SEO. You have 2 weeks to
+              complete this stage from the time you start, rember if you stuggleing with coding or desgin please reach for/to         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
-          lineHeight={"35px"}
           as={Link}
-          href="/stage-1/welcome-stage-1"
+          href="/internship-program/mentorship-guidance"
           cursor={"pointer"}
           textAlign={"center"}
           fontWeight={"bold"}
+          lineHeight={"35px"}
           bg={"rgb(255, 255, 255,0.05)"}
           border={"1px solid rgb(255, 255, 255,0.05)"}
           p={1.5}
@@ -89,33 +139,8 @@ const WelcomeToStage2 = ({ titlepath, subpath }) => {
           whiteSpace={"nowrap"}
         >
           {" "}
-          🧠 Stage 1 Learning{" "}
-        </Text> and a little bit of <Text
-          transition={"all 0.3s ease"}
-          lineHeight={"35px"}
-          mx={1.5}
-          as={Link}
-          href="/using-quicksite/get-started"
-          cursor={"pointer"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-          bg={"rgb(255, 255, 255,0.05)"}
-          border={"1px solid rgb(255, 255, 255,0.05)"}
-          p={1.5}
-          rounded={"8px"}
-          _hover={{
-            transform: "scale(1.05)",
-            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
-          }}
-          whiteSpace={"nowrap"}
-        >
-          {" "}
-          ⚙️ Using QuickSite{" "}
-        </Text> . You'll
-              use minimal HTML and CSS to master web development basics, explore
-              QuickSite.guru's features like content management and image
-              handling, and understand SEO. You have 2 weeks to complete this
-              stage from the time you start.
+          👨‍🏫 Mentorship/Guidance{" "}
+        </Text> on Discord  .
             </Text>
           </Box>
 

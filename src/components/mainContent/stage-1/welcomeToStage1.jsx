@@ -26,7 +26,7 @@ import {Stage1steps} from "./stage1Components/stage1steps";
 const WelcomeToStage1 = ({ titlepath, subpath }) => {
 
   const { activeStep } = useSteps({
-    index: 8,
+    index: 9,
     count: Stage1steps.length,
   });
 

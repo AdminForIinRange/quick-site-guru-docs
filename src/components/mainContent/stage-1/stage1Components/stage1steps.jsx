@@ -388,6 +388,39 @@ const Stage1steps = [
       </Text>
     ),
   },
+  {
+    title: "Before Moving to Stage 2",
+    text: (
+      <Text transition={"all 0.3s ease"}>
+        Stage two is hard and a bit more complicated and will require you to be
+        more proactive in the internship. You will learn a lot of skills in both
+        development, operations, communication and overall how developers work.
+        If this is your first time coding please visit{" "}
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/learning-material/scrimba"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          📗 Learning Material{" "}
+        </Text>
+        for a quick startup guide.
+      </Text>
+    ),
+  },
 ];
 
 export { Stage1steps };
