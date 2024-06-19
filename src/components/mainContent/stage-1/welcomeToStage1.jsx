@@ -59,7 +59,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              Welcome To Stage 1
+              🎉 Welcome To Stage 1
             </Text>
           </Box>
 

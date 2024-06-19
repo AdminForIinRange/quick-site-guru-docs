@@ -25,7 +25,7 @@ import MeetingFeedback from "../mainContent/internship-program/meetingFeedback";
 import WelcomeToStage1 from "../mainContent/stage-1/welcomeToStage1";
 import OurMissionVison from "../mainContent/stage-1/ourMissionVison";
 import JoiningDiscord from "../mainContent/getting-started/joiningDiscord.jsx";
-import TalkingToMentors from "../mainContent/stage-1/talkingToMentors";
+
 import WelcomeToStage2 from "../mainContent/stage-2/welcomeToStage2";
 import ProposeAdesign from "../mainContent/stage-2/proposeAdesign";
 import CodingInQuicksite from "../mainContent/stage-2/codingInQuicksite";
@@ -97,8 +97,7 @@ const Main = ({ titlepath, subpath }) => {
       return <WelcomeToStage1 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-1" && subpath === "mission-vision") {
       return <OurMissionVison titlepath={titlepath} subpath={subpath} />;
-    } else if (titlepath === "stage-1" && subpath === "talking-to-mentors") {
-      return <TalkingToMentors titlepath={titlepath} subpath={subpath} />;
+    
     } else if (titlepath === "stage-2" && subpath === "welcome-stage-2") {
       return <WelcomeToStage2 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-2" && subpath === "propose-design") {
