@@ -55,7 +55,7 @@ const Stage1steps = [
           🎓 Internship Program{" "}
         </Text>{" "}
         materials. This will give you a greater sense of the internship and the
-        company. After that, complete this signup form 
+        company. After that, complete this signup form
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -77,7 +77,8 @@ const Stage1steps = [
         >
           {" "}
           Orientation Form {""}
-        </Text>{" "}.   "{" "} 
+        </Text>{" "}
+        . "{" "}
       </Text>
     ),
   },
@@ -91,7 +92,6 @@ const Stage1steps = [
           mx={1.5}
           target="_blank"
           as={Link}
-         
           href="https://discord.com/channels/1223592781235359764/1224788718221787136"
           cursor={"pointer"}
           textAlign={"center"}
@@ -268,10 +268,8 @@ const Stage1steps = [
         >
           {" "}
           Culture Quiz {""}
-        </Text>{" "}.   {" "} 
-        to get familiar with QuickSite.guru's company culture
-        and values. 
-     
+        </Text>{" "}
+        . to get familiar with QuickSite.guru's company culture and values.
       </Text>
     ),
   },
