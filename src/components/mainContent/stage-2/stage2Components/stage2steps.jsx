@@ -159,31 +159,7 @@ const Stage2steps = [
     title: "Incorporate QuickSite.guru Features",
     text: (
       <Text transition={"all 0.3s ease"}>
-        Utilize QuickSite.guru features for content management and image
-        handling. Pay attention to the "head" section for SEO optimization, have
-        a look at
-        <Text
-          transition={"all 0.3s ease"}
-          mx={1.5}
-          as={Link}
-          href="/using-quicksite/links-scripts-meta"
-          cursor={"pointer"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-          bg={"rgb(255, 255, 255,0.05)"}
-          border={"1px solid rgb(255, 255, 255,0.05)"}
-          p={1.5}
-          rounded={"8px"}
-          _hover={{
-            transform: "scale(1.05)",
-            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
-          }}
-          whiteSpace={"nowrap"}
-        >
-          {" "}
-          🔗 Links/Scripts/Meta tags{" "}
-        </Text>
-        and
+        Utilize QuickSite.guru features for content management and{" "}
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -205,22 +181,12 @@ const Stage2steps = [
           {" "}
           🖼️ SVG/Assets{" "}
         </Text>
-        to get a better understanding.
-      </Text>
-    ),
-  },
-
-  {
-    title: "Hosting on QuickSite.guru (Not Required)",
-    text: (
-      <Text transition={"all 0.3s ease"}>
-        To go a step further, Purchase a domain and follow the DOMAINS section
-        steps to make your website live, please visit{" "}
+        handling also have a look at
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
-          href="/using-quicksite/hosting"
+          href="/using-quicksite/links-scripts-meta"
           cursor={"pointer"}
           textAlign={"center"}
           fontWeight={"bold"}
@@ -235,9 +201,18 @@ const Stage2steps = [
           whiteSpace={"nowrap"}
         >
           {" "}
-          🌐 Hosting{" "}
+          🔗 Links/Scripts/Meta tags{" "}
         </Text>
-        ,
+        for more in-depth explanation .
+      </Text>
+    ),
+  },
+
+  {
+    title: "Publishing on QuickSite.guru ",
+    text: (
+      <Text transition={"all 0.3s ease"}>
+        Once you completed your site visit{" "}
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -258,6 +233,30 @@ const Stage2steps = [
         >
           {" "}
           📰 Publishing{" "}
+        </Text>
+        to get started on QuickSite.guru and host your website. Not required but
+        if want go a step further you can host your website on the internet but
+        this will require you to Purchase a domain please visit{" "}
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/using-quicksite/hosting"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          🌐 Hosting{" "}
         </Text>
         and{" "}
         <Text
@@ -281,28 +280,72 @@ const Stage2steps = [
           {" "}
           🌍 Domain{" "}
         </Text>{" "}
-        for a more in-depth explanation.
-        and familiarizing yourself with web hosting and domain management, if
-        you have any issues or need help please contact the meteors in the
-        discord.
+        for a more in-depth explanation. .
       </Text>
     ),
   },
   {
-    title: "Feedback and Refinement",
+    title: "Feedback",
     text: (
       <Text transition={"all 0.3s ease"}>
-        Share your website for feedback, use insights to improve design,
-        content, and user experience. Iterate based on constructive criticism.
+        Visit
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/internship-program/meetings-feedback"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          📅 Meetings/Feedback{" "}
+        </Text>
+        as it will show you how we conduct the feedbacks process and the
+        expected format we advise. Please keep in mind that this process will
+        take some time as the mentors will be dealing with others submission's,
+        however please attend the meeting to get direct feedback
       </Text>
     ),
   },
   {
-    title: "Get feedback from mentor",
+    title: "Refinement",
     text: (
       <Text transition={"all 0.3s ease"}>
-        Share your website in ⁠stage2-review on Discord. Follow mentor guidance
-        to make necessary fixes. Complete this step when your mentor approves.
+        After you have received feedback in the meetings, please refine your
+        project and repeat{" "}
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={"span"}
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(113,128,150)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(113,128,150)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          Step 6: Feedback{" "}
+        </Text>{" "}
+        above. Keep in mind we are trying to develop your skills and ability's
+        so learn to take constrictive criticism as we mean the best for you and
+        the company.
       </Text>
     ),
   },
@@ -310,13 +353,14 @@ const Stage2steps = [
     title: "Get sign-off from mentors",
     text: (
       <Text transition={"all 0.3s ease"}>
-        After making changes based on feedback, ask your mentor for a final
-        review. Complete stage 2 once your website is approved.
+        After the mentors approve the website through rigorous feedback,
+        meetings, and general advice, your mentors will sign off on your
+        project, and you will be approved for stage 3.
       </Text>
     ),
   },
   {
-    title: "Reflect on Your Learning",
+    title: "Before Moving to Stage 3",
     text: (
       <Text transition={"all 0.3s ease"}>
         Reflect on your skills developed, challenges faced, and how you overcame
