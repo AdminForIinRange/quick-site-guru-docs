@@ -50,7 +50,48 @@ const Stage2steps = [
     title: "Build with HTML",
     text: (
       <Text transition={"all 0.3s ease"}>
-        After you have completed the design, Create the basic structure of your
+        After you have completed the   <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/getting-started/introduction"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          🎨 Propose a design{" "}
+        </Text>, before you code take a more extesinve look though  <Text
+          transition={"all 0.3s ease"}
+          lineHeight={"35px"}
+          mx={1.5}
+          as={Link}
+          href="/using-quicksite/get-started"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          ⚙️ Using QuickSite{" "}
+        </Text>. Create the basic structure of your
         website with HTML, including headers, footers, navigation bars, and
         content sections. Focus on clean and semantic markup if your confused
         give this a quick article read
