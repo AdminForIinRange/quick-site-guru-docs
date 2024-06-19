@@ -50,7 +50,8 @@ const Stage2steps = [
     title: "Build with HTML",
     text: (
       <Text transition={"all 0.3s ease"}>
-        After you have completed the   <Text
+        After you have completed the{" "}
+        <Text
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -70,7 +71,9 @@ const Stage2steps = [
         >
           {" "}
           🎨 Propose a design{" "}
-        </Text>, before you code take a more extesinve look though  <Text
+        </Text>
+        , before you code take a more extesinve look though{" "}
+        <Text
           transition={"all 0.3s ease"}
           lineHeight={"35px"}
           mx={1.5}
@@ -91,10 +94,10 @@ const Stage2steps = [
         >
           {" "}
           ⚙️ Using QuickSite{" "}
-        </Text>. Create the basic structure of your
-        website with HTML, including headers, footers, navigation bars, and
-        content sections. Focus on clean and semantic markup if your confused
-        give this a quick article read
+        </Text>
+        . Create the basic structure of your website with HTML, including
+        headers, footers, navigation bars, and content sections. Focus on clean
+        and semantic markup if your confused give this a quick article read
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -146,7 +149,9 @@ const Stage2steps = [
           {" "}
           📱 Responsiveness{" "}
         </Text>{" "}
-        with media queries for different screen sizes .
+        with media queries for different screen sizes, make sure you to your
+        website on various devices and screen sizes, adjusting CSS as needed for
+        a seamless user experience.
       </Text>
     ),
   },
@@ -157,7 +162,6 @@ const Stage2steps = [
         Utilize QuickSite.guru features for content management and image
         handling. Pay attention to the "head" section for SEO optimization, have
         a look at
-
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -179,9 +183,7 @@ const Stage2steps = [
           {" "}
           🔗 Links/Scripts/Meta tags{" "}
         </Text>
-
         and
-
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -207,22 +209,82 @@ const Stage2steps = [
       </Text>
     ),
   },
+
   {
-    title: "Ensure Responsiveness",
+    title: "Hosting on QuickSite.guru (Not Required)",
     text: (
       <Text transition={"all 0.3s ease"}>
-        Test your website on various devices and screen sizes, adjusting CSS as
-        needed for a seamless user experience.
-      </Text>
-    ),
-  },
-  {
-    title: "Hosting on QuickSite.guru",
-    text: (
-      <Text transition={"all 0.3s ease"}>
-        Purchase a domain and follow the DOMAINS section steps to make your
-        website live, familiarizing yourself with web hosting and domain
-        management.
+        To go a step further, Purchase a domain and follow the DOMAINS section
+        steps to make your website live, please visit{" "}
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/using-quicksite/hosting"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          🌐 Hosting{" "}
+        </Text>
+        ,
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/using-quicksite/publishing"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          📰 Publishing{" "}
+        </Text>
+        and{" "}
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/using-quicksite/domain"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          🌍 Domain{" "}
+        </Text>{" "}
+        for a more in-depth explanation.
+        and familiarizing yourself with web hosting and domain management, if
+        you have any issues or need help please contact the meteors in the
+        discord.
       </Text>
     ),
   },

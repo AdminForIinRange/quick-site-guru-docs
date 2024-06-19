@@ -119,28 +119,31 @@ const WelcomeToStage2 = ({ titlepath, subpath }) => {
               . You'll use minimal HTML and CSS to master web development
               basics, explore QuickSite.guru's features like content management
               and image handling, and understand SEO. You have 2 weeks to
-              complete this stage from the time you start, rember if you stuggleing with coding or desgin please reach for/to         <Text
-          transition={"all 0.3s ease"}
-          mx={1.5}
-          as={Link}
-          href="/internship-program/mentorship-guidance"
-          cursor={"pointer"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-          lineHeight={"35px"}
-          bg={"rgb(255, 255, 255,0.05)"}
-          border={"1px solid rgb(255, 255, 255,0.05)"}
-          p={1.5}
-          rounded={"8px"}
-          _hover={{
-            transform: "scale(1.05)",
-            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
-          }}
-          whiteSpace={"nowrap"}
-        >
-          {" "}
-          👨‍🏫 Mentorship/Guidance{" "}
-        </Text> on Discord  .
+              complete this stage from the time you start, remember if you
+              struggling with coding or design please reach out to{" "}
+              <Text
+                transition={"all 0.3s ease"}
+                mx={1.5}
+                as={Link}
+                href="/internship-program/mentorship-guidance"
+                cursor={"pointer"}
+                textAlign={"center"}
+                fontWeight={"bold"}
+                lineHeight={"35px"}
+                bg={"rgb(255, 255, 255,0.05)"}
+                border={"1px solid rgb(255, 255, 255,0.05)"}
+                p={1.5}
+                rounded={"8px"}
+                _hover={{
+                  transform: "scale(1.05)",
+                  shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+                }}
+                whiteSpace={"nowrap"}
+              >
+                {" "}
+                👨‍🏫 Mentorship/Guidance{" "}
+              </Text>{" "}
+              on Discord .
             </Text>
           </Box>
 
