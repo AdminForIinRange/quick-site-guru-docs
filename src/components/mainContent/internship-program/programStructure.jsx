@@ -150,29 +150,11 @@ const ProgramStructure = ({ titlepath, subpath }) => {
               During the internship, you will gain hands-on experience in web
               development by working on real-world projects. Our mentors will
               guide you in front-end and back-end development, user experience
-              design,
-              <Text as={"span"} color={"orange.400"}>
-                {" "}
-                HTML{" "}
-              </Text>{" "}
-              /{" "}
-              <Text as={"span"} color={"blue.400"}>
-                {" "}
-                CSS{" "}
-              </Text>{" "}
-              (
-              <Text as={"span"} color={"purple.400"}>
-                {" "}
-                BootStrap{" "}
-              </Text>{" "}
-              <Text as={"span"} color={"cyan.400"}>
-                {" "}
-                Tailwind{" "}
-              </Text>{" "}
-              etc.), layout design, animations, hosting, content writing, and
-              domain management. You'll create responsive, emphasizing practical
-              learning and teamwork, with projects ranging from personal
-              websites to real-world applications.
+              design,HTML/CSS (BootStrap, Tailwind, etc.) , layout design,
+              animations, hosting, content writing, and domain management.
+              You'll create responsive, emphasizing practical learning and
+              teamwork, with projects ranging from personal websites to
+              real-world applications.
             </Text>
           </Box>
 

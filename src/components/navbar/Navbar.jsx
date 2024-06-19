@@ -53,6 +53,7 @@ const Navbar = () => {
       {isTablet && (
         <Box>
           <HStack
+          
             px={"15"}
             w={"100%"}
             h={"100%"}
@@ -90,14 +91,15 @@ const Navbar = () => {
             justify={"center"}
             align={"center"}
             mt={"10px"}
+     
           >
-            <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}>
+            <HStack w={"100%"} h={"100%"} justify={"center"} align={"center"}  >
               <Box
                 transition={"all 0.3s ease-in-out"}
                 bg={"rgb(255, 255, 255,0.05)"}
                 border={"1px solid rgb(255, 255, 255,0.05)"}
                 rounded={"15px"}
-                w={["100%", "100%", "100%", "95%", "90%"]}
+                w={"95%"}
                 h={"65px"}
                 px={"14"}
                 borderRadius={"15px"}
