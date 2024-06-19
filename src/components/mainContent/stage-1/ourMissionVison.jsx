@@ -41,7 +41,7 @@ const OurMissionVison = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              🏢 Community/Support
+             🌍 Our Mission/Vision
             </Text>
           </Box>
 
@@ -57,7 +57,7 @@ const OurMissionVison = ({ titlepath, subpath }) => {
           mx={1.5}
           as={Link}
           target="_blank"
-          href="https://discord.com/channels/1223592781235359764/1224795787985420298"
+          href="https://quicksite.guru"
           cursor={"pointer"}
           textAlign={"center"}
           fontWeight={"bold"}
