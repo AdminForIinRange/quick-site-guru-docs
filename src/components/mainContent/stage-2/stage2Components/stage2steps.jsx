@@ -310,7 +310,7 @@ const Stage2steps = [
           {" "}
           📅 Meetings/Feedback{" "}
         </Text>
-        as it will show you how we conduct the feedbacks process and the
+        as it will show you how we conduct the feedbacks/Meeting process and the
         expected format we advise. Please keep in mind that this process will
         take some time as the mentors will be dealing with others submission's,
         however please attend the meeting to get direct feedback
