@@ -39,7 +39,8 @@ const Content = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              🏢 Community/Support
+
+📝 Content
             </Text>
           </Box>
 

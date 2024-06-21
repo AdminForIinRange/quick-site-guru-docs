@@ -195,7 +195,7 @@ const ProposeAdesignSteps = [
         >
           📅 Meetings/Feedback{" "}
         </Text>{" "}
-        formats.
+        feedback format, focusing on the your proposal + designs.
       </Text>
     ),
   },
