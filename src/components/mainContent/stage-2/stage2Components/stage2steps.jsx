@@ -9,7 +9,7 @@ const Stage2steps = [
     title: "Define Your Project",
     text: (
       <Text transition={"all 0.3s ease"}>
-        Start by visting{" "}
+        Start by visting
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -28,8 +28,8 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          🎨 Propose a design{" "}
+          
+          🎨 Propose a design
         </Text>
         , and follow its instructions as this will help you get a start in
         selecting a theme and topic for your website and how to structure it and
@@ -50,7 +50,7 @@ const Stage2steps = [
     title: "Build with HTML",
     text: (
       <Text transition={"all 0.3s ease"}>
-        After you have completed the{" "}
+        After you have completed the
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -69,10 +69,10 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          🎨 Propose a design{" "}
+          
+          🎨 Propose a design
         </Text>
-        , before you code take a more extesinve look though{" "}
+        , before you code take a more extesinve look though
         <Text
           transition={"all 0.3s ease"}
           lineHeight={"35px"}
@@ -92,8 +92,8 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          ⚙️ Using QuickSite{" "}
+          
+          ⚙️ Using QuickSite
         </Text>
         . Create the basic structure of your website with HTML, including
         headers, footers, navigation bars, and content sections. Focus on clean
@@ -116,8 +116,8 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          Semantic Html{" "}
+          
+          Semantic Html
         </Text>
       </Text>
     ),
@@ -127,7 +127,7 @@ const Stage2steps = [
     text: (
       <Text transition={"all 0.3s ease"}>
         Style your website with CSS for a minimalist design emphasizing
-        usability and accessibility. Ensure{" "}
+        usability and accessibility. Ensure
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -146,9 +146,9 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          📱 Responsiveness{" "}
-        </Text>{" "}
+          
+          📱 Responsiveness
+        </Text>
         with media queries for different screen sizes, make sure you to your
         website on various devices and screen sizes, adjusting CSS as needed for
         a seamless user experience.
@@ -159,7 +159,7 @@ const Stage2steps = [
     title: "Incorporate QuickSite.guru Features",
     text: (
       <Text transition={"all 0.3s ease"}>
-        Utilize QuickSite.guru features for content management and{" "}
+        Utilize QuickSite.guru features for content management and
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -178,8 +178,8 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          🖼️ SVG/Assets{" "}
+          
+          🖼️ SVG/Assets
         </Text>
         handling also have a look at
         <Text
@@ -200,8 +200,8 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          🔗 Links/Scripts/Meta tags{" "}
+          
+          🔗 Links/Scripts/Meta tags
         </Text>
         for more in-depth explanation .
       </Text>
@@ -212,7 +212,7 @@ const Stage2steps = [
     title: "Publishing on QuickSite.guru ",
     text: (
       <Text transition={"all 0.3s ease"}>
-        Once you completed your site visit{" "}
+        Once you completed your site visit
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -231,12 +231,12 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          📰 Publishing{" "}
+          
+          📰 Publishing
         </Text>
         to get started on QuickSite.guru and host your website. Not required but
         if want go a step further you can host your website on the internet but
-        this will require you to Purchase a domain please visit{" "}
+        this will require you to Purchase a domain please visit
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -255,10 +255,10 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          🌐 Hosting{" "}
+          
+          🌐 Hosting
         </Text>
-        and{" "}
+        and
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -277,9 +277,9 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          🌍 Domain{" "}
-        </Text>{" "}
+          
+          🌍 Domain
+        </Text>
         for a more in-depth explanation. .
       </Text>
     ),
@@ -307,8 +307,8 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          📅 Meetings/Feedback{" "}
+          
+          📅 Meetings/Feedback
         </Text>
         as it will show you how we conduct the feedbacks/Meeting process and the
         expected format we advise. Please keep in mind that this process will
@@ -322,7 +322,7 @@ const Stage2steps = [
     text: (
       <Text transition={"all 0.3s ease"}>
         After you have received feedback in the meetings, please refine your
-        project and repeat{" "}
+        project and repeat
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -340,9 +340,9 @@ const Stage2steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
-          Step 6: Feedback{" "}
-        </Text>{" "}
+          
+          Step 6: Feedback
+        </Text>
         above. Keep in mind we are trying to develop your skills and ability's
         so learn to take constrictive criticism as we mean the best for you and
         the company.

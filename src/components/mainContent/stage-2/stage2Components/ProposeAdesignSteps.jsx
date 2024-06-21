@@ -117,7 +117,29 @@ const ProposeAdesignSteps =[
     title: "Step 3: Understand CRAP Fundamentals",
     desc: (
       <Text>
-        Familiarize yourself with the CRAP design principles: Contrast,
+        Familiarize yourself with the  <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          lineHeight={"35px"}
+          as={Link}
+         target="_blank"
+          href="https://www.google.com/search?q=CRAP+Design+fundamentals"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          C.R.A.P
+        </Text> design principles: Contrast,
         Repetition, Alignment, and Proximity. These fundamentals will help you
         create a visually appealing and cohesive design. Ensure your layout
         makes good use of these principles.
@@ -130,7 +152,28 @@ const ProposeAdesignSteps =[
       <Text>
         Define what the website will be for, how it will look, who the users
         will be, and what value it will bring to those users. Document this in
-        stage2-review by creating a post with this format: [YOUR DISCORD NAME]
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          target="_blank"
+          as={Link}
+          href="https://discord.com/channels/1223592781235359764/1224788718221787136"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          color={"white"}
+          p={1.5}
+          rounded={"8px"}
+          bg={"#7289DA"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(114,137,218,0.5)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}
+          #stage2-review{" "}
+        </Text> by creating a post with this format: [YOUR DISCORD NAME]
         - [WEBSITE NAME]. Ideally, this should be a website you will use in
         the future, not just forget about after the internship is over. If you
         can't decide, we will help you with it.
@@ -143,7 +186,28 @@ const ProposeAdesignSteps =[
       <Text>
         Sketch a basic layout of your website. Consider the structure and how
         users will navigate your site. Planning your layout on paper or using
-        a digital tool like Figma can help visualize the end product and
+        a digital tool like  <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          lineHeight={"35px"}
+          as={Link}
+          target="_blank"
+          href="https://www.canva.com"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(18,209,135,0.5)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(18,209,135, 0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          {" "}Figma
+        </Text> can help visualize the end product and
         streamline the development process.
       </Text>
     ),

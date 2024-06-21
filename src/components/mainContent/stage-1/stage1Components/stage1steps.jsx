@@ -9,7 +9,7 @@ const Stage1steps = [
     title: "Understand Who We Are",
     text: (
       <Text transition={"all 0.3s ease"}>
-        {" "}
+       
         Welcome to Stage 1! Start by going through all of the{" "}
         <Text
           as={Link}
@@ -29,7 +29,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           👋 Getting Started{" "}
         </Text>{" "}
         and{" "}
@@ -51,7 +51,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           🎓 Internship Program{" "}
         </Text>{" "}
         materials. This will give you a greater sense of the internship and the
@@ -75,7 +75,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           Orientation Form {""}
         </Text>{" "}
         . "{" "}
@@ -106,7 +106,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           #stage1-hello{" "}
         </Text>{" "}
         channel on Discord. Include your background, interests, and what you
@@ -129,7 +129,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           🧑‍💻 Introduction{" "}
         </Text>
       </Text>
@@ -158,7 +158,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           👨‍🏫 Mentorship/Guidance{" "}
         </Text>{" "}
         and
@@ -180,7 +180,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           📅 Meetings/Feedback{" "}
         </Text>{" "}
         sections to get a clear understanding of the processes. After that,
@@ -212,7 +212,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           👨‍🏫 Mentorship/Guidance{" "}
         </Text>{" "}
         section and start joining team meetings via the Google Meet link in{" "}
@@ -234,7 +234,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           📅 Meetings/Feedback{" "}
         </Text>{" "}
         . This will help you understand current projects and see where you can
@@ -266,7 +266,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           Culture Quiz {""}
         </Text>{" "}
         . to get familiar with QuickSite.guru's company culture and values.
@@ -296,7 +296,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           ⚙️ Using QuickSite{" "}
         </Text>{" "}
         section and spend some time navigating the QuickSite.guru platform .
@@ -349,7 +349,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           🌐 Community/Support{" "}
         </Text>
         channel and follow QuickSite.guru on our social media accounts.
@@ -380,7 +380,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           #org-feedback{" "}
         </Text>
         channel on Discord to share your thoughts on the orientation process.
@@ -414,7 +414,7 @@ const Stage1steps = [
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}
+         
           📗 Learning Material{" "}
         </Text>
         for a quick startup guide, or reach out to  <Text
@@ -436,7 +436,7 @@ const Stage1steps = [
                 }}
                 whiteSpace={"nowrap"}
               >
-                {" "}
+               
                 👨‍🏫 Mentorship/Guidance{" "}
               </Text>{" "}
               on Discord.
