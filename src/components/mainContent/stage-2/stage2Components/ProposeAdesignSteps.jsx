@@ -1,27 +1,24 @@
-
-
 import {
-    Box,
-    VStack,
-    Text,
-    HStack,
-    Step,
-    StepDescription,
-    StepIcon,
-    StepIndicator,
-    StepNumber,
-    StepSeparator,
-    StepStatus,
-    StepTitle,
-    Stepper,
-    useSteps,
-  } from "@chakra-ui/react";
+  Box,
+  VStack,
+  Text,
+  HStack,
+  Step,
+  StepDescription,
+  StepIcon,
+  StepIndicator,
+  StepNumber,
+  StepSeparator,
+  StepStatus,
+  StepTitle,
+  Stepper,
+  useSteps,
+} from "@chakra-ui/react";
 import Link from "next/link";
-import React from 'react';
+import React from "react";
 
-
-const ProposeAdesignSteps =[
-    {
+const ProposeAdesignSteps = [
+  {
     title: "Step 1: Define Your Project",
     desc: (
       <Text>
@@ -36,14 +33,14 @@ const ProposeAdesignSteps =[
     title: "Step 2: Gather Inspiration and Create a Mood Board",
     desc: (
       <Text>
-        Before sketching your layout, gather inspiration from websites you
-        like. Create a
+        Before sketching your layout, gather inspiration from websites you like.
+        Create a
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
           lineHeight={"35px"}
           as={Link}
-         target="_blank"
+          target="_blank"
           href="https://www.google.com/search?q=mood+board"
           cursor={"pointer"}
           textAlign={"center"}
@@ -61,8 +58,8 @@ const ProposeAdesignSteps =[
           {" "}
           Mood Board{" "}
         </Text>{" "}
-        to compile your ideas, which can include color schemes, typography,
-        and overall style. Tools like{" "}
+        to compile your ideas, which can include color schemes, typography, and
+        overall style. Tools like{" "}
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -107,9 +104,10 @@ const ProposeAdesignSteps =[
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}Canva
+          {" "}
+          Canva
         </Text>
-      can be useful for this step.
+        can be useful for this step.
       </Text>
     ),
   },
@@ -117,12 +115,13 @@ const ProposeAdesignSteps =[
     title: "Step 3: Understand CRAP Fundamentals",
     desc: (
       <Text>
-        Familiarize yourself with the  <Text
+        Familiarize yourself with the{" "}
+        <Text
           transition={"all 0.3s ease"}
           mx={1.5}
           lineHeight={"35px"}
           as={Link}
-         target="_blank"
+          target="_blank"
           href="https://www.google.com/search?q=CRAP+Design+fundamentals"
           cursor={"pointer"}
           textAlign={"center"}
@@ -139,10 +138,10 @@ const ProposeAdesignSteps =[
         >
           {" "}
           C.R.A.P
-        </Text> design principles: Contrast,
-        Repetition, Alignment, and Proximity. These fundamentals will help you
-        create a visually appealing and cohesive design. Ensure your layout
-        makes good use of these principles.
+        </Text>{" "}
+        design principles: Contrast, Repetition, Alignment, and Proximity. These
+        fundamentals will help you create a visually appealing and cohesive
+        design. Ensure your layout makes good use of these principles.
       </Text>
     ),
   },
@@ -173,10 +172,30 @@ const ProposeAdesignSteps =[
         >
           {" "}
           #stage2-review{" "}
-        </Text> by creating a post with this format: [YOUR DISCORD NAME]
-        - [WEBSITE NAME]. Ideally, this should be a website you will use in
-        the future, not just forget about after the internship is over. If you
-        can't decide, we will help you with it.
+        </Text>{" "}
+        by creating a post with this format: [YOUR DISCORD NAME] - [WEBSITE
+        NAME] and your proposal, similar to{" "}
+        <Text
+          transition={"all 0.3s ease"}
+          mx={1.5}
+          as={Link}
+          href="/internship-program/meetings-feedback"
+          cursor={"pointer"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          bg={"rgb(255, 255, 255,0.05)"}
+          border={"1px solid rgb(255, 255, 255,0.05)"}
+          p={1.5}
+          rounded={"8px"}
+          _hover={{
+            transform: "scale(1.05)",
+            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
+          }}
+          whiteSpace={"nowrap"}
+        >
+          📅 Meetings/Feedback{" "}
+        </Text>{" "}
+        formats.
       </Text>
     ),
   },
@@ -185,8 +204,9 @@ const ProposeAdesignSteps =[
     desc: (
       <Text>
         Sketch a basic layout of your website. Consider the structure and how
-        users will navigate your site. Planning your layout on paper or using
-        a digital tool like  <Text
+        users will navigate your site. Planning your layout on paper or using a
+        digital tool like{" "}
+        <Text
           transition={"all 0.3s ease"}
           mx={1.5}
           lineHeight={"35px"}
@@ -206,16 +226,14 @@ const ProposeAdesignSteps =[
           }}
           whiteSpace={"nowrap"}
         >
-          {" "}Figma
-        </Text> can help visualize the end product and
-        streamline the development process.
+          {" "}
+          Figma
+        </Text>{" "}
+        can help visualize the end product and streamline the development
+        process.
       </Text>
     ),
   },
-
-
-]
- 
-
+];
 
 export default ProposeAdesignSteps;
