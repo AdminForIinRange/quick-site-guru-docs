@@ -155,17 +155,8 @@
             "subtitle": "🎉 Welcome to stage 4",
             "prams": "welcome-stage-4",
             "path": "stage-4/welcome-stage-4"
-          },
-          {
-            "subtitle": "📊 Business Templates",
-            "prams": "business-templates",
-            "path": "stage-4/business-templates"
-          },
-          {
-            "subtitle": "🎨 Propose a template ",
-            "prams": "propose-template",
-            "path": "stage-4/propose-template"
           }
+    
         ]
       }
     ]

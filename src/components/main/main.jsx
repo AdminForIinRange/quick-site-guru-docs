@@ -112,10 +112,7 @@ const Main = ({ titlepath, subpath }) => {
       return <BusinessTemplates titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-4" && subpath === "welcome-stage-4") {
       return <WelcomeToStage4 titlepath={titlepath} subpath={subpath} />;
-    } else if (titlepath === "stage-4" && subpath === "propose-template") {
-      return <ProposeATemplate titlepath={titlepath} subpath={subpath} />;
-    } else if (titlepath === "stage-4" && subpath === "business-templates") {
-      return <BusinessTemplates titlepath={titlepath} subpath={subpath} />;
+    
     } else if (titlepath === "learning-material" && subpath === "scrimba") {
       return <Scrimba titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "using-quicksite" && subpath === "get-started") {
