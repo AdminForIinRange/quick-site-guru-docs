@@ -6,7 +6,7 @@ import BreadCrumbs from "@/components/breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
-const Responsiveness = ({ titlepath, subpath }) => {
+const Code = ({ titlepath, subpath }) => {
   //fix no emjoi issues by if else or some other methosds like laocl store on click save variable
   return (
     <>
@@ -39,7 +39,7 @@ const Responsiveness = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              🏢 Community/Support
+       👨‍💻 Code
             </Text>
           </Box>
 
@@ -110,4 +110,4 @@ const Responsiveness = ({ titlepath, subpath }) => {
   );
 };
 
-export default Responsiveness;
+export default Code;

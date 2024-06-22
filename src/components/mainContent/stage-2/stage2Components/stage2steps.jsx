@@ -128,28 +128,7 @@ const Stage2steps = [
       <Text transition={"all 0.3s ease"}>
         Style your website with CSS for a minimalist design emphasizing
         usability and accessibility. Ensure
-        <Text       lineHeight={"35px"}
-          transition={"all 0.3s ease"}
-          mx={1.5}
-          as={Link}
-          href="/using-quicksite/responsiveness"
-          cursor={"pointer"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-          bg={"rgb(255, 255, 255,0.05)"}
-          border={"1px solid rgb(255, 255, 255,0.05)"}
-          p={1.5}
-          rounded={"8px"}
-          _hover={{
-            transform: "scale(1.05)",
-            shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
-          }}
-          whiteSpace={"nowrap"}
-        >
-          
-          📱 Responsiveness
-        </Text>
-        with media queries for different screen sizes, make sure you to your
+        responsiveness with media queries for different screen sizes, make sure you to your
         website on various devices and screen sizes, adjusting CSS as needed for
         a seamless user experience.
       </Text>

@@ -33,7 +33,8 @@ const GetStarted = ({ titlepath, subpath }) => {
           image below. This page is the AI-integrated design page. However, you
           don’t need to worry about using this unless you have a GTP API key and
           want to experiment with it. For the internship, we will be focusing on
-          code, content, and hosting.
+          code, content, and hosting. If it does not look like
+              this, try zooming out.
         </Text>
       ),
     },
@@ -43,7 +44,9 @@ const GetStarted = ({ titlepath, subpath }) => {
       img: CreatingAproject,
       text: (
         <Text transition={"all 0.3s ease"}>
-       Tap the "Plus icon" to create a project. You can name the project as you want, but throughout the demonstrations, it will be called "example" in the input field. Then, click "Add."
+          Tap the "Plus icon" to create a project. You can name the project as
+          you want, but throughout the demonstrations, it will be called
+          "example" in the input field. Then, click "Add." Congrats the done, you may move to the next step.
         </Text>
       ),
     },
@@ -108,7 +111,7 @@ const GetStarted = ({ titlepath, subpath }) => {
               fontWeight={"600"}
               fontSize={["38px", "38px", "38px", "38px", "48px"]}
             >
-              📱 Responsiveness
+              🚀 Get Started
             </Text>
           </Box>
 
@@ -148,9 +151,7 @@ const GetStarted = ({ titlepath, subpath }) => {
               image below. This page is the AI-integrated design page. However,
               you don’t need to worry about using this unless you have a GTP API
               key and want to experiment with it. For the internship, we will be
-              focusing on Code, Content, and Hosting. If it does not look like
-              this, I suggest you zoom out until it is displayed as shown on the
-              screen.
+              focusing on Code, Content, and Hosting. 
             </Text>
           </Box>
 
@@ -186,7 +187,6 @@ const GetStarted = ({ titlepath, subpath }) => {
                     {title}
                   </Box>
                   <Box
-                
                     mb={"15px"}
                     color={"white"}
                     fontWeight={"300"}

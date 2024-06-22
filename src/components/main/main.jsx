@@ -37,7 +37,7 @@ import WelcomeToStage4 from "../mainContent/stage-4/welcomeToStage4"; // use sta
 
 import Scrimba from "../mainContent/learning-material/scrimba";
 import GetStarted from "../mainContent/using-quicksite/getStarted";
-import Responsiveness from "../mainContent/using-quicksite/responsiveness";
+import Code from "../mainContent/using-quicksite/Code";
 import Content from "../mainContent/using-quicksite/content";
 import Hosting from "../mainContent/using-quicksite/hosting";
 import Publishing from "../mainContent/using-quicksite/publishing";
@@ -97,14 +97,11 @@ const Main = ({ titlepath, subpath }) => {
       return <WelcomeToStage1 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-1" && subpath === "mission-vision") {
       return <OurMissionVison titlepath={titlepath} subpath={subpath} />;
-    
     } else if (titlepath === "stage-2" && subpath === "welcome-stage-2") {
       return <WelcomeToStage2 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-2" && subpath === "propose-design") {
       return <ProposeAdesign titlepath={titlepath} subpath={subpath} />;
-    }
-
-    else if (titlepath === "stage-3" && subpath === "welcome-stage-3") {
+    } else if (titlepath === "stage-3" && subpath === "welcome-stage-3") {
       return <WelcomeToStage3 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-3" && subpath === "propose-template") {
       return <ProposeATemplate titlepath={titlepath} subpath={subpath} />;
@@ -112,16 +109,12 @@ const Main = ({ titlepath, subpath }) => {
       return <BusinessTemplates titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-4" && subpath === "welcome-stage-4") {
       return <WelcomeToStage4 titlepath={titlepath} subpath={subpath} />;
-    
     } else if (titlepath === "learning-material" && subpath === "scrimba") {
       return <Scrimba titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "using-quicksite" && subpath === "get-started") {
       return <GetStarted titlepath={titlepath} subpath={subpath} />;
-    } else if (
-      titlepath === "using-quicksite" &&
-      subpath === "responsiveness"
-    ) {
-      return <Responsiveness titlepath={titlepath} subpath={subpath} />;
+    } else if (titlepath === "using-quicksite" && subpath === "code") {
+      return <Code titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "using-quicksite" && subpath === "content") {
       return <Content titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "using-quicksite" && subpath === "hosting") {
