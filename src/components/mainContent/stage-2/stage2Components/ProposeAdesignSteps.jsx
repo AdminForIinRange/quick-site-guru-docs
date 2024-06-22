@@ -200,7 +200,7 @@ const ProposeAdesignSteps = [
     ),
   },
   {
-    title: "Step 5: Sketch a Layout",
+    title: "Step 5: Sketch/Create a Layout",
     desc: (
       <Text>
         Sketch a basic layout of your website. Consider the structure and how

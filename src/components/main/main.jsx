@@ -28,7 +28,7 @@ import JoiningDiscord from "../mainContent/getting-started/joiningDiscord.jsx";
 
 import WelcomeToStage2 from "../mainContent/stage-2/welcomeToStage2";
 import ProposeAdesign from "../mainContent/stage-2/proposeAdesign";
-import CodingInQuicksite from "../mainContent/stage-2/codingInQuicksite";
+
 import WelcomeToStage3 from "../mainContent/stage-3/welcomeToStage3";
 import ProposeATemplate from "../mainContent/stage-3/proposeATemplate";
 import BusinessTemplates from "../mainContent/stage-3/businessTemplates";
@@ -102,9 +102,9 @@ const Main = ({ titlepath, subpath }) => {
       return <WelcomeToStage2 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-2" && subpath === "propose-design") {
       return <ProposeAdesign titlepath={titlepath} subpath={subpath} />;
-    } else if (titlepath === "stage-2" && subpath === "coding-in-quicksite") {
-      return <CodingInQuicksite titlepath={titlepath} subpath={subpath} />;
-    } else if (titlepath === "stage-3" && subpath === "welcome-stage-3") {
+    }
+
+    else if (titlepath === "stage-3" && subpath === "welcome-stage-3") {
       return <WelcomeToStage3 titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "stage-3" && subpath === "propose-template") {
       return <ProposeATemplate titlepath={titlepath} subpath={subpath} />;

@@ -110,11 +110,6 @@
             "subtitle": "🎨 Propose a design",
             "prams": "propose-design",
             "path": "stage-2/propose-design"
-          },
-          {
-            "subtitle": "💻 Coding in QuickSite",
-            "prams": "coding-in-quicksite",
-            "path": "stage-2/coding-in-quicksite"
           }
         ]
       }
