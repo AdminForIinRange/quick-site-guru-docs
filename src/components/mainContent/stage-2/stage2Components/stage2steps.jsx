@@ -51,7 +51,7 @@ const Stage2steps = [
     text: (
       <Text transition={"all 0.3s ease"}>
         After you have completed the
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -98,7 +98,7 @@ const Stage2steps = [
         . Create the basic structure of your website with HTML, including
         headers, footers, navigation bars, and content sections. Focus on clean
         and semantic markup if your confused give this a quick article read
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -128,7 +128,7 @@ const Stage2steps = [
       <Text transition={"all 0.3s ease"}>
         Style your website with CSS for a minimalist design emphasizing
         usability and accessibility. Ensure
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -160,7 +160,7 @@ const Stage2steps = [
     text: (
       <Text transition={"all 0.3s ease"}>
         Utilize QuickSite.guru features for content management and
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -182,7 +182,7 @@ const Stage2steps = [
           🖼️ SVG/Assets
         </Text>
         handling also have a look at
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -213,7 +213,7 @@ const Stage2steps = [
     text: (
       <Text transition={"all 0.3s ease"}>
         Once you completed your site visit
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -237,7 +237,7 @@ const Stage2steps = [
         to get started on QuickSite.guru and host your website. Not required but
         if want go a step further you can host your website on the internet but
         this will require you to Purchase a domain please visit
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -259,7 +259,7 @@ const Stage2steps = [
           🌐 Hosting
         </Text>
         and
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -289,7 +289,7 @@ const Stage2steps = [
     text: (
       <Text transition={"all 0.3s ease"}>
         Visit
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
@@ -323,7 +323,7 @@ const Stage2steps = [
       <Text transition={"all 0.3s ease"}>
         After you have received feedback in the meetings, please refine your
         project and repeat
-        <Text
+        <Text       lineHeight={"35px"}
           transition={"all 0.3s ease"}
           mx={1.5}
           as={"span"}

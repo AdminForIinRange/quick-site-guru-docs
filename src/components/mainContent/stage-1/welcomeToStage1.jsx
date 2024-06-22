@@ -114,14 +114,7 @@ const WelcomeToStage1 = ({ titlepath, subpath }) => {
                     h={"100%"}
                   >
                     <Box
-                      lineHeight={[
-                        "35px",
-                        "35px",
-                        "35px",
-                        "35px",
-                        "35px",
-                        "35px",
-                      ]}
+                 
                       mb={"15px"}
                       color={"white"}
                       fontWeight={"300"}

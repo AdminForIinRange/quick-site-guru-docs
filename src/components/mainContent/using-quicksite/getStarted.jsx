@@ -20,6 +20,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import Link from "next/link";
 import Opening1 from "../../../img/QSG/Opening1.png";
+import CreatingAproject from "../../../img/QSG/CreatingAproject.png";
 import Image from "next/image";
 const GetStarted = ({ titlepath, subpath }) => {
   const steps = [
@@ -33,6 +34,16 @@ const GetStarted = ({ titlepath, subpath }) => {
           don’t need to worry about using this unless you have a GTP API key and
           want to experiment with it. For the internship, we will be focusing on
           code, content, and hosting.
+        </Text>
+      ),
+    },
+
+    {
+      title: "Creating an Project",
+      img: CreatingAproject,
+      text: (
+        <Text transition={"all 0.3s ease"}>
+       Tap the "Plus icon" to create a project. You can name the project as you want, but throughout the demonstrations, it will be called "example" in the input field. Then, click "Add."
         </Text>
       ),
     },
@@ -133,13 +144,13 @@ const GetStarted = ({ titlepath, subpath }) => {
                 {" "}
                 quicksite.guru{" "}
               </Text>{" "}
-              (QSG) platform. Please keep in mind that the site is currently
-              going through a development phase and there might be bugs and
-              issues. However, the UI/UX and development teams are working hard
-              to release a more stable and intriguing version. When that
-              happens, the documentation will be updated, but the fundamentals
-              shown though this docs will be the same throughout all
-              variations/updates.
+              After registering on the platform, the site should open up to the
+              image below. This page is the AI-integrated design page. However,
+              you don’t need to worry about using this unless you have a GTP API
+              key and want to experiment with it. For the internship, we will be
+              focusing on Code, Content, and Hosting. If it does not look like
+              this, I suggest you zoom out until it is displayed as shown on the
+              screen.
             </Text>
           </Box>
 
@@ -175,14 +186,7 @@ const GetStarted = ({ titlepath, subpath }) => {
                     {title}
                   </Box>
                   <Box
-                    lineHeight={[
-                      "35px",
-                      "35px",
-                      "35px",
-                      "35px",
-                      "35px",
-                      "35px",
-                    ]}
+                
                     mb={"15px"}
                     color={"white"}
                     fontWeight={"300"}

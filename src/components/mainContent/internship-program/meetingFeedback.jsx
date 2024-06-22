@@ -47,6 +47,7 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
           Include your website link which must be formatted in QSG and
           published, if you dont know see{" "}
           <Text
+                 lineHeight={"35px"}
             transition={"all 0.3s ease"}
             mx={1.5}
             as={Link}
@@ -70,6 +71,7 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
           <Text
             transition={"all 0.3s ease"}
             mx={1.5}
+            lineHeight={"35px"}
             as={Link}
             href="/using-quicksite/publishing"
             cursor={"pointer"}
@@ -236,14 +238,7 @@ const MeetingFeedback = ({ titlepath, subpath }) => {
                     mb={"20px"}
                   >
                     <Box
-                      lineHeight={[
-                        "35px",
-                        "35px",
-                        "35px",
-                        "35px",
-                        "35px",
-                        "35px",
-                      ]}
+                    
                       mb={"15px"}
                       color={"white"}
                       fontWeight={"300"}

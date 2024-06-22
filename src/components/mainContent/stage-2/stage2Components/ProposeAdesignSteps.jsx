@@ -155,6 +155,7 @@ const ProposeAdesignSteps = [
           transition={"all 0.3s ease"}
           mx={1.5}
           target="_blank"
+          lineHeight={"35px"}
           as={Link}
           href="https://discord.com/channels/1223592781235359764/1224788718221787136"
           cursor={"pointer"}
@@ -178,6 +179,7 @@ const ProposeAdesignSteps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/internship-program/meetings-feedback"
           cursor={"pointer"}

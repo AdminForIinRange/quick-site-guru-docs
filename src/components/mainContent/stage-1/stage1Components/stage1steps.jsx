@@ -13,6 +13,7 @@ const Stage1steps = [
         Welcome to Stage 1! Start by going through all of the{" "}
         <Text
           as={Link}
+          lineHeight={"35px"}
           href="/getting-started/introduction"
           transition={"all 0.3s ease"}
           mx={1.5}
@@ -36,6 +37,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/internship-program/program-structure"
           cursor={"pointer"}
@@ -59,6 +61,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="https://forms.gle/AGAa6ideTx98ucFw6"
           target="_blank"
@@ -90,6 +93,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           target="_blank"
           as={Link}
           href="https://discord.com/channels/1223592781235359764/1224788718221787136"
@@ -115,6 +119,7 @@ const Stage1steps = [
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
+          lineHeight={"35px"}
           href="/getting-started/introduction"
           cursor={"pointer"}
           textAlign={"center"}
@@ -143,6 +148,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/internship-program/mentorship-guidance"
           cursor={"pointer"}
@@ -165,6 +171,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/internship-program/meetings-feedback"
           cursor={"pointer"}
@@ -197,6 +204,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/internship-program/mentorship-guidance"
           cursor={"pointer"}
@@ -219,6 +227,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/internship-program/meetings-feedback"
           cursor={"pointer"}
@@ -251,6 +260,7 @@ const Stage1steps = [
           transition={"all 0.3s ease"}
           mx={1.5}
           as={Link}
+          lineHeight={"35px"}
           href="https://forms.gle/pd88EJYtZKYeJ5pq7"
           target="_blank"
           cursor={"pointer"}
@@ -281,6 +291,8 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
+          
           as={Link}
           href="/using-quicksite/get-started"
           cursor={"pointer"}
@@ -304,6 +316,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           target="_blank"
           href="https://discord.com/channels/1223592781235359764/1224795814962925740"
@@ -334,6 +347,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/getting-started/community-support"
           cursor={"pointer"}
@@ -364,6 +378,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           target="_blank"
           href="https://discord.com/channels/1223592781235359764/1224795787985420298"
@@ -399,6 +414,7 @@ const Stage1steps = [
         <Text
           transition={"all 0.3s ease"}
           mx={1.5}
+          lineHeight={"35px"}
           as={Link}
           href="/learning-material/scrimba"
           cursor={"pointer"}

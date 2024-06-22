@@ -110,14 +110,7 @@ const ProposeAdesign = ({ titlepath, subpath }) => {
                     {title}
                   </Box>
                   <Box
-                    lineHeight={[
-                      "35px",
-                      "35px",
-                      "35px",
-                      "35px",
-                      "35px",
-                      "35px",
-                    ]}
+         
                     mb={"15px"}
                     color={"white"}
                     fontWeight={"300"}
