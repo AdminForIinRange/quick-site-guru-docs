@@ -37,7 +37,7 @@ import WelcomeToStage4 from "../mainContent/stage-4/welcomeToStage4"; // use sta
 
 import Scrimba from "../mainContent/learning-material/scrimba";
 import GetStarted from "../mainContent/using-quicksite/getStarted";
-import Code from "../mainContent/using-quicksite/Code";
+import Code from "../mainContent/using-quicksite/code.jsx";
 import Content from "../mainContent/using-quicksite/content";
 import Hosting from "../mainContent/using-quicksite/hosting";
 import Publishing from "../mainContent/using-quicksite/publishing";
