@@ -111,7 +111,7 @@ import {
                 fontWeight={"600"}
                 fontSize={["38px", "38px", "38px", "38px", "48px"]}
               >
-        👨‍💻 Codesd
+        👨‍💻 Code
               </Text>
             </Box>
   
