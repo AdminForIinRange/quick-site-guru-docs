@@ -24,6 +24,8 @@ import {
   import Image from "next/image";
   import codeQSG from "../../../img/QSG/code/codeQSG.png"
   import htmlcss from "../../../img/QSG/code/htmlcss.png"
+  import addingCode from "../../../img/QSG/code/addingCode.png"
+  import image from "../../../img/QSG/code/image.png"
   const Code = ({ titlepath, subpath }) => {
     const steps = [
       {
@@ -40,9 +42,37 @@ import {
           </Text>
         ),
       },
-  
+      {
+        title: "Getting Started",
+        img: image,
+        text: (
+          <Text transition={"all 0.3s ease"}>
+            After registering on the platform, the site should open up to the
+            image below. This page is the AI-integrated design page. However, you
+            don’t need to worry about using this unless you have a GTP API key and
+            want to experiment with it. For the internship, we will be focusing on
+            code, content, and hosting. If it does not look like
+                this, try zooming out.
+          </Text>
+        ),
+      },
      
   
+      {
+        title: "Getting Started",
+        img: htmlcss,
+        text: (
+          <Text transition={"all 0.3s ease"}>
+            After registering on the platform, the site should open up to the
+            image below. This page is the AI-integrated design page. However, you
+            don’t need to worry about using this unless you have a GTP API key and
+            want to experiment with it. For the internship, we will be focusing on
+            code, content, and hosting. If it does not look like
+                this, try zooming out.
+          </Text>
+        ),
+      },
+
     ];
   
     const { activeStep } = useSteps({
