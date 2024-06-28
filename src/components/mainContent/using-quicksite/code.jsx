@@ -22,11 +22,13 @@ import {
   import Opening1 from "../../../img/QSG/Opening1.png";
   import CreatingAproject from "../../../img/QSG/CreatingAproject.png";
   import Image from "next/image";
+  import codeQSG from "../../../img/QSG/code/codeQSG.png"
+  import htmlcss from "../../../img/QSG/code/htmlcss.png"
   const Code = ({ titlepath, subpath }) => {
     const steps = [
       {
         title: "Getting Started",
-        img: Opening1,
+        img: codeQSG,
         text: (
           <Text transition={"all 0.3s ease"}>
             After registering on the platform, the site should open up to the
@@ -39,39 +41,8 @@ import {
         ),
       },
   
-      {
-        title: "Creating an Project",
-        img: CreatingAproject,
-        text: (
-          <Text transition={"all 0.3s ease"}>
-            Tap the "Plus icon" to create a project. You can name the project as
-            you want, but throughout the demonstrations, it will be called
-            "example" in the input field. Then, click "Add." Congrats the done, you may move to the next step.
-          </Text>
-        ),
-      },
+     
   
-      //   <Text
-      //   transition={"all 0.3s ease"}
-      //   mx={1.5}
-      //   as={Link}
-      //   href="/getting-started/introduction"
-      //   cursor={"pointer"}
-      //   textAlign={"center"}
-      //   fontWeight={"bold"}
-      //   bg={"rgb(255, 255, 255,0.05)"}
-      //   border={"1px solid rgb(255, 255, 255,0.05)"}
-      //   p={1.5}
-      //   rounded={"8px"}
-      //   _hover={{
-      //     transform: "scale(1.05)",
-      //     shadow: "0 0 25px 0px rgb(255, 255, 255,0.2)",
-      //   }}
-      //   whiteSpace={"nowrap"}
-      // >
-  
-      //   🎨 Propose a design
-      // </Text>
     ];
   
     const { activeStep } = useSteps({
