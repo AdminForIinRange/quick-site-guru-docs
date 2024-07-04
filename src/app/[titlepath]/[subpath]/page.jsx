@@ -9,6 +9,8 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 
 const Home = ({ params }) => {
+
+  console.log("params", params);
   //after prop drilling test phase is done use context api !!!!!!!!!!!!!!!!!!
 
   return (
