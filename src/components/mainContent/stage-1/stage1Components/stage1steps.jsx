@@ -1,7 +1,6 @@
 import { Box, VStack, Text, Step } from "@chakra-ui/react";
 import React from "react";
-import { useRouter } from "next/navigation";
-import { useHistory } from "react-router-dom";
+
 import Link from "next/link";
 
 const Stage1steps = [
