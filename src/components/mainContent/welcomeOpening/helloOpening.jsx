@@ -205,10 +205,10 @@ const HelloOpening = ({ titlepath, subpath }) => {
     </>
   );
 };
+  
+export default HelloOpening;     
 
-export default Hello;
-
-// <Box>
+// <Box> 
 // <Text
 //   color={"white"}
 //   fontWeight={"600"}

@@ -9,11 +9,9 @@
 
 //##########################################################################
 
-import { Box, VStack, Text, HStack } from "@chakra-ui/react";
+
 import React from "react";
-import BreadCrumbs from "../breadCrumbs/breadCrumbs";
-import { HiArrowLongRight } from "react-icons/hi2";
-import { HiArrowLongLeft } from "react-icons/hi2";
+
 import HelloOpening from "../mainContent/welcomeOpening/helloOpening";
 import SublinkNotFound from "../mainContent/sublinkNotFound/sublinkNotFound";
 import Introduction from "../mainContent/getting-started/introduction";
