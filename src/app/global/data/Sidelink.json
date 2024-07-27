@@ -3,12 +3,12 @@
     "Welcome": [
       {
         "title": "🎉 Welcome",
-        "StartingPath": "welcome",
+        "StartingPath": "welcomeOpening",
         "sublinks": [
           {
             "subtitle": "👋 Hello",
-            "prams": "hello",
-            "path": "welcome/hello"
+            "prams": "helloOpening",
+            "path": "welcomeOpening/helloOpening"
           }
         ]
       }

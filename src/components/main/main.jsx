@@ -14,7 +14,7 @@ import React from "react";
 import BreadCrumbs from "../breadCrumbs/breadCrumbs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
-import Hello from "../mainContent/welcome/hello";
+import HelloOpening from "../mainContent/welcomeOpening/helloOpening";
 import SublinkNotFound from "../mainContent/sublinkNotFound/sublinkNotFound";
 import Introduction from "../mainContent/getting-started/introduction";
 import CompanyValues from "../mainContent/getting-started/companyValues";
@@ -54,8 +54,8 @@ const Main = ({ titlepath, subpath }) => {
   //ONLY PROP NEEDS TO BE PASSED IN. MAYBE VIA GLOBAL/CONTENTDATA.JOSN IDK
 
   const RenderMain = (titlepath, subpath) => {
-    if (titlepath === "welcome" && subpath === "hello") {
-      return <Hello titlepath={titlepath} subpath={subpath} />;
+    if (titlepath === "welcome" && subpath === "HelloOpening") {
+      return <HelloOpening titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "getting-started" && subpath === "introduction") {
       return <Introduction titlepath={titlepath} subpath={subpath} />;
     } else if (

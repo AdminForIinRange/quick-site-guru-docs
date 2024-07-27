@@ -7,7 +7,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import { useRouter } from "next/navigation";
 
-const Hello = ({ titlepath, subpath }) => {
+const HelloOpening = ({ titlepath, subpath }) => {
   const router = useRouter();
   const navBoxes = [
     {
