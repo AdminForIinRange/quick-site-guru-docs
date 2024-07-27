@@ -5,10 +5,10 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Home = () => {
-  console.log("sending you to welcome/hello");
+  console.log("sending you to welcomeOpening/helloOpening");
 
   const router = useRouter();
-  router.push("/welcome/hello");
+  router.push("/welcomeOpening/helloOpening");
 };
 
 export default Home;

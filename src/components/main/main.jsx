@@ -52,7 +52,7 @@ const Main = ({ titlepath, subpath }) => {
   //ONLY PROP NEEDS TO BE PASSED IN. MAYBE VIA GLOBAL/CONTENTDATA.JOSN IDK
 
   const RenderMain = (titlepath, subpath) => {
-    if (titlepath === "welcome" && subpath === "HelloOpening") {
+    if (titlepath === "welcomeOpening" && subpath === "helloOpening") {
       return <HelloOpening titlepath={titlepath} subpath={subpath} />;
     } else if (titlepath === "getting-started" && subpath === "introduction") {
       return <Introduction titlepath={titlepath} subpath={subpath} />;
